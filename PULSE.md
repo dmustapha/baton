@@ -392,3 +392,24 @@
 #### Downstream Items
 - [DS-CR1] owner: build — evaluate E-5 (single-vault `Call[]` fallback) at Task-0 if multi-call fails but a simpler instruction executes. P2. OPEN.
 - [DS-CR2] owner: demo — execute E-3 explorer internal-calls wow beat. P1. OPEN.
+
+---
+### build (Phase 0 milestone) — 2026-08-13
+**Status:** IN-PROGRESS (Phase 0 COMPLETE; Phases 1-6 pending)
+
+#### Done
+- **Task-0 GO + depth-8 achieved.** Cloned+pinned smart-accounts-cli (commit c8809b94), discovered real interface (entry `smart_accounts.py`, venv 3.12), booted live clients against Coston2.
+- One funded XRPL Payment → live operator deployed PersonalAccount `0x27fBb63780AB83aE7CEcd69291AAbb0A769071f7`, reserved collateral (Coston2 `0x97730bfc…`), minted **10.0 real FXRP** (Coston2 `0x0c33940a…`). Full hashes in submission/proof.md.
+- Locked `BATON_DEPTH=depth-8` (critique E-1 satisfied — FAssets primitive is genuinely load-bearing, not faucet-prefunded).
+
+#### Active Facts (override brief)
+- CLI real interface: `custom register '<calls-json>'` (Flare tx → call-hash) → `encode custom-instruction -w 248 -c <hash>` → `bridge instruction -`. NOT the one-shot `--calls` forge assumed (DEV-002). See baton/CLI-INTERFACE.md.
+- Live facts: wallet_id 248, agent vault id 1, Vault A id 4 (Upshift 0xD913…), Vault B id 1 (Firelight 0xC90D…), FXRP `0x0b6A3645…` decimals 6, lot=10 testXRP, provider `rEyj8ns…`, executor fee 1e11.
+
+#### Blockers for Downstream
+- **[BUILD-FLR-KEY] Phase 2 needs a funded Coston2 EVM key** for `custom register` (registers the atomic Call[] mapping; backend infra, NOT the user path). Fresh key generated: `0x47C84649A5dd23E34e938A00504D16AfcA9637a6` — needs ~1 C2FLR. Flare faucet is captcha-gated (no API). Resolve before Phase 2 Task 2.2.
+
+#### For Next Skill (build continuation / debug)
+- Phase 1 scaffold does NOT need the FLR key — proceed. Phase 2 execution does.
+- `lib/encode.ts` must implement the two-step register→encode flow (DEV-002), not the one-shot.
+- Depth-8 is real: keep the FXRP direct-mint as the first leg of the atomic instruction.

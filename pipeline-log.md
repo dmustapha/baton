@@ -26,3 +26,4 @@ Coston2 RPC live, chainId 114. All reused contracts have bytecode (MasterAccount
 2026-08-13T21:49:13Z | conductor | START | resume | Resuming from url_preverify
 2026-08-13T21:50:16Z | build | START | build | Dispatching build
 2026-08-13T21:52:14Z | hackathon-build | START | phase-0 | Task-0 go/no-go: clone+pin CLI, funded XRPL→Coston2 e2e
+2026-08-13T22:13:11Z | hackathon-build | MILESTONE | phase-0 | Task-0 GO + depth-8: operator executed XRPL-signed instruction, 10 FXRP minted on Coston2
