@@ -1,0 +1,21 @@
+{
+  "audited_at": "2026-08-13T08:32:31Z",
+  "dorahacks_endpoint": "https://dorahacks.io/api/v1/hub/hackathons/2234/hackers?page=N&page_size=50&include_following=true",
+  "api_count": 577,
+  "collected_count": 577,
+  "unique_hackers": 577,
+  "count_match": true,
+  "participants_with_github_disclosure": 487,
+  "unique_valid_github_handles": 484,
+  "profiles_resolved": 475,
+  "unresolved_or_invalid_handles": 9,
+  "public_repositories_enumerated": 26519,
+  "github_repo_count_mismatches": 0,
+  "explicit_current_repositories": 58,
+  "strong_current_candidates": 35,
+  "thematic_current_candidates": 32,
+  "flare_prior_art_repositories": 3,
+  "weak_thematic_overlap": 25,
+  "github_errors": 9,
+  "caveat": "Public profile and repository activity supports competitive reconnaissance. It does not prove formal submission, team composition, private work, or prize eligibility."
+}

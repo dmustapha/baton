@@ -1,0 +1,179 @@
+{
+  "version": "1.0",
+  "working_dir": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal",
+  "created_at": "2026-08-13T22:20:00Z",
+  "updated_at": "2026-08-13T22:26:00Z",
+  "hackathon": {
+    "name": "Flare Summer Signal",
+    "url": "https://dorahacks.io/hackathon/flaresummersignal/detail",
+    "platform": "dorahacks",
+    "hard_deadline": "2026-08-14T19:59:00Z",
+    "soft_deadline": "2026-08-14T17:59:00Z",
+    "videoLengthRequirement": 180,
+    "tracks": [
+      "Interoperable Asset Products"
+    ],
+    "judging_criteria": [
+      "Product usefulness",
+      "Flare integration quality",
+      "Technical execution",
+      "Evidence of new work",
+      "Clarity and future potential"
+    ]
+  },
+  "manifest": {
+    "project_name": "Baton",
+    "scope_mode": "emergency",
+    "hours_remaining": 22,
+    "team": [
+      {
+        "name": "Damilola Mustapha",
+        "email": "irfanjimoh123@gmail.com",
+        "github": "dmustapha",
+        "twitter": "@capitanoo23"
+      }
+    ],
+    "demoFormat": "recorded",
+    "dry_run": false
+  },
+  "checkpoints_answered": {
+    "manifest": true,
+    "idea_selection": true,
+    "post_forge_credentials": false
+  },
+  "pipeline": {
+    "phases": {
+      "intel": {
+        "status": "complete",
+        "dispatched_at": null,
+        "completed_at": "2026-08-13T10:55:00Z",
+        "artifacts": [
+          "research/research-brief.md"
+        ]
+      },
+      "warroom": {
+        "status": "complete",
+        "dispatched_at": null,
+        "completed_at": "2026-08-13T21:10:00Z",
+        "artifacts": [
+          "WINNER-BRIEF.md",
+          "baton/warroom/WINNER-BRIEF.md"
+        ]
+      },
+      "forge": {
+        "status": "complete",
+        "dispatched_at": null,
+        "completed_at": "2026-08-13T22:40:00Z",
+        "artifacts": [
+          "baton/PRD.md",
+          "baton/ARCHITECTURE.md",
+          "baton/PLAN.md",
+          "baton/FEATURE-OBSERVABLES.md",
+          ".env.example"
+        ]
+      },
+      "critique": {
+        "status": "running",
+        "dispatched_at": "2026-08-13T22:22:00Z",
+        "completed_at": null,
+        "artifacts": []
+      },
+      "url_preverify": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "build": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "debug": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "wire": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "verify_milestone": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "design_forge": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "stress_test": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "polish": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "deploy": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "livetest": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "interrogate": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "demo_rehearsal": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "demo": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "package": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "verify_preflight": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      }
+    }
+  },
+  "confirmed_urls": {},
+  "retry_budgets": {
+    "critique": {
+      "compliance_cycles": 1
+    }
+  }
+}

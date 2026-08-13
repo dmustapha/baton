@@ -1,0 +1,217 @@
+{
+  "hackathon_name": "Flare Summer Signal",
+  "url": "https://dorahacks.io/hackathon/flaresummersignal/detail",
+  "platform": "DoraHacks",
+  "hackathon_id": 2234,
+  "deadline": "2026-08-14T19:59:00Z",
+  "registered_hackers_snapshot": 577,
+  "multi_track_entry_enabled": true,
+  "tracks_limit_per_buidl": 0,
+  "bounties_limit_per_buidl": 10,
+  "dual_prize_eligibility_confirmed": false,
+  "warroom_strategy": {
+    "competitor_intelligence_mode": "generative_before_defensive",
+    "track_strategy": "single-track-confidential-compute",
+    "required_tracks": [
+      "Confidential Compute Apps"
+    ],
+    "require_independent_track_removal_tests": false,
+    "require_joined_proof_path": false,
+    "iteration": 8,
+    "track_decision_2026-08-13": {
+      "note": "Round 8 (Dami-authorized). Round 7 proved the dual-track combine path is a structural dead end (0/10, cited). Dami ruled: pick the single better track for us based on intel. PICK = Confidential Compute Apps. Grounded: ~7x fewer dedicated competitors (6 vs 44 primary repos), explicitly unowned whitespace (FCC lifecycle ops/observability #1, integration-test harness #4), and a NAMED user with verbatim-documented pain (FCC/Flare builders) — the market-reality evidence every prior round lacked. Interoperable single-track already produced 0/40 (R5-6) on the native-substitution wall.",
+      "target_whitespace": ["FCC lifecycle operations & proof observability that performs a real recovery", "cross-primitive integration-test / failure-injection harness with judge-verifiable receipts", "confidential vertical WITH a named buyer + proprietary workflow + privacy boundary not replaceable by ordinary encryption"],
+      "decision_doc": "warroom/round-8/track-decision-and-evidence-map.md"
+    },
+    "history": {
+      "dual_track_workflow_first": "iteration 7 (0/10, structural pincer)",
+      "single_track_interoperable": "iterations 5-6 (0/40, native-substitution wall)",
+      "mandatory_dual_track": "iterations 1-4"
+    }
+  },
+  "prize_pool_usd": 12000,
+  "tracks": [
+    "Interoperable Asset Products",
+    "Confidential Compute Apps"
+  ],
+  "chain": "Flare",
+  "team_size_max": null,
+  "submission_requirements": [
+    "Project name",
+    "Selected bounty or bounties",
+    "Short product description",
+    "Target user",
+    "Demo link, video, or working app link",
+    "GitHub repository or technical materials",
+    "Explanation of how the project uses Flare",
+    "Explanation of what was newly built, ported, integrated, or improved during the program",
+    "Smart contract addresses or relevant deployment details, if applicable",
+    "Short roadmap or next steps"
+  ],
+  "required_integrations": [
+    "Meaningful Flare integration",
+    "Flare Confidential Compute for the Confidential Compute Apps bounty"
+  ],
+  "products": [
+    "FAssets",
+    "FXRP",
+    "Flare Confidential Compute",
+    "Flare Compute Extensions",
+    "Flare Smart Accounts",
+    "Protocol Managed Wallets",
+    "Flare Data Connector",
+    "Flare Time Series Oracle v2"
+  ],
+  "docs_url": "https://dev.flare.network/",
+  "toolkit_url": "https://github.com/flare-foundation",
+  "telegram": "https://t.me/+5Vn6ZKhr6KI3NjIx",
+  "registration_form": "https://dorahacks.io/hackathon/flaresummersignal/detail",
+  "submission_form": null,
+  "demoFormat": "both",
+  "demo_video_requirements": {
+    "max_seconds": null,
+    "formats": [],
+    "platform": null,
+    "content_notes": "A strong submission should include a demo. The live DoraHacks event model does not currently enforce a video URL and publishes no explicit length or format."
+  },
+  "submission_form_fields": [
+    "Project name",
+    "Selected bounty or bounties",
+    "Short product description",
+    "Target user",
+    "Demo link, video, or working app link",
+    "GitHub repository or technical materials",
+    "How the project uses Flare",
+    "New work completed during the program",
+    "Smart contract addresses or deployment details",
+    "Roadmap or next steps"
+  ],
+  "disqualifiers": [
+    "Final submission must be made by August 14, 2026 at 19:59 UTC according to the live DoraHacks event model.",
+    "Existing projects must clearly separate pre-hackathon work from work newly built, ported, integrated, or improved during the program.",
+    "A bounty submission must demonstrate meaningful use of the relevant Flare capability."
+  ],
+  "workshops": [
+    {
+      "name": "Flare Summer Signal x Flare Africa Builder Webinar",
+      "speaker": "Flare Africa team",
+      "topic": "Tracks, environment setup, judging signals, and build planning",
+      "strategy_signal": "Judges expect a deliberate product plan and credible Flare integration, not a last-minute EVM port."
+    },
+    {
+      "name": "Shipping on Flare: Builders & Infrastructure",
+      "speaker": "Flare Dev Hub, Ankr, and Tenderly",
+      "topic": "RPC infrastructure, simulation, testing, and shipping support",
+      "strategy_signal": "Deployment reliability and a testable demo are explicit organizer priorities."
+    },
+    {
+      "name": "Flare Summer Signal Office Hours",
+      "speaker": "Flare mentors and ecosystem team",
+      "topic": "Product ideas, architecture questions, and technical blockers",
+      "strategy_signal": "The organizer is offering architecture feedback, so unresolved integration assumptions should be surfaced early."
+    },
+    {
+      "name": "Builder Workshop 23: From Idea to Product on Flare with AI Agents",
+      "speaker": "Quantic and Flare Dev Hub",
+      "topic": "Using Flare infrastructure and AI agents to accelerate product development",
+      "strategy_signal": "AI is positioned as a build accelerator. It is not itself a prize track or a substitute for a useful product."
+    }
+  ],
+  "sponsor_bounties": [
+    {
+      "sponsor": "Flare",
+      "amount": 6000,
+      "bounty": "Interoperable Asset Products",
+      "requirements": "Build a useful product that makes assets more useful across Flare and connected ecosystems.",
+      "integration_depth_bar": "Use Flare-native interoperability or data primitives as a core product dependency, not as a cosmetic deployment target."
+    },
+    {
+      "sponsor": "Flare",
+      "amount": 6000,
+      "bounty": "Confidential Compute Apps",
+      "requirements": "Build a privacy-preserving application using Flare Confidential Compute.",
+      "integration_depth_bar": "Route a meaningful application operation through an FCC extension and prove the onchain instruction-to-TEE-to-result lifecycle."
+    }
+  ],
+  "sidetracks": [],
+  "network": {
+    "chain": "Flare Testnet Coston2",
+    "chain_id": 114,
+    "rpc": "https://coston2-api.flare.network/ext/C/rpc",
+    "testnet_name": "Coston2",
+    "faucet_url": "https://faucet.flare.network/coston2",
+    "deploy_requirement": "Coston2, Songbird, or Flare Mainnet deployment is encouraged. Indexed event copy does not state that deployment is mandatory."
+  },
+  "judging_criteria": [
+    {
+      "name": "Product usefulness and target-user clarity",
+      "weight_pct": 30,
+      "derived": true
+    },
+    {
+      "name": "Quality and depth of Flare integration",
+      "weight_pct": 30,
+      "derived": true
+    },
+    {
+      "name": "Technical execution and demo quality",
+      "weight_pct": 20,
+      "derived": true
+    },
+    {
+      "name": "New work completed during the program",
+      "weight_pct": 10,
+      "derived": true
+    },
+    {
+      "name": "Distribution, traction, and continuation potential",
+      "weight_pct": 10,
+      "derived": true
+    }
+  ],
+  "judges": [],
+  "prizes": [
+    {
+      "track": "Interoperable Asset Products, first place",
+      "amount_usd": 4000,
+      "notes": null
+    },
+    {
+      "track": "Interoperable Asset Products, second place",
+      "amount_usd": 2000,
+      "notes": null
+    },
+    {
+      "track": "Confidential Compute Apps, first place",
+      "amount_usd": 4000,
+      "notes": null
+    },
+    {
+      "track": "Confidential Compute Apps, second place",
+      "amount_usd": 2000,
+      "notes": null
+    }
+  ],
+  "builder_profile": {
+    "skills": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Solidity",
+      "EVM integration",
+      "AI-agent product design"
+    ],
+    "tools": [
+      "Foundry",
+      "Hardhat",
+      "Viem",
+      "Vercel"
+    ],
+    "preferences": [
+      "Proof-first demos",
+      "Small shippable scope",
+      "Deep sponsor integration",
+      "Production-quality interface"
+    ]
+  }
+}

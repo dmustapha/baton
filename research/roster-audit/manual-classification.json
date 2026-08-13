@@ -1,0 +1,103 @@
+{
+  "excluded_support_or_unrelated": [
+    "FlareForward/ftso-accuracy-data",
+    "FlareForward/ftso-signal-providers",
+    "jnhualu-art/agent-builders-cup",
+    "mashharuki/flare-sample",
+    "pplmaverick/fce-extension-scaffold"
+  ],
+  "same_project_variants": [
+    {
+      "project": "Sotto / Umbra",
+      "repositories": [
+        "fahmmin/sotto-flare",
+        "fahmmin/umbra-flare"
+      ],
+      "canonical": "fahmmin/sotto-flare"
+    }
+  ],
+  "profile_recovered_current_repositories": [
+    {
+      "project": "SealedFlare",
+      "repository": "AnubisCrypto666/sealedflare",
+      "track": "dual",
+      "basis": "DoraHacks profile names sealed-bid FXRP auctions; README explicitly names Flare Summer Signal and Coston2."
+    },
+    {
+      "project": "StacksBit Flare",
+      "repository": "rogersterkaa/stacksBit-flare",
+      "track": "interoperable",
+      "basis": "DoraHacks profile says porting to Flare; README explicitly labels the Summer Signal submission and Coston2 deployment."
+    },
+    {
+      "project": "Balary",
+      "repository": "Sparexonzy95/balary",
+      "track": "confidential",
+      "basis": "DoraHacks profile disclosed Zalary; repository README identifies Balary as the renamed Summer Signal Bounty 2 deployment."
+    },
+    {
+      "project": "VeriFlow AI",
+      "repository": "Librapraise/veriflow-ai",
+      "track": "confidential",
+      "basis": "DoraHacks profile disclosed confidential identity work; README documents a live Coston2 proof product and honest simulated-TEE boundary."
+    }
+  ],
+  "profile_only_or_unlinked_current_signals": [
+    {
+      "project": "Denarii Orchestrator",
+      "dorahacks_username": "Denarii_DFI",
+      "github": "kashifbashir204-netizen",
+      "track": "interoperable",
+      "status": "profile-disclosed; no matching current public repository found"
+    },
+    {
+      "project": "FLEC Hub",
+      "dorahacks_username": "flareflec",
+      "github": "FlareFlec",
+      "track": "interoperable",
+      "status": "profile-disclosed; public docs repository exists but no event-specific repository evidence"
+    },
+    {
+      "project": "G1",
+      "dorahacks_username": "G1Flare",
+      "github": "sakalbills-source",
+      "track": "interoperable",
+      "status": "profile-disclosed; pre-event repository exists"
+    },
+    {
+      "project": "FlareGPT",
+      "dorahacks_username": "U_24cyg",
+      "github": "salemzii",
+      "track": "interoperable",
+      "status": "profile-disclosed; no matching current public repository found"
+    },
+    {
+      "project": "RebalanceKeeper FCC extension",
+      "dorahacks_username": "U_edd018189fe05e",
+      "github": "jnhualu-art",
+      "track": "confidential",
+      "status": "profile-disclosed extension; public repository still documents Ethereum KeeperHub version"
+    },
+    {
+      "project": "CAVOK",
+      "dorahacks_username": "cavok",
+      "github": null,
+      "track": "dual",
+      "status": "detailed profile disclosure; no GitHub link"
+    },
+    {
+      "project": "FlareClaw",
+      "dorahacks_username": "flarenetworkflr",
+      "github": null,
+      "track": "dual",
+      "status": "detailed profile disclosure; no GitHub link"
+    },
+    {
+      "project": "TEE-enforced agent authorization",
+      "dorahacks_username": "U_125e5c8f902ec2",
+      "github": "GreatSage-dev",
+      "track": "confidential",
+      "status": "profile-disclosed; no matching current public repository found"
+    }
+  ]
+}

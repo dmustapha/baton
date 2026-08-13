@@ -1,0 +1,258 @@
+{
+  "version": "1.0",
+  "working_dir": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal",
+  "created_at": "2026-08-13T22:20:00Z",
+  "updated_at": "2026-08-13T22:35:00Z",
+  "hackathon": {
+    "name": "Flare Summer Signal",
+    "url": "https://dorahacks.io/hackathon/flaresummersignal/detail",
+    "platform": "dorahacks",
+    "hard_deadline": "2026-08-14T19:59:00Z",
+    "soft_deadline": "2026-08-14T17:59:00Z",
+    "videoLengthRequirement": 180,
+    "tracks": [
+      "Interoperable Asset Products"
+    ],
+    "judging_criteria": [
+      "Product usefulness",
+      "Flare integration quality",
+      "Technical execution",
+      "Evidence of new work",
+      "Clarity and future potential"
+    ]
+  },
+  "manifest": {
+    "project_name": "Baton",
+    "scope_mode": "emergency",
+    "hours_remaining": 22,
+    "team": [
+      {
+        "name": "Damilola Mustapha",
+        "email": "irfanjimoh123@gmail.com",
+        "github": "dmustapha",
+        "twitter": "@capitanoo23"
+      }
+    ],
+    "demoFormat": "recorded",
+    "dry_run": false
+  },
+  "checkpoints_answered": {
+    "manifest": true,
+    "idea_selection": true,
+    "post_forge_credentials": {
+      "answered": true,
+      "answer": "generate+fund now",
+      "note": "Funded XRPL testnet account rwLtfA6cn57VYjzaDetfCQi2z4cDgeNi8b (100 XRP) written to .env; all other config public/auto-resolved",
+      "answered_at": "2026-08-13T22:32:00Z"
+    }
+  },
+  "pipeline": {
+    "phases": {
+      "intel": {
+        "status": "complete",
+        "dispatched_at": null,
+        "completed_at": "2026-08-13T10:55:00Z",
+        "artifacts": [
+          "research/research-brief.md"
+        ]
+      },
+      "warroom": {
+        "status": "complete",
+        "dispatched_at": null,
+        "completed_at": "2026-08-13T21:10:00Z",
+        "artifacts": [
+          "WINNER-BRIEF.md",
+          "baton/warroom/WINNER-BRIEF.md"
+        ]
+      },
+      "forge": {
+        "status": "complete",
+        "dispatched_at": null,
+        "completed_at": "2026-08-13T22:40:00Z",
+        "artifacts": [
+          "baton/PRD.md",
+          "baton/ARCHITECTURE.md",
+          "baton/PLAN.md",
+          "baton/FEATURE-OBSERVABLES.md",
+          ".env.example"
+        ]
+      },
+      "critique": {
+        "status": "complete",
+        "dispatched_at": "2026-08-13T22:22:00Z",
+        "completed_at": "2026-08-13T22:27:00Z",
+        "artifacts": [
+          "baton/CRITIQUE-REPORT.md",
+          "baton/.critique-state.json"
+        ]
+      },
+      "url_preverify": {
+        "status": "complete",
+        "dispatched_at": "2026-08-13T22:33:00Z",
+        "completed_at": "2026-08-13T22:35:00Z",
+        "artifacts": [
+          "confirmed_urls (in conductor state)"
+        ]
+      },
+      "build": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "debug": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "wire": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "verify_milestone": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "design_forge": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "stress_test": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "polish": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "deploy": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "livetest": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "interrogate": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "demo_rehearsal": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "demo": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "package": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      },
+      "verify_preflight": {
+        "status": "pending",
+        "dispatched_at": null,
+        "completed_at": null,
+        "artifacts": []
+      }
+    }
+  },
+  "confirmed_urls": {
+    "coston2_rpc": {
+      "url": "https://coston2-api.flare.network/ext/C/rpc",
+      "status": "live",
+      "chainId": 114
+    },
+    "coston2_explorer": {
+      "url": "https://coston2-explorer.flare.network",
+      "status": 200
+    },
+    "flare_faucet": {
+      "url": "https://faucet.flare.network/coston2",
+      "status": 200
+    },
+    "xrpl_faucet": {
+      "url": "https://faucet.altnet.rippletest.net/accounts",
+      "status": "live (POST endpoint proven; root path 404 only)"
+    },
+    "MasterAccountController": {
+      "addr": "0x434936d47503353f06750Db1A444DBDC5F0AD37c",
+      "code": true
+    },
+    "Operator_EOA": {
+      "addr": "0x103b384064ae85577127097A7cCadfd6fb13f437",
+      "code": false,
+      "txs": 52653,
+      "note": "EOA executor — no bytecode expected"
+    },
+    "VaultA_Upshift": {
+      "addr": "0xD91324A6e8884147F6425E9ddd60e11Aea060B5b",
+      "code": true
+    },
+    "VaultB_Firelight": {
+      "addr": "0xC90D6847747b85d1fa2E07859869fb9fB72c0361",
+      "code": true
+    },
+    "AgentVault": {
+      "addr": "0x55c815260cBE6c45Fe5bFe5FF32E3C7D746f14dC",
+      "code": true
+    },
+    "ContractRegistry": {
+      "addr": "0xaD67FE66660Fb8dFE9d6b1b4240d8650e30F6019",
+      "code": true
+    },
+    "provider_xrpl": {
+      "addr": "rEyj8nsHLdgt79KJWzXR5BgF7ZbaohbXwq",
+      "funded_xrp": 5256.39
+    },
+    "demo_xrpl": {
+      "addr": "rwLtfA6cn57VYjzaDetfCQi2z4cDgeNi8b",
+      "funded_xrp": 100.0
+    }
+  },
+  "retry_budgets": {
+    "critique": {
+      "compliance_cycles": 1
+    }
+  },
+  "critiqueState": {
+    "winProbabilityIndex": 74,
+    "verdict": "SHIP-WORTHY WITH RESERVATIONS",
+    "positioning": "differentiated",
+    "narrative": "compelling",
+    "elevationsProposed": 5,
+    "elevationsApplied": 3,
+    "elevationsDeferred": [
+      "E-1 depth-8 fight (Gate-1)",
+      "E-5 upgrade Task-0 fallback to single-vault Call[] (build)"
+    ],
+    "topBlockers": [
+      "BLOCKER-1: thesis rides un-run Task-0 assumption; documented fallback lands in simple-FXRP kill-list",
+      "BLOCKER-2: atomicity is the thesis but not judge-visible (addressed by E-3)"
+    ],
+    "crossReview": "peer unavailable (degraded, non-blocking)"
+  }
+}

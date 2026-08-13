@@ -1,0 +1,717 @@
+[
+  {
+    "identity": "JakobOpresnik",
+    "candidate_repositories": [
+      "cyberrockng/workproof",
+      "pplmaverick/fce-extension-scaffold"
+    ],
+    "repository_count": 2
+  },
+  {
+    "identity": "PugarHuda",
+    "candidate_repositories": [
+      "PugarHuda/buta",
+      "PugarHuda/undelayed"
+    ],
+    "repository_count": 2
+  },
+  {
+    "identity": "Snojj25",
+    "candidate_repositories": [
+      "cyberrockng/workproof",
+      "pplmaverick/fce-extension-scaffold"
+    ],
+    "repository_count": 2
+  },
+  {
+    "identity": "Webghost01-NG",
+    "candidate_repositories": [
+      "Webghost01-NG/flare-pulse-ai",
+      "Webghost01-NG/relaypay"
+    ],
+    "repository_count": 2
+  },
+  {
+    "identity": "a252937166",
+    "candidate_repositories": [
+      "a252937166/faktura",
+      "a252937166/heirloom"
+    ],
+    "repository_count": 2
+  },
+  {
+    "identity": "luongs3",
+    "candidate_repositories": [
+      "luongs3/flare-confidential-settle",
+      "luongs3/flare-firegate"
+    ],
+    "repository_count": 2
+  },
+  {
+    "identity": "mashharuki",
+    "candidate_repositories": [
+      "mashharuki/Flare-Summer-Signal-Hackathon-2026",
+      "mashharuki/flare-sample"
+    ],
+    "repository_count": 2
+  },
+  {
+    "identity": "pplmaverick",
+    "candidate_repositories": [
+      "pplmaverick/fce-extension-scaffold",
+      "pplmaverick/flare-prediction-market"
+    ],
+    "repository_count": 2
+  },
+  {
+    "identity": "Ai-Rook",
+    "candidate_repositories": [
+      "Ai-Rook/flare-wallet-port"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Alike001",
+    "candidate_repositories": [
+      "Alike001/fasset-sentry"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Atmyown",
+    "candidate_repositories": [
+      "martin-gedyk/paigold"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Bsh54",
+    "candidate_repositories": [
+      "Bsh54/aegisflow"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Carlys17",
+    "candidate_repositories": [
+      "Carlys17/adumbra-flare"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Chinwuba081",
+    "candidate_repositories": [
+      "drained69/Tacit"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Clean-earthw",
+    "candidate_repositories": [
+      "riush03/Veri"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Dami904",
+    "candidate_repositories": [
+      "davre001/UMBRA"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Derojuu",
+    "candidate_repositories": [
+      "Derojuu/VaultDrop"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "DiveshChauhan123",
+    "candidate_repositories": [
+      "DiveshChauhan123/flare_"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "ETIM-PAUL",
+    "candidate_repositories": [
+      "Kenny-svg/flareramp"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "EndPx",
+    "candidate_repositories": [
+      "EndPx/whisperdesk"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "FlareForward",
+    "candidate_repositories": [
+      "FlareForward/ftso-accuracy-data"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Folawewo",
+    "candidate_repositories": [
+      "Folawewo/flareshield"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Hugegreencandle",
+    "candidate_repositories": [
+      "Hugegreencandle/fassets-verify"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Kenny-svg",
+    "candidate_repositories": [
+      "Kenny-svg/flareramp"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "KingBeeee",
+    "candidate_repositories": [
+      "KingBeeee/cuddly-lamp"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "KingOfTheMultiverse",
+    "candidate_repositories": [
+      "KingOfTheMultiverse/fxrp-agent-radar"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "LSUDOKO",
+    "candidate_repositories": [
+      "LSUDOKO/Wraith"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Lukeknow0",
+    "candidate_repositories": [
+      "Lukeknow0/flare-payflow-guard"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Marc-Dvci",
+    "candidate_repositories": [
+      "Marc-Dvci/BridgeSafe"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Marvy247",
+    "candidate_repositories": [
+      "Marvy247/Umbra-Protocol"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Mazwancreatives",
+    "candidate_repositories": [
+      "davre001/UMBRA"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Milites-Christi",
+    "candidate_repositories": [
+      "Milites-Christi/prv1311-flare-submission"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Obiajulu-gif",
+    "candidate_repositories": [
+      "Obiajulu-gif/flareseal"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Pandey456",
+    "candidate_repositories": [
+      "Pandey456/VeilMarket"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "PyGuy2",
+    "candidate_repositories": [
+      "drained69/Tacit"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "RaYYeR220",
+    "candidate_repositories": [
+      "RaYYeR220/veil"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Rasslonely",
+    "candidate_repositories": [
+      "Rasslonely/NexusXRP"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "SharkHand3",
+    "candidate_repositories": [
+      "SharkHand3/fasset-taskbounty"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Tajudeeen",
+    "candidate_repositories": [
+      "Tajudeeen/ledgerguard"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Terese678",
+    "candidate_repositories": [
+      "Terese678/schoolsave-flare"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Theophilus20",
+    "candidate_repositories": [
+      "Theophilus20/flarecredit"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Vendhan1512",
+    "candidate_repositories": [
+      "hari-hara-sudharsan/XRPShield"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Wangsit05",
+    "candidate_repositories": [
+      "wngstnr-code/SealedFi"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "Xyrelix",
+    "candidate_repositories": [
+      "davre001/UMBRA"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "agent@workbuddy.local",
+    "candidate_repositories": [
+      "jnhualu-art/agent-builders-cup"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "anoopbalan25-creator",
+    "candidate_repositories": [
+      "anoopbalan25-creator/proofvault"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "argenestel",
+    "candidate_repositories": [
+      "argenestel/fxrproute"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "captainebru84-sudo",
+    "candidate_repositories": [
+      "captainebru84-sudo/ward"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "cassxbt@example.com",
+    "candidate_repositories": [
+      "Cassxbt/fxrp-dark-rfq"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "codex",
+    "candidate_repositories": [
+      "ShalyX/private-fxrp"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "cyberrockng",
+    "candidate_repositories": [
+      "cyberrockng/workproof"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "dane@kairovault.com",
+    "candidate_repositories": [
+      "Hugegreencandle/fassets-verify"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "danielamodu",
+    "candidate_repositories": [
+      "danielamodu/Warden"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "davife2025",
+    "candidate_repositories": [
+      "davife2025/polycast"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "davre001",
+    "candidate_repositories": [
+      "davre001/UMBRA"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "dependabot[bot]",
+    "candidate_repositories": [
+      "LSUDOKO/Wraith"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "dev@umbraprotocol.xyz",
+    "candidate_repositories": [
+      "Marvy247/Umbra-Protocol"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "dmetagame",
+    "candidate_repositories": [
+      "dmetagame/ballast"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "drip@hackathon.dev",
+    "candidate_repositories": [
+      "bolajiev/drip"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "everythingcode-1",
+    "candidate_repositories": [
+      "envexx/FlareOne"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "fahmmin",
+    "candidate_repositories": [
+      "fahmmin/sotto-flare"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "fassko",
+    "candidate_repositories": [
+      "cyberrockng/workproof"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "github-actions[bot]",
+    "candidate_repositories": [
+      "Pandey456/VeilMarket"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "godwinchijioke@gmail.com",
+    "candidate_repositories": [
+      "spiffamani/wayafee"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "google-labs-jules[bot]",
+    "candidate_repositories": [
+      "LSUDOKO/Wraith"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "hashir@zama-hackathon.dev",
+    "candidate_repositories": [
+      "tommycet/creditgate"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "holyaustin",
+    "candidate_repositories": [
+      "holyaustin/PortalFX"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "huangharen",
+    "candidate_repositories": [
+      "huangharen/xrpflow-flare"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "huzi0000",
+    "candidate_repositories": [
+      "huzi0000/milestonex-flare"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "ikhsanRamadhan",
+    "candidate_repositories": [
+      "ikhsanRamadhan/pixelorbit-flare"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "jerrymusaga",
+    "candidate_repositories": [
+      "jerrymusaga/Keyless"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "jnhualu-art",
+    "candidate_repositories": [
+      "jnhualu-art/agent-builders-cup"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "kvt-verifier@users.noreply.github.com",
+    "candidate_repositories": [
+      "Hugegreencandle/fassets-verify"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "major101x",
+    "candidate_repositories": [
+      "major101x/midpoint"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "martin-gedyk",
+    "candidate_repositories": [
+      "martin-gedyk/paigold"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "max@MaxdeMacBook-Air.local",
+    "candidate_repositories": [
+      "MaxxxDong/flare-evidence-escrow"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "mystiquemide",
+    "candidate_repositories": [
+      "mystiquemide/jorqeth"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "nobanksnearby@NoBankss-Mac-mini-4.local",
+    "candidate_repositories": [
+      "NoBanks/traide-flare"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "nonggde",
+    "candidate_repositories": [
+      "nonggde/privyroll-signal"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "nositrax",
+    "candidate_repositories": [
+      "Marc-Dvci/BridgeSafe"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "ochinimus@proton.me",
+    "candidate_repositories": [
+      "seekdaseek/haircut"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "onchaindc",
+    "candidate_repositories": [
+      "onchaindc/RippleFi"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "priyaraghavan23",
+    "candidate_repositories": [
+      "priyaraghavan23/flare-fee-dashboard"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "queen@Queens-Mac-Studio.local",
+    "candidate_repositories": [
+      "Ai-Rook/flare-wallet-port"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "root@3773.example.uk",
+    "candidate_repositories": [
+      "KingBeeee/cuddly-lamp"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "scientivan",
+    "candidate_repositories": [
+      "wngstnr-code/SealedFi"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "semantic-release-bot",
+    "candidate_repositories": [
+      "LSUDOKO/Wraith"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "sofeel",
+    "candidate_repositories": [
+      "Milites-Christi/prv1311-flare-submission"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "sofiadaniellarossi-cmd",
+    "candidate_repositories": [
+      "sofiadaniellarossi-cmd/fxrp-vault"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "spiffamani",
+    "candidate_repositories": [
+      "spiffamani/wayafee"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "stephenovo",
+    "candidate_repositories": [
+      "stephenovo/sealed-credit"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "sudharsanj008gmail.com",
+    "candidate_repositories": [
+      "hari-hara-sudharsan/XRPShield"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "superman32432432",
+    "candidate_repositories": [
+      "Lukeknow0/flare-payflow-guard"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "supplyweijiemtm@outlook.com",
+    "candidate_repositories": [
+      "a252937166/faktura"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "tang-vu",
+    "candidate_repositories": [
+      "tang-vu/Vouchsafe"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "thesithunyein",
+    "candidate_repositories": [
+      "thesithunyein/cipher-sign"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "vercel[bot]",
+    "candidate_repositories": [
+      "Tajudeeen/ledgerguard"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "vibenedict",
+    "candidate_repositories": [
+      "vibenedict/flavest"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "wngstnr-code",
+    "candidate_repositories": [
+      "wngstnr-code/SealedFi"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "yyn",
+    "candidate_repositories": [
+      "yangyangnovelist-hub/darkstop"
+    ],
+    "repository_count": 1
+  },
+  {
+    "identity": "z@container",
+    "candidate_repositories": [
+      "Cubiczan/flareintel"
+    ],
+    "repository_count": 1
+  }
+]

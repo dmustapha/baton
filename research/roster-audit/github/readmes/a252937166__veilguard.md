@@ -1,0 +1,539 @@
+# VeilGuard for Safe
+
+**Safe already controls *who* can spend. VeilGuard keeps the spending policy itself *confidential*.**
+
+VeilGuard is a [Safe](https://safe.global) Module that enforces **encrypted**
+spending policies on a treasury — a per-request auto-execution limit, a total
+delegated budget and a minimum treasury reserve — evaluated inside a TEE by the
+[iExec Nox](https://docs.noxprotocol.io) confidential computing protocol.
+
+A delegate submits an **encrypted** amount. The policy is evaluated on ciphertext
+and the chain only ever learns a coarse, publicly verifiable outcome:
+
+| Outcome | Meaning |
+| --- | --- |
+| `WITHIN MANDATE` | Policy passed — a confidential ERC-7984 transfer executes immediately |
+| `APPROVAL REQUIRED` | Above the auto-limit — a real 2-of-2 Safe multisig approval is required |
+| `BLOCKED` | Policy violated — no funds move; the coarse reason stays private to the delegate & admin |
+
+Exact limits, remaining budgets, thresholds and amounts are **never** revealed on-chain.
+Auditors receive **scoped, immutable disclosure snapshots** — not live state.
+
+**Live contracts on Ethereum Sepolia** · current public dApp: **https://veilguard.axiqo.xyz**.
+The v1.2 Operations Desk is deployed there. Releases upload every hashed asset
+first, switch `index.html` last, then verify the live footer SHA and dynamic imports.
+
+## Live deployment (Ethereum Sepolia)
+
+| Contract | Address |
+| --- | --- |
+| VeilGuardModule | [`0x02e9b09f5929604b101244661835605b1ee67fea`](https://sepolia.etherscan.io/address/0x02e9b09f5929604b101244661835605b1ee67fea) |
+| Safe (v1.4.1, **2-of-2**, module enabled) | [`0x22Ab88236b21D4A528251474b05f5045c6e71e99`](https://sepolia.etherscan.io/address/0x22Ab88236b21D4A528251474b05f5045c6e71e99) |
+| cUSDC (ERC-7984 wrapper) | [`0x71ac9a2872048f78dc3d627c6fe7f3b2f35467b3`](https://sepolia.etherscan.io/address/0x71ac9a2872048f78dc3d627c6fe7f3b2f35467b3) |
+| TestUSDC (public faucet ERC-20) | [`0x94c426eb57f5bb3fa9dfdbbbe7ae1efb2cb958ab`](https://sepolia.etherscan.io/address/0x94c426eb57f5bb3fa9dfdbbbe7ae1efb2cb958ab) |
+| Nox NoxCompute (protocol) | [`0x24Ef36Ec5b626D7DCD09a98F3083c2758F0F77bF`](https://sepolia.etherscan.io/address/0x24Ef36Ec5b626D7DCD09a98F3083c2758F0F77bF) |
+
+Full addresses & roles: [`deployments.json`](./deployments.json).
+
+## Frozen on-chain evidence run
+
+One clean run on Sepolia (commit `2dde792`), **real 2-of-2 Safe governance** — a single owner cannot act alone. Every hash is verifiable on Etherscan:
+
+| Flow | Request | Finalize (proof-gated) | Safe 2-of-2 | Outcome |
+| --- | --- | --- | --- | --- |
+| Activate mandate #4 | [propose](https://sepolia.etherscan.io/tx/0x30016956c101f4c937b0fbfe72cadc95ead90e17c1a7af73ea8afa3d79cd9352) | — | [activate 2/2](https://sepolia.etherscan.io/tx/0x179476edcffae54c85077bcaf681b162f2ad156d8ace078e8dd564b32b08e857) | ACTIVE |
+| Direct spend #5 | [request](https://sepolia.etherscan.io/tx/0x72c07b64d7faa10db837ba6965a6ae40357353046c4a3e892b156f7bd235db32) | [finalize](https://sepolia.etherscan.io/tx/0xb73036c3a45daf99512df64d2e3909589a84866d920fca33a4d3e4b94c871108) | not needed | EXECUTED |
+| Escalated #4 | [request](https://sepolia.etherscan.io/tx/0xa3e45c0d82d9545a3cd97c265177f88d2e315fb05e15d93cf355450789384ed4) | [finalize](https://sepolia.etherscan.io/tx/0xd97f49b73090af9c73dce2f6abb34bdc1fdde3aa3c3a80a4cc8868e6ed634695) | [approve 2/2](https://sepolia.etherscan.io/tx/0x3edd9d7d09508c9f093bf4ac456b4ce1288050e0b82f161c12ff55ba3637f2a5) | APPROVED |
+| Blocked #6 | [request](https://sepolia.etherscan.io/tx/0x6e084c52be59da98a9c5b8a87f570415df7fc3aebbfa0e7a72dea15ba896f204) | [finalize](https://sepolia.etherscan.io/tx/0xa1c79fa8d8652c59dd640ee9ab1e0b09a08750b9479b68f77a164140275ece63) | no funds move | BLOCKED |
+| Selective disclosure | covers #5, #4, #6 | — | — | [packet tx](https://sepolia.etherscan.io/tx/0xde733271081e955be5c10cbaa15776cf4227ed1f980b1a242eadb49e335592a7) |
+
+TEE latency (single run, not a percentile): within 5.4s · escalated 5.4s · blocked 1.526s. Reproduce with `scripts/final-evidence.ts`.
+
+## How it works
+
+```
+Finance Admin ──proposeMandate(encrypted limits)──▶ VeilGuardModule ◀──activate── Safe multisig
+
+Delegate ──requestSpend(encrypted amount)──▶ policy evaluated ON CIPHERTEXT in the Nox TEE
+   ├─ budget check ── safeSub          │ against the Safe's REAL confidential balance
+   ├─ reserve check ─ safeSub + ge     │ (the Safe lends the module transient handle access)
+   ├─ auto-limit ──── le               │
+   └─ decision = nested select ──▶ funds ATOMICALLY RESERVED (encrypted zero when blocked)
+
+anyone ──finalize(decryptionProof)──▶ proof verified on-chain ──▶ execute / escalate / block
+Auditor ◀── scoped IMMUTABLE snapshot handles — never live state, never future versions
+```
+
+Key design properties:
+
+- **Humans are viewers, never admins.** Every decrypt grant is read-only
+  (`addViewer`); persistent compute access to handles is confined to the module.
+- **Atomic reservation, no shadow accounting.** Admissible funds move to module
+  escrow in the same transaction as the decision, evaluated against the Safe's
+  *real* confidential balance — later treasury changes can't invalidate a decision.
+  A blocked request reserves an encrypted zero, indistinguishable on-chain.
+- **Untrusted finalization.** The Nox gateway's signed decryption proof decides the
+  outcome; the keeper (or any caller) is just a courier.
+- **Governance without a super-admin.** The admin can only propose and pause;
+  activating, resuming and approving escalations require the Safe multisig.
+
+## Repository layout
+
+```
+contracts/
+  VeilGuardModule.sol        the Safe Module: policies, requests, escrow, audit
+  ConfidentialUSDC.sol       ERC-7984 token (local tests)
+  ConfidentialUSDCWrapper.sol ERC-20→ERC-7984 wrapper (Sepolia cUSDC)
+  mocks/{TestUSDC,MinimalSafe}.sol
+test/                        node:test suites on the local Nox Docker stack
+scripts/
+  deploy-sepolia.ts          full deploy (token → wrapper → Safe → module)
+  smoke-sepolia.ts           on-chain within-mandate loop + latency
+  e2e-sepolia.ts             three-state + cancel + audit coverage
+  keeper.ts                  untrusted finalize courier (one-shot or loop)
+app/                         Hash-routed React + viem + Nox SDK operations desk
+docs/DESIGN.md               canonical judge journey, visual and recovery contract
+server/provisioner.mjs       bounded decision, audit, governance and onboarding API
+feedback.md                  developer feedback on the Nox tooling
+```
+
+## Development
+
+Prerequisites: Node.js **22.x** (pinned in `.nvmrc` / `.node-version`) and Docker
+running (the plugin boots the Nox off-chain stack locally). On Apple Silicon,
+use an arm64 Node process rather than an x64/Rosetta shell; the preflight check
+fails early with a clear message when the runtime is incompatible.
+
+```sh
+nvm use
+npm install
+npm --prefix app install
+npm run check
+npm run test:server                    # bounded API and Safe-serialization tests
+npm test -- "$PWD/test/00-stack.test.ts" \
+            "$PWD/test/10-veilguard-flows.test.ts" \
+            "$PWD/test/20-audit-isolation.test.ts" \
+            "$PWD/test/30-governance.test.ts"   # 17 tests on the local Nox off-chain stack
+```
+
+> Pass **absolute** test paths — `hardhat test` with a relative path can misresolve
+> against `node_modules/@iexec-nox/handle` when the suite imports the handle SDK.
+> With Colima, also export its socket for the Nox plugin, for example
+> `DOCKER_HOST=unix://$HOME/.colima/default/docker.sock`; Docker CLI context selection
+> alone is not visible to the plugin.
+
+### Sepolia reproduction paths
+
+#### Fresh deployment (new contracts and Safe)
+
+```sh
+# .env needs SEPOLIA_DEPLOYER_KEY, DEMO_ADMIN_KEY, DEMO_SIGNER_B_KEY,
+# DEMO_DELEGATE_KEY and DEMO_AUDITOR_KEY (+ optional SEPOLIA_RPC_URL).
+# Optional per-role targets: FRESH_ADMIN_TARGET_ETH,
+# FRESH_SIGNER_B_TARGET_ETH, FRESH_DELEGATE_TARGET_ETH and
+# FRESH_AUDITOR_TARGET_ETH.
+npx hardhat run scripts/deploy-sepolia.ts --network sepolia
+npx hardhat run scripts/smoke-sepolia.ts  --network sepolia
+npx hardhat run scripts/e2e-sepolia.ts    --network sepolia
+```
+
+To generate the four disposable roles without printing their keys, prepare a
+private environment and checkpoint before copying the source into a disposable
+worktree:
+
+```sh
+node scripts/create-fresh-env.mjs \
+  --source .env \
+  --output /absolute/private/path/fresh.env \
+  --checkpoint /absolute/private/path/fresh-run.json
+
+# Activate every generated value without echoing it. The exported values take
+# precedence over the repository .env for Hardhat and all Fresh scripts.
+set -a
+. /absolute/private/path/fresh.env
+set +a
+
+npx hardhat run scripts/deploy-sepolia.ts --network sepolia
+npx hardhat run scripts/smoke-sepolia.ts  --network sepolia
+npx hardhat run scripts/e2e-sepolia.ts    --network sepolia
+```
+
+The helper retains only the source Deployer identity, generates four new role
+keys, writes the environment as mode `0600`, refuses existing output/checkpoint
+paths and places `FRESH_RUN_CHECKPOINT_PATH` in that environment. The three
+Fresh entrypoints and Hardhat itself use exported process variables before the
+repository `.env`; sourcing the generated file as shown is therefore required
+unless it is explicitly installed as the active `.env`.
+
+All four `DEMO_*` role keys must be brand-new test-only identities; the deploy
+preflight refuses any role that reuses a checked-in Safe owner or deployment role.
+
+Fresh role funding uses **target balances**, not a fixed transfer. Defaults are
+Admin `0.012 ETH`, signer B `0.010 ETH`, Delegate `0.012 ETH` and Auditor
+`0.001 ETH`, based on a complete Deploy → Smoke → E2E run with extra testnet-gas
+margin. Before the first chain write, the deploy script reads every role balance,
+adds only the missing top-ups, and requires the Deployer to cover that dynamic
+total plus a separate `0.02 ETH` deployment-gas reserve. For four zero-balance
+roles, the default gate is therefore `0.055 ETH`; existing role balances reduce
+it. Each transfer is recalculated from the latest balance and followed by an
+independent balance read that must meet the configured target. Raise an individual
+`FRESH_*_TARGET_ETH` value if Sepolia gas prices increase. These overrides may
+raise a target but cannot lower its empirical default floor; an undercut is
+rejected during the read-only preflight.
+
+The deploy step initializes a mode-`0600`, deployment-bound Fresh checkpoint
+(`.fresh-run-checkpoint.json`, or `FRESH_RUN_CHECKPOINT_PATH`). Smoke and E2E
+persist each broadcast hash before receipt polling and derive every Mandate,
+Request and Audit Packet ID from that transaction's event. A restart follows
+the same hash and ID; a mismatched deployment or an ambiguous stage without a
+hash fails closed instead of submitting a replacement transaction. Use a new,
+isolated checkpoint path for every new Fresh deployment—existing recovery
+evidence is never overwritten.
+
+Fresh Nox inputs are broadcast only after the exact contract gas-estimation
+path can consume them. Status resolution and downstream
+`decrypt`/`publicDecrypt` are separate retry barriers, and the checkpoint
+records their `resolved → usable` lag. The flow uses bounded read-only retries;
+it does not rely on operator sleeps or repeated wallet submissions.
+
+This sequence is only for a **fresh deployment**. It creates a Safe with exactly
+two distinct owners and threshold `2`, then every module enable, mandate
+activation, escalation approval and cancellation is signed by both owners with
+real EIP-712 signatures through the shared `safeExec2of2` helper. A single owner
+cannot complete any of those governance actions.
+
+`deploy-sepolia.ts` intentionally replaces the root `deployments.json`; the smoke
+and E2E scripts then exercise those newly written addresses and leave real
+Sepolia/Nox evidence behind. Run this sequence in a disposable branch or worktree.
+Do **not** start at `smoke-sepolia.ts` or `e2e-sepolia.ts` with the repository's
+checked-in production manifest. If the dApp should target the fresh deployment,
+copy the generated root manifest to `app/src/deployments.json` and run
+`npm run check` before building it; otherwise leave both checked-in production
+manifests untouched.
+
+This is a **fresh protocol reproduction**, not a one-command clone of the full
+public Operations Desk demo. It proves the new contracts, exact 2-of-2 Safe,
+direct/escalated/blocked requests and audit snapshots with one configured
+Delegate and Auditor. Copying the manifest only retargets contract and role
+addresses; it does not replace the public test-only identities or provision the
+guided scenarios.
+
+To reproduce the complete public Guided Demo on the fresh deployment, also:
+
+- choose test-only keys for the main, violation and Free Play Delegates plus the
+  Auditor; keep those identities aligned between `app/src/demo.ts` and the
+  provisioner demo-role settings, then rebuild the dApp. Never put the Finance
+  Admin or either Safe-owner key in the browser bundle;
+- fund all three Delegate accounts with Sepolia gas, seed the Safe with enough
+  cUSDC, and create/activate an eligible mandate for each Delegate with the same
+  three guided recipients and sufficient confidential capacity;
+- run the provisioner against the fresh `MODULE` and `SAFE`, with matching
+  `ADMIN_KEY`/`SIGNER_B_KEY`, RPC, Nox gateway/subgraph, allowed origin, demo
+  role/recipient overrides and a durable decision journal; and
+- verify `/api/demo-ready`, Approve and Reject, audit-packet creation and every
+  Guided Demo mission against that environment before presenting it.
+
+The deploy script funds only its configured Admin, second signer, one Delegate
+and one Auditor. The smoke/E2E sequence creates only its single protocol-test
+mandate, so neither step satisfies the additional public-demo prerequisites.
+
+#### Existing production deployment
+
+The checked-in root and dApp deployment manifests describe the existing public
+2-of-2 Safe and production contracts. They are not inputs for the fresh-deployment
+exercise above. Use the production dApp for ordinary judge flows and the manual
+**Production Release Gate** workflow for a release-bound live Approve/Reject
+acceptance run. That workflow requires explicit production confirmation, pins the
+source and observed UI SHA, serializes real Safe mutations and emits a retained
+release manifest; ordinary CI and read-only production checks never opt into it.
+Do not run the fresh deploy/smoke/E2E scripts or the historical
+`redeploy-module.ts` migration against the current production deployment.
+The Gate does not deploy contracts, the backend or the UI. Deploy the selected
+ref first, confirm that the live footer reports that ref's SHA and require ordinary
+CI to pass before dispatching the production mutation Gate.
+
+### dApp
+
+```sh
+cd app && npm install && npm run dev      # http://localhost:5173
+npm test                                  # Vitest + React Testing Library
+npm run test:e2e                         # Playwright: 1366x768 + 390x844
+npm run build                             # → app/dist (static SPA)
+```
+
+### Keeper (optional availability helper)
+
+```sh
+npx hardhat run scripts/keeper.ts --network sepolia          # one-shot sweep
+KEEPER_LOOP=1 npx hardhat run scripts/keeper.ts --network sepolia   # loop
+```
+Systemd/cron templates: [`scripts/keeper.service.example`](./scripts/keeper.service.example).
+
+## Confidential Operations Desk
+
+The dApp is organized around work objects rather than disconnected role demos.
+Its refresh-safe routes include `#/overview`, `#/payments`, `#/payments/:id`,
+`#/policies/new`, `#/policies/:id`, `#/policies/:id/new-version`,
+`#/approvals/:id`, `#/disclosure`, `#/audit/:packetId`,
+`#/verify/:flowId`, `#/contracts`, `#/provenance` and `#/funds`. The guided
+Launch Day run cannot skip ahead:
+
+1. submit the 25 cUSDC CloudNode invoice and verify direct execution;
+2. submit the 60 cUSDC ShieldOps request and explicitly choose Approve or Reject;
+3. submit the 600 cUSDC Atlas Contractor request, verify it is blocked, and decrypt
+   the private reason as its isolated Delegate;
+4. review the immutable v1 disclosure scope and create the run-bound packet set;
+5. unlock, review or flag every disclosed request, pass integrity checks, then
+   inspect the direct, committee, blocked and audit flows in Verify.
+
+`DemoSessionV2` binds every request and packet to one run. An unfinished run can
+be resumed. Restart is refused until any old pending escalation has been really
+cancelled and its escrow refund confirmed. The public view never receives
+plaintext amounts, policy values or blocked reasons.
+
+Each guided Invoice owns one immutable Attempt once its mission is strictly
+complete. A newer Request with the same run memo cannot replace that Request ID
+or erase its receipt, decision or disclosure identity. An incomplete Attempt is
+retryable only after an authenticated timeout cancellation or an on-chain
+`Expired` state; an unavailable decision attestation remains recoverable and is
+never treated as permission to submit again. Completed Invoice actions open the
+bound Request Detail, while “Start a new demo run” always enters the same guarded
+Restart flow rather than clearing browser state directly.
+
+Payment submission acknowledges the first click immediately and reports the
+single truthful Preflight → Encrypt → Submit → Private check → Publish result
+flow. The transaction hash is persisted at broadcast time; refresh recovery stays
+under Submit and then matches only the current run's domain-separated memo,
+scenario, mandate, delegate and recipient. Invoice drafts remain in the Inbox;
+created Request IDs open a dedicated timeline, Privacy Lens, settlement and
+transaction view. See
+[`docs/DESIGN.md`](./docs/DESIGN.md) for the canonical interaction and recovery
+contract.
+
+Mission evidence never triggers a timed page change. The completed Receipt,
+blocked reason or packet result stays visible until the visitor explicitly
+continues. On mobile, action-required missions collapse to a compact rail above
+the Safe decision dock instead of covering Approve or Reject.
+
+Each action-required Launch step also has a run-aware handoff button. It applies
+the required role, route and object selection together, preselects the fixed
+invoice or eligible disclosure scope, and places keyboard focus plus a visible
+coachmark on the one real next control. This handoff is navigation only: it never
+submits a payment, decrypts a value, chooses a Safe decision or invokes a wallet.
+If asynchronous content does not expose the target within 2.5 seconds, the
+drawer reopens with a retryable loading message instead of spinning forever.
+Multi-stage work keeps the coach attached across safe local transitions such as
+Review → Create and Unlock → Review → disposition → next Packet. Consequential
+submit, decrypt and Safe decision controls still require a separate explicit
+click and never fire automatically. Once a Follow action begins, its busy control
+retains the coach for the full bounded operation; the 2.5-second missing-target
+window starts only if that control actually disappears before its successor exists.
+
+## Real 2-of-2 demo committee
+
+The guided ShieldOps Approve/Reject buttons select a constrained demo action;
+they are not presented as the visitor's signature. Both current Safe owner keys
+remain server-side and produce a real threshold-2 `execTransaction`. There is no
+timer-based auto-approval: after the disclosed three-minute decision window the
+only automatic action is `cancelEscalated`, which returns escrow and restores the
+request budget.
+
+The provisioner enforces narrowly scoped server interfaces:
+
+- `POST /api/finalize` accepts one exact Request ID and returns `202` as soon as
+  the idempotent proof-courier job owns it. Proof generation and the Sepolia
+  receipt continue in the background; the browser keeps the Request bound,
+  shows the real stage/elapsed time and reads its terminal chain state. A lost
+  HTTP response is recovery, not failure, and never submits another payment.
+- `POST /api/demo-ready` performs its bounded recent-Request check in one
+  Multicall. The browser may retry this read-only preflight once with visible
+  feedback; both attempts happen before encryption, signing or submission, so a
+  timeout can never create a duplicate payment.
+- `POST /api/demo-decision` accepts only the current run's pending ShieldOps
+  request, exact recipient and decrypted 60 cUSDC amount. Same-action retries are
+  idempotent; `202` returns the current validation/signing/broadcast/confirmation
+  phase and the transaction hash as soon as it exists. `409` is a
+  conflicting decision, `410` means the window expired and escrow was returned,
+  and `503` refuses to sign when Finance Admin cannot decrypt and verify the amount.
+- `GET /api/demo-decision?runId=…&requestId=…` is a read-only, run-bound
+  attestation over the persisted decision journal. A public state-5 cancellation
+  remains `Cancelled and refunded` unless this endpoint proves a matching user
+  Reject; watchdog expiry is reported separately and never impersonates a user.
+- `POST /api/demo-audit-packet` accepts only verified terminal requests from the
+  current run, groups them by mandate and creates or reuses real on-chain packets.
+  The returned bundle is explicitly a UI aggregate, never a synthetic contract object.
+- `POST /api/governance-execute` replaces the removed `/api/cosign`. It verifies a
+  current owner-A EIP-712 signature, canonical allow-listed module calldata and the
+  latest Safe nonce before owner B co-signs and broadcasts.
+
+The disclosure request list is a real scope selector. Guided runs may create one
+or more subsets; packet IDs and covered Request IDs accumulate, and the Auditor
+handoff unlocks only after CloudNode, ShieldOps and Atlas Contractor are all
+covered. Packets are still grouped by mandate and the displayed bundle remains a
+UI aggregate rather than a fabricated contract object.
+
+A connected Finance Admin's complete multi-mandate packet loop holds one
+resource-scoped Operation Coordinator lease for its wallet from the first nonce
+read through the last receipt, reinforced by an origin-wide Web Lock. Conflicting
+wallet operations remain on Review and perform no write. Immediately before
+`wallet_writeContract`, the app durably records an unknown-signature marker and
+starting block. A reload therefore cannot open a second prompt: it must recover a
+unique matching `AuditPacketCreated` transaction from chain. A rejection caught
+by the still-open page clears the pre-broadcast marker; after reload, an unknown
+outcome has no user-asserted clear path and requires manual chain reconciliation.
+A broadcast hash is a non-discardable recovery pointer and is checked against the
+receipt, the unique event and `getAuditPacket`. Only a reverted receipt clears
+that group for a new signature; fully verified success is archived before a new
+scope can begin.
+Guided facilitated creation continues to use the independent server-side Admin
+mutex and never claims the browser wallet resource.
+
+Policies expose the complete authority model without publishing privileged keys:
+the connected Finance Admin may propose a new encrypted mandate or replacement
+Draft and pause the module; a current Safe owner may activate, retire or resume
+through 2-of-2 governance. Finance Admin rotation remains a managed Safe/deployment
+operation outside the public automatic co-sign allowlist.
+
+Every Safe operation shares one serialized nonce boundary from state revalidation
+through receipt. In this source candidate the self-service `/api/provision` path
+is disabled by default, requires an address-bound EIP-712 challenge when enabled,
+and consumes restart-persistent per-address/global quota before any sponsored
+write. It also remains idempotent per address and CORS-locked to the app origin.
+Finance-admin and both current Safe-owner secrets are never shipped in the
+browser bundle; only intentionally low-power Delegate and snapshot-Auditor
+testnet keys are public. See [`server/OPERATIONS.md`](server/OPERATIONS.md) for
+the required persistent paths, treasury gate and RPC broadcast policy.
+
+These controls are not considered deployed merely because this checkout passes.
+After release, acceptance must re-read `/api/health` and require the structured
+`provision`, `treasury` and `rpc` sections described in the operations guide,
+including `treasury.gasTopupEnabled=false` for a fail-closed release.
+If those fields are absent, production is still running an older backend and
+self-service provisioning must not be represented as using this hardened path.
+
+In production, set `DEMO_DECISION_JOURNAL_PATH` to a writable persistent volume.
+The journal stores the first observed approval timestamp plus terminal decision
+receipts, so the three-minute window and idempotent retries survive a provisioner
+restart. The OS temporary-directory default is suitable only for local development.
+
+### Historical production acceptance
+
+The 2026-07-19 pre-Gate production acceptance executed both visitor-selectable
+outcomes as separate run-bound requests on the deployed threshold-2 Safe; these
+are transaction receipts, not health-check results or client-side completion flags:
+
+| Path | Request | Terminal proof | Safe transaction |
+| --- | ---: | --- | --- |
+| Approve | #35 | state 2 · `executeEscalated` · `EscalationExecuted` · `origin:user` | [`0xe5d36e…90c6`](https://sepolia.etherscan.io/tx/0xe5d36e657fc77823871f72a2f6d690a9cbad35421af8a3a5e46a4f8f22c890c6) |
+| Reject | #37 | state 5 · `cancelEscalated` · `EscalationCancelled` · `origin:user` | [`0x53aaf5…8c75`](https://sepolia.etherscan.io/tx/0x53aaf51e5874ea929740b90781f2609dca259edd6e351cf7365fb8ed6fa28c75) |
+
+Both receipts target the deployed Safe, call the VeilGuard module with operation
+0, and carry 130 signature bytes (two 65-byte owner signatures). A later manual
+Gate run for source `f48627f` completed successfully with a valid manifest (its
+Approve evidence was safely recovered and its Reject evidence was independently
+executed). This remains historical evidence only: it does not prove any later
+source or production UI SHA.
+
+### Manual Production Release Gate
+
+`.github/workflows/production-release-gate.yml` is intentionally separate from
+ordinary pull-request CI. It becomes manually dispatchable only after the
+workflow exists on the default branch. Before either live action it requires the
+explicit mutation confirmation and verifies that the production UI footer SHA
+equals the selected commit. The blocking order is the 17-test local Nox suite,
+one `live-sepolia` desktop Approve run, then one independent Reject run; neither
+action retries automatically and each has a 15-minute ceiling.
+
+The Actions runner receives no Safe owner or Finance Admin private key. It calls
+only the bounded production API, while keys remain in the production service.
+Each action emits versioned JSON, trace/report files and Etherscan links; the
+final manifest is retained for 90 days. If an assertion fails after broadcast,
+inspect the recovery artifact before any manual rerun instead of blindly creating
+another request.
+
+A fresh release-bound run has no resume inputs:
+
+```bash
+gh workflow run production-release-gate.yml --ref <deployed-ref> \
+  -f confirm_production=true
+```
+
+If Approve succeeds but the independent Reject Job fails, dispatching the Gate
+with `resume_run_id` reuses the prior validated Approve evidence and runs Reject
+only. A `run-started` pointer may start a fresh Reject run only when it contains
+no request or transaction pointer. A `request-bound` pointer must instead resume
+that exact run, Request ID and request transaction; it may never submit another
+invoice. A `decision-observed` pointer is accepted only with a matching
+`origin:user` Reject attestation. The live recovery rechecks current chain state
+and refuses watchdog `origin:timeout`, unknown terminal state, mismatched request
+evidence or conflicting action. This prevents both duplicate Safe actions and a
+timeout cancellation being presented as a user's choice.
+
+```bash
+gh workflow run production-release-gate.yml --ref <deployed-ref> \
+  -f confirm_production=true -f resume_run_id=<failed-run-id> -f resume_run_attempt=1
+```
+
+An uploaded manifest is not by itself a pass because the manifest Job runs with
+`if: always()`. Release acceptance requires all three conditions: the workflow
+concludes `success`, `release-manifest.json` has `passed: true`, and its full
+`sourceCommit` equals the full commit SHA resolved from the selected ref. The
+deployed UI footer must show that commit's expected short SHA prefix.
+
+Ordinary desktop/mobile Playwright never collects the live file. It runs only
+against the local app and includes deterministic dark/reduced-motion visual
+baselines for Landing, Payments, Request Detail, Approval Decision, Disclosure
+Builder and Audit Review at 1366×768 and 390×844. Expected images are reviewed
+and committed; CI uses `threshold: 0.2` and `maxDiffPixelRatio: 0.003` and never
+updates them automatically. Public reads, all three local Demo write signers and
+wallet network setup use only the browser-CORS-verified dRPC, Tenderly and
+PublicNode-first, Tenderly, then dRPC fallback pool; archive log reads use one
+six-event OR filter per block chunk through Tenderly with dRPC fallback. System
+Readiness independently verifies a reachable block, the latest Nox handle, the
+real Safe threshold and module enablement instead of displaying hard-coded green
+states. Provider changes and failed Nox client creation both invalidate their
+account-bound cache so retry remains real.
+
+## Security & trust model
+
+VeilGuard provides **confidentiality, not anonymity**. Public by design:
+addresses, recipients, timing, the three-state outcome and transaction hashes.
+Encrypted: amounts, auto-limits, budgets, reserve floors and blocked reasons.
+
+Confidentiality rests on the Nox protocol's TEE (Intel TDX remote attestation +
+a KMS/Handle-Gateway that signs decryption proofs the chain verifies) — **not** a
+zero-knowledge proof of the policy computation. The public outcome intentionally
+leaks limited information (which of three states a request reached); exact limits,
+balances and failure margins stay confidential. Probing is dampened by a
+post-block cooldown, coarse (viewer-only) reasons, and one in-flight request per
+mandate.
+
+## Current limitations
+
+- **Testnet prototype — not audited.** Do not use with real funds.
+- **Nox ACL grants are irreversible.** `addViewer` / `allow` / public-decrypt
+  cannot be revoked on-chain; audit disclosure is therefore modeled as an
+  **immutable snapshot** (a fresh isolated handle), never a grant on live state.
+- **Recipient addresses are public** in P0 (the allow-list is plaintext).
+- **Escalation UX**: signers decrypt the amount in the VeilGuard view and confirm
+  the escalated amount in the VeilGuard view; the official Safe UI does not decrypt Nox handles itself.
+- The Sepolia Safe is **2-of-2**: activation and escalation decisions each require
+  two distinct owner EIP-712 signatures, threshold 2. Guided-demo signatures are
+  produced by the bounded server committee, not collected from separate humans via
+  the Safe Transaction Service / Safe{Wallet} queue.
+- The deployed v1 audit ABI always snapshots `autoLimit`, `budgetLeft` and
+  `reserveFloor`, plus amount and reason for every selected request. The UI labels
+  this fixed scope; per-field policy masking would require a new contract version.
+- **Changing the Safe owner set does not revoke access already granted to historical
+  handles** (Nox ACLs are irreversible). Propose a new policy version after owner rotation.
+- Audit packets are **selective disclosure**, not a standalone compliance proof: v1
+  discloses its three fixed policy snapshots plus selected request amounts and coarse
+  reasons — verify the public
+  request state and transaction hashes alongside them.
+- The public prototype still discovers full historical Mandate and Request state
+  from ID 1 on each refresh. Multicall keeps the current testnet workload bounded;
+  pagination or an indexed history API is deferred until after the hackathon.
+
+## License
+
+MIT.

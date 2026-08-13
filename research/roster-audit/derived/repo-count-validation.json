@@ -1,0 +1,2852 @@
+[
+  {
+    "handle": "0takuc0mrade",
+    "expected": 80,
+    "collected": 80,
+    "count_match": true
+  },
+  {
+    "handle": "0xEunum",
+    "expected": 38,
+    "collected": 38,
+    "count_match": true
+  },
+  {
+    "handle": "0xNerd",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "0xNexuz",
+    "expected": 75,
+    "collected": 75,
+    "count_match": true
+  },
+  {
+    "handle": "0xaje",
+    "expected": 36,
+    "collected": 36,
+    "count_match": true
+  },
+  {
+    "handle": "0xfaked",
+    "expected": 22,
+    "collected": 22,
+    "count_match": true
+  },
+  {
+    "handle": "0xhaz",
+    "expected": 428,
+    "collected": 428,
+    "count_match": true
+  },
+  {
+    "handle": "23f2001033",
+    "expected": 36,
+    "collected": 36,
+    "count_match": true
+  },
+  {
+    "handle": "4n0nn43x",
+    "expected": 14,
+    "collected": 14,
+    "count_match": true
+  },
+  {
+    "handle": "ABHIJEETH-V-N",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "ANAMASGARD",
+    "expected": 187,
+    "collected": 187,
+    "count_match": true
+  },
+  {
+    "handle": "ARY4T",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "Abbas-Dev-786",
+    "expected": 95,
+    "collected": 95,
+    "count_match": true
+  },
+  {
+    "handle": "Abd00lmalik",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "AbdoViper23",
+    "expected": 17,
+    "collected": 17,
+    "count_match": true
+  },
+  {
+    "handle": "Abdulazeez41",
+    "expected": 69,
+    "collected": 69,
+    "count_match": true
+  },
+  {
+    "handle": "Abuchtela",
+    "expected": 247,
+    "collected": 247,
+    "count_match": true
+  },
+  {
+    "handle": "Ade-akanfe",
+    "expected": 27,
+    "collected": 27,
+    "count_match": true
+  },
+  {
+    "handle": "Adeel91",
+    "expected": 29,
+    "collected": 29,
+    "count_match": true
+  },
+  {
+    "handle": "Agilgeorge",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "Ai-Rook",
+    "expected": 12,
+    "collected": 12,
+    "count_match": true
+  },
+  {
+    "handle": "Akanimoh12",
+    "expected": 203,
+    "collected": 203,
+    "count_match": true
+  },
+  {
+    "handle": "Akeredolu-Samuel",
+    "expected": 58,
+    "collected": 58,
+    "count_match": true
+  },
+  {
+    "handle": "Alike001",
+    "expected": 52,
+    "collected": 52,
+    "count_match": true
+  },
+  {
+    "handle": "AltcoinDaddy",
+    "expected": 72,
+    "collected": 72,
+    "count_match": true
+  },
+  {
+    "handle": "AmaanSayyad",
+    "expected": 280,
+    "collected": 280,
+    "count_match": true
+  },
+  {
+    "handle": "AmanM006",
+    "expected": 48,
+    "collected": 48,
+    "count_match": true
+  },
+  {
+    "handle": "Amoran1357",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "Anant-0705",
+    "expected": 34,
+    "collected": 34,
+    "count_match": true
+  },
+  {
+    "handle": "Andy00L",
+    "expected": 52,
+    "collected": 52,
+    "count_match": true
+  },
+  {
+    "handle": "Ankit-raj-11",
+    "expected": 53,
+    "collected": 53,
+    "count_match": true
+  },
+  {
+    "handle": "AnubisCrypto666",
+    "expected": 2,
+    "collected": 2,
+    "count_match": true
+  },
+  {
+    "handle": "AranAveng",
+    "expected": 2,
+    "collected": 2,
+    "count_match": true
+  },
+  {
+    "handle": "AustinChris1",
+    "expected": 56,
+    "collected": 56,
+    "count_match": true
+  },
+  {
+    "handle": "Axlnd3r",
+    "expected": 20,
+    "collected": 20,
+    "count_match": true
+  },
+  {
+    "handle": "Ay-obami",
+    "expected": 12,
+    "collected": 12,
+    "count_match": true
+  },
+  {
+    "handle": "Ayush24katiyar",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "Belloabraham121",
+    "expected": 106,
+    "collected": 106,
+    "count_match": true
+  },
+  {
+    "handle": "Benita2001",
+    "expected": 28,
+    "collected": 28,
+    "count_match": true
+  },
+  {
+    "handle": "Blacksaviour",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "BlaiseSegal",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "Blockchain-Oracle",
+    "expected": 256,
+    "collected": 256,
+    "count_match": true
+  },
+  {
+    "handle": "Bobo2005",
+    "expected": 42,
+    "collected": 42,
+    "count_match": true
+  },
+  {
+    "handle": "Bratipah",
+    "expected": 168,
+    "collected": 168,
+    "count_match": true
+  },
+  {
+    "handle": "Bsh54",
+    "expected": 53,
+    "collected": 53,
+    "count_match": true
+  },
+  {
+    "handle": "BunnyTeddy",
+    "expected": 21,
+    "collected": 21,
+    "count_match": true
+  },
+  {
+    "handle": "CHEF-SAVY",
+    "expected": 118,
+    "collected": 118,
+    "count_match": true
+  },
+  {
+    "handle": "Carlys17",
+    "expected": 50,
+    "collected": 50,
+    "count_match": true
+  },
+  {
+    "handle": "Chetna716",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "ChiJian28",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "ChrisNCreations",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "CodeBlackHackathon",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "Cryptbits",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "CryptoZephyr",
+    "expected": 8,
+    "collected": 8,
+    "count_match": true
+  },
+  {
+    "handle": "Cubiczan",
+    "expected": 126,
+    "collected": 126,
+    "count_match": true
+  },
+  {
+    "handle": "DIFoundation",
+    "expected": 98,
+    "collected": 98,
+    "count_match": true
+  },
+  {
+    "handle": "Dasika-Vaishnavi",
+    "expected": 137,
+    "collected": 137,
+    "count_match": true
+  },
+  {
+    "handle": "Datwebguy",
+    "expected": 28,
+    "collected": 28,
+    "count_match": true
+  },
+  {
+    "handle": "DdDob",
+    "expected": 5,
+    "collected": 5,
+    "count_match": true
+  },
+  {
+    "handle": "Dearie-de-cybek",
+    "expected": 111,
+    "collected": 111,
+    "count_match": true
+  },
+  {
+    "handle": "DeewakarBora",
+    "expected": 26,
+    "collected": 26,
+    "count_match": true
+  },
+  {
+    "handle": "Derojuu",
+    "expected": 21,
+    "collected": 21,
+    "count_match": true
+  },
+  {
+    "handle": "Dev-In-Crypt",
+    "expected": 29,
+    "collected": 29,
+    "count_match": true
+  },
+  {
+    "handle": "Div1912",
+    "expected": 41,
+    "collected": 41,
+    "count_match": true
+  },
+  {
+    "handle": "DiveshChauhan123",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "Donyemiight",
+    "expected": 13,
+    "collected": 13,
+    "count_match": true
+  },
+  {
+    "handle": "Dotman-Bei",
+    "expected": 47,
+    "collected": 47,
+    "count_match": true
+  },
+  {
+    "handle": "ETIM-PAUL",
+    "expected": 116,
+    "collected": 116,
+    "count_match": true
+  },
+  {
+    "handle": "EVMlord",
+    "expected": 165,
+    "collected": 165,
+    "count_match": true
+  },
+  {
+    "handle": "EcosystemNetwork",
+    "expected": 69,
+    "collected": 69,
+    "count_match": true
+  },
+  {
+    "handle": "Ehonrie",
+    "expected": 48,
+    "collected": 48,
+    "count_match": true
+  },
+  {
+    "handle": "Emmanuel-webDev",
+    "expected": 113,
+    "collected": 113,
+    "count_match": true
+  },
+  {
+    "handle": "Emmythefirst",
+    "expected": 13,
+    "collected": 13,
+    "count_match": true
+  },
+  {
+    "handle": "EndPx",
+    "expected": 59,
+    "collected": 59,
+    "count_match": true
+  },
+  {
+    "handle": "FarajiOranj",
+    "expected": 2,
+    "collected": 2,
+    "count_match": true
+  },
+  {
+    "handle": "FeeeeelixWong",
+    "expected": 31,
+    "collected": 31,
+    "count_match": true
+  },
+  {
+    "handle": "FeltonMuggs",
+    "expected": 5,
+    "collected": 5,
+    "count_match": true
+  },
+  {
+    "handle": "FernandoMay",
+    "expected": 195,
+    "collected": 195,
+    "count_match": true
+  },
+  {
+    "handle": "FlareFlec",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "FlareForward",
+    "expected": 15,
+    "collected": 15,
+    "count_match": true
+  },
+  {
+    "handle": "FlemingJohn",
+    "expected": 84,
+    "collected": 84,
+    "count_match": true
+  },
+  {
+    "handle": "Folawewo",
+    "expected": 38,
+    "collected": 38,
+    "count_match": true
+  },
+  {
+    "handle": "GanjaFlare",
+    "expected": 4,
+    "collected": 4,
+    "count_match": true
+  },
+  {
+    "handle": "GokhanCey",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "GreatSage-dev",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "Hexdee",
+    "expected": 148,
+    "collected": 148,
+    "count_match": true
+  },
+  {
+    "handle": "Holuwaphemmy01",
+    "expected": 83,
+    "collected": 83,
+    "count_match": true
+  },
+  {
+    "handle": "Hugegreencandle",
+    "expected": 14,
+    "collected": 14,
+    "count_match": true
+  },
+  {
+    "handle": "IJHO-NUl1l1",
+    "expected": 39,
+    "collected": 39,
+    "count_match": true
+  },
+  {
+    "handle": "Ifechukwudaniel",
+    "expected": 219,
+    "collected": 219,
+    "count_match": true
+  },
+  {
+    "handle": "Im-A-Nuel",
+    "expected": 56,
+    "collected": 56,
+    "count_match": true
+  },
+  {
+    "handle": "Investorquab",
+    "expected": 31,
+    "collected": 31,
+    "count_match": true
+  },
+  {
+    "handle": "JMadhan1",
+    "expected": 78,
+    "collected": 78,
+    "count_match": true
+  },
+  {
+    "handle": "JUICEWRLD998",
+    "expected": 63,
+    "collected": 63,
+    "count_match": true
+  },
+  {
+    "handle": "Jaydearcadian",
+    "expected": 40,
+    "collected": 40,
+    "count_match": true
+  },
+  {
+    "handle": "Jaymzzzzzzzzz",
+    "expected": 17,
+    "collected": 17,
+    "count_match": true
+  },
+  {
+    "handle": "Jayy4rl",
+    "expected": 89,
+    "collected": 89,
+    "count_match": true
+  },
+  {
+    "handle": "Jett191",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "Jitimay",
+    "expected": 110,
+    "collected": 110,
+    "count_match": true
+  },
+  {
+    "handle": "Jonathan-04-code",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "JosephNjorog",
+    "expected": 201,
+    "collected": 201,
+    "count_match": true
+  },
+  {
+    "handle": "Jr-kenny",
+    "expected": 127,
+    "collected": 127,
+    "count_match": true
+  },
+  {
+    "handle": "JusticeSol",
+    "expected": 15,
+    "collected": 15,
+    "count_match": true
+  },
+  {
+    "handle": "Justriri",
+    "expected": 3,
+    "collected": 3,
+    "count_match": true
+  },
+  {
+    "handle": "KKKcjy",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "KabiththananParan",
+    "expected": 46,
+    "collected": 46,
+    "count_match": true
+  },
+  {
+    "handle": "Kafiirr",
+    "expected": 13,
+    "collected": 13,
+    "count_match": true
+  },
+  {
+    "handle": "Kali-Decoder",
+    "expected": 245,
+    "collected": 245,
+    "count_match": true
+  },
+  {
+    "handle": "Karansahani78",
+    "expected": 91,
+    "collected": 91,
+    "count_match": true
+  },
+  {
+    "handle": "KatrixReloaded",
+    "expected": 54,
+    "collected": 54,
+    "count_match": true
+  },
+  {
+    "handle": "KennyGodman",
+    "expected": 37,
+    "collected": 37,
+    "count_match": true
+  },
+  {
+    "handle": "KingBeeee",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "KingOfTheMultiverse",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "KrisnaPutraP",
+    "expected": 34,
+    "collected": 34,
+    "count_match": true
+  },
+  {
+    "handle": "LSUDOKO",
+    "expected": 113,
+    "collected": 113,
+    "count_match": true
+  },
+  {
+    "handle": "LawrenceKU03",
+    "expected": 87,
+    "collected": 87,
+    "count_match": true
+  },
+  {
+    "handle": "Leequidice",
+    "expected": 13,
+    "collected": 13,
+    "count_match": true
+  },
+  {
+    "handle": "Leroiduxd",
+    "expected": 93,
+    "collected": 93,
+    "count_match": true
+  },
+  {
+    "handle": "Lukeknow0",
+    "expected": 17,
+    "collected": 17,
+    "count_match": true
+  },
+  {
+    "handle": "Maa-ly",
+    "expected": 79,
+    "collected": 79,
+    "count_match": true
+  },
+  {
+    "handle": "Maby02",
+    "expected": 2,
+    "collected": 2,
+    "count_match": true
+  },
+  {
+    "handle": "Madhav-Gupta-28",
+    "expected": 69,
+    "collected": 69,
+    "count_match": true
+  },
+  {
+    "handle": "Mansi2007275",
+    "expected": 68,
+    "collected": 68,
+    "count_match": true
+  },
+  {
+    "handle": "ManuelPrhyme",
+    "expected": 80,
+    "collected": 80,
+    "count_match": true
+  },
+  {
+    "handle": "ManyRios",
+    "expected": 159,
+    "collected": 159,
+    "count_match": true
+  },
+  {
+    "handle": "Marc-Dvci",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "Marvy247",
+    "expected": 200,
+    "collected": 200,
+    "count_match": true
+  },
+  {
+    "handle": "MarxMad",
+    "expected": 95,
+    "collected": 95,
+    "count_match": true
+  },
+  {
+    "handle": "MathieuDWeill",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "MaxxxDong",
+    "expected": 22,
+    "collected": 22,
+    "count_match": true
+  },
+  {
+    "handle": "Mazwancreatives",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "MikeMoulder",
+    "expected": 38,
+    "collected": 38,
+    "count_match": true
+  },
+  {
+    "handle": "Milites-Christi",
+    "expected": 4,
+    "collected": 4,
+    "count_match": true
+  },
+  {
+    "handle": "Miracle-Alajemba",
+    "expected": 22,
+    "collected": 22,
+    "count_match": true
+  },
+  {
+    "handle": "Mofe-Bankole",
+    "expected": 55,
+    "collected": 55,
+    "count_match": true
+  },
+  {
+    "handle": "Mofifoluwa-ade",
+    "expected": 12,
+    "collected": 12,
+    "count_match": true
+  },
+  {
+    "handle": "MrSufferer",
+    "expected": 59,
+    "collected": 59,
+    "count_match": true
+  },
+  {
+    "handle": "Mridul-06-stack",
+    "expected": 15,
+    "collected": 15,
+    "count_match": true
+  },
+  {
+    "handle": "N-45div",
+    "expected": 137,
+    "collected": 137,
+    "count_match": true
+  },
+  {
+    "handle": "Nabil-Aufa",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "NewNexus001",
+    "expected": 15,
+    "collected": 15,
+    "count_match": true
+  },
+  {
+    "handle": "Nifemi0",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "NoBanks",
+    "expected": 102,
+    "collected": 102,
+    "count_match": true
+  },
+  {
+    "handle": "Noah-Ian",
+    "expected": 29,
+    "collected": 29,
+    "count_match": true
+  },
+  {
+    "handle": "NthMOMENT",
+    "expected": 19,
+    "collected": 19,
+    "count_match": true
+  },
+  {
+    "handle": "Obiajulu-gif",
+    "expected": 331,
+    "collected": 331,
+    "count_match": true
+  },
+  {
+    "handle": "OkeyAmy",
+    "expected": 204,
+    "collected": 204,
+    "count_match": true
+  },
+  {
+    "handle": "Oliverknowledge",
+    "expected": 38,
+    "collected": 38,
+    "count_match": true
+  },
+  {
+    "handle": "Otuja",
+    "expected": 20,
+    "collected": 20,
+    "count_match": true
+  },
+  {
+    "handle": "PRIEYAN",
+    "expected": 59,
+    "collected": 59,
+    "count_match": true
+  },
+  {
+    "handle": "PanSHIgg",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "Pandey456",
+    "expected": 32,
+    "collected": 32,
+    "count_match": true
+  },
+  {
+    "handle": "Pavan03062006",
+    "expected": 14,
+    "collected": 14,
+    "count_match": true
+  },
+  {
+    "handle": "Pavilion-devs",
+    "expected": 70,
+    "collected": 70,
+    "count_match": true
+  },
+  {
+    "handle": "PhiBao",
+    "expected": 45,
+    "collected": 45,
+    "count_match": true
+  },
+  {
+    "handle": "Pixie-19",
+    "expected": 43,
+    "collected": 43,
+    "count_match": true
+  },
+  {
+    "handle": "Pratik-Shirodkar",
+    "expected": 27,
+    "collected": 27,
+    "count_match": true
+  },
+  {
+    "handle": "Prudentdev-xyz",
+    "expected": 48,
+    "collected": 48,
+    "count_match": true
+  },
+  {
+    "handle": "PugarHuda",
+    "expected": 103,
+    "collected": 103,
+    "count_match": true
+  },
+  {
+    "handle": "RaYYeR220",
+    "expected": 53,
+    "collected": 53,
+    "count_match": true
+  },
+  {
+    "handle": "Rasslonely",
+    "expected": 14,
+    "collected": 14,
+    "count_match": true
+  },
+  {
+    "handle": "Rezacrown",
+    "expected": 135,
+    "collected": 135,
+    "count_match": true
+  },
+  {
+    "handle": "Ridwannurudeen",
+    "expected": 126,
+    "collected": 126,
+    "count_match": true
+  },
+  {
+    "handle": "Risingtell",
+    "expected": 23,
+    "collected": 23,
+    "count_match": true
+  },
+  {
+    "handle": "Ritapossible",
+    "expected": 43,
+    "collected": 43,
+    "count_match": true
+  },
+  {
+    "handle": "SKAHLO",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "SRIKRISH-S",
+    "expected": 35,
+    "collected": 35,
+    "count_match": true
+  },
+  {
+    "handle": "SZtch",
+    "expected": 22,
+    "collected": 22,
+    "count_match": true
+  },
+  {
+    "handle": "SachPlayZ",
+    "expected": 64,
+    "collected": 64,
+    "count_match": true
+  },
+  {
+    "handle": "Sadick14",
+    "expected": 66,
+    "collected": 66,
+    "count_match": true
+  },
+  {
+    "handle": "Samuel1505",
+    "expected": 181,
+    "collected": 181,
+    "count_match": true
+  },
+  {
+    "handle": "SamyaDeb",
+    "expected": 41,
+    "collected": 41,
+    "count_match": true
+  },
+  {
+    "handle": "Sandijigs",
+    "expected": 135,
+    "collected": 135,
+    "count_match": true
+  },
+  {
+    "handle": "Savage27z",
+    "expected": 63,
+    "collected": 63,
+    "count_match": true
+  },
+  {
+    "handle": "ShalyX",
+    "expected": 45,
+    "collected": 45,
+    "count_match": true
+  },
+  {
+    "handle": "Shanks-btc",
+    "expected": 27,
+    "collected": 27,
+    "count_match": true
+  },
+  {
+    "handle": "Shardz4",
+    "expected": 52,
+    "collected": 52,
+    "count_match": true
+  },
+  {
+    "handle": "SharkHand3",
+    "expected": 8,
+    "collected": 8,
+    "count_match": true
+  },
+  {
+    "handle": "ShawnAlisson",
+    "expected": 38,
+    "collected": 38,
+    "count_match": true
+  },
+  {
+    "handle": "ShivamSoni20",
+    "expected": 49,
+    "collected": 49,
+    "count_match": true
+  },
+  {
+    "handle": "Shlok1729",
+    "expected": 22,
+    "collected": 22,
+    "count_match": true
+  },
+  {
+    "handle": "Shreyassp002",
+    "expected": 49,
+    "collected": 49,
+    "count_match": true
+  },
+  {
+    "handle": "Singularityy0",
+    "expected": 44,
+    "collected": 44,
+    "count_match": true
+  },
+  {
+    "handle": "SolarDePinHub",
+    "expected": 2,
+    "collected": 2,
+    "count_match": true
+  },
+  {
+    "handle": "Some1Uknow",
+    "expected": 79,
+    "collected": 79,
+    "count_match": true
+  },
+  {
+    "handle": "Sparexonzy95",
+    "expected": 17,
+    "collected": 17,
+    "count_match": true
+  },
+  {
+    "handle": "Spydiecy",
+    "expected": 191,
+    "collected": 191,
+    "count_match": true
+  },
+  {
+    "handle": "Stoneybro",
+    "expected": 88,
+    "collected": 88,
+    "count_match": true
+  },
+  {
+    "handle": "Suganthan96",
+    "expected": 43,
+    "collected": 43,
+    "count_match": true
+  },
+  {
+    "handle": "TAWFIKQERAN",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "TBYQ",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "Tabassum-0",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "Tajudeeen",
+    "expected": 20,
+    "collected": 20,
+    "count_match": true
+  },
+  {
+    "handle": "TeSharma",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "Tech-Psycho95",
+    "expected": 90,
+    "collected": 90,
+    "count_match": true
+  },
+  {
+    "handle": "Techkeyys",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "Teckdegen",
+    "expected": 83,
+    "collected": 83,
+    "count_match": true
+  },
+  {
+    "handle": "Ted1166",
+    "expected": 84,
+    "collected": 84,
+    "count_match": true
+  },
+  {
+    "handle": "Terese678",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "The-Natri",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "TheWeirdDee",
+    "expected": 117,
+    "collected": 117,
+    "count_match": true
+  },
+  {
+    "handle": "Theophilus20",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "Timothyfranx",
+    "expected": 18,
+    "collected": 18,
+    "count_match": true
+  },
+  {
+    "handle": "Tonyflam",
+    "expected": 71,
+    "collected": 71,
+    "count_match": true
+  },
+  {
+    "handle": "Ultraviolet",
+    "expected": 19,
+    "collected": 19,
+    "count_match": true
+  },
+  {
+    "handle": "Uthmannabeel",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "Utitofon-Udoekong",
+    "expected": 146,
+    "collected": 146,
+    "count_match": true
+  },
+  {
+    "handle": "Varun5711",
+    "expected": 36,
+    "collected": 36,
+    "count_match": true
+  },
+  {
+    "handle": "Vasqq",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "Vedantgosling",
+    "expected": 13,
+    "collected": 13,
+    "count_match": true
+  },
+  {
+    "handle": "Venkat5599",
+    "expected": 83,
+    "collected": 83,
+    "count_match": true
+  },
+  {
+    "handle": "Vire1886",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "WPrasad99",
+    "expected": 23,
+    "collected": 23,
+    "count_match": true
+  },
+  {
+    "handle": "Webghost01-NG",
+    "expected": 31,
+    "collected": 31,
+    "count_match": true
+  },
+  {
+    "handle": "Wilja8",
+    "expected": 0,
+    "collected": 0,
+    "count_match": true
+  },
+  {
+    "handle": "Xenofic",
+    "expected": 80,
+    "collected": 80,
+    "count_match": true
+  },
+  {
+    "handle": "Xyrelix",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "YingchenWang999",
+    "expected": 16,
+    "collected": 16,
+    "count_match": true
+  },
+  {
+    "handle": "Zerxxz",
+    "expected": 42,
+    "collected": 42,
+    "count_match": true
+  },
+  {
+    "handle": "Zireaelst",
+    "expected": 63,
+    "collected": 63,
+    "count_match": true
+  },
+  {
+    "handle": "a252937166",
+    "expected": 97,
+    "collected": 97,
+    "count_match": true
+  },
+  {
+    "handle": "aaditya3301",
+    "expected": 53,
+    "collected": 53,
+    "count_match": true
+  },
+  {
+    "handle": "abaresks24",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "abdraufdele",
+    "expected": 12,
+    "collected": 12,
+    "count_match": true
+  },
+  {
+    "handle": "abdussalam-mustapha",
+    "expected": 96,
+    "collected": 96,
+    "count_match": true
+  },
+  {
+    "handle": "ace-coderr",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "acunaladies27-maker",
+    "expected": 0,
+    "collected": 0,
+    "count_match": true
+  },
+  {
+    "handle": "adebayo3478",
+    "expected": 4,
+    "collected": 4,
+    "count_match": true
+  },
+  {
+    "handle": "aditya000099",
+    "expected": 75,
+    "collected": 75,
+    "count_match": true
+  },
+  {
+    "handle": "ajanaku1",
+    "expected": 66,
+    "collected": 66,
+    "count_match": true
+  },
+  {
+    "handle": "ajeet97",
+    "expected": 29,
+    "collected": 29,
+    "count_match": true
+  },
+  {
+    "handle": "akash-mondal",
+    "expected": 127,
+    "collected": 127,
+    "count_match": true
+  },
+  {
+    "handle": "akashbiswas0",
+    "expected": 81,
+    "collected": 81,
+    "count_match": true
+  },
+  {
+    "handle": "alienworld1",
+    "expected": 88,
+    "collected": 88,
+    "count_match": true
+  },
+  {
+    "handle": "alinjfz",
+    "expected": 52,
+    "collected": 52,
+    "count_match": true
+  },
+  {
+    "handle": "alokrajshahi04",
+    "expected": 47,
+    "collected": 47,
+    "count_match": true
+  },
+  {
+    "handle": "amantajatii",
+    "expected": 23,
+    "collected": 23,
+    "count_match": true
+  },
+  {
+    "handle": "angelraph",
+    "expected": 38,
+    "collected": 38,
+    "count_match": true
+  },
+  {
+    "handle": "anoopbalan25-creator",
+    "expected": 2,
+    "collected": 2,
+    "count_match": true
+  },
+  {
+    "handle": "arg0506",
+    "expected": 15,
+    "collected": 15,
+    "count_match": true
+  },
+  {
+    "handle": "argenestel",
+    "expected": 75,
+    "collected": 75,
+    "count_match": true
+  },
+  {
+    "handle": "arisnand01",
+    "expected": 14,
+    "collected": 14,
+    "count_match": true
+  },
+  {
+    "handle": "armsves",
+    "expected": 218,
+    "collected": 218,
+    "count_match": true
+  },
+  {
+    "handle": "artomily",
+    "expected": 64,
+    "collected": 64,
+    "count_match": true
+  },
+  {
+    "handle": "asamarsal",
+    "expected": 69,
+    "collected": 69,
+    "count_match": true
+  },
+  {
+    "handle": "asteroiddestroyer911",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "avishrakshe",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "ayodejiades",
+    "expected": 75,
+    "collected": 75,
+    "count_match": true
+  },
+  {
+    "handle": "ayush4003",
+    "expected": 5,
+    "collected": 5,
+    "count_match": true
+  },
+  {
+    "handle": "bagusardin25",
+    "expected": 16,
+    "collected": 16,
+    "count_match": true
+  },
+  {
+    "handle": "bashrian",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "beatp-bit",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "bellobambo",
+    "expected": 274,
+    "collected": 274,
+    "count_match": true
+  },
+  {
+    "handle": "big14way",
+    "expected": 224,
+    "collected": 224,
+    "count_match": true
+  },
+  {
+    "handle": "bigchiano",
+    "expected": 139,
+    "collected": 139,
+    "count_match": true
+  },
+  {
+    "handle": "bolajiev",
+    "expected": 23,
+    "collected": 23,
+    "count_match": true
+  },
+  {
+    "handle": "bot80-alt",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "byrepprotocol",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "caelum0x",
+    "expected": 221,
+    "collected": 221,
+    "count_match": true
+  },
+  {
+    "handle": "calledAdo",
+    "expected": 18,
+    "collected": 18,
+    "count_match": true
+  },
+  {
+    "handle": "captainebru84-sudo",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "cassxbt",
+    "expected": 28,
+    "collected": 28,
+    "count_match": true
+  },
+  {
+    "handle": "charleschibudom2-ux",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "charlesms1246",
+    "expected": 42,
+    "collected": 42,
+    "count_match": true
+  },
+  {
+    "handle": "cipoklean",
+    "expected": 32,
+    "collected": 32,
+    "count_match": true
+  },
+  {
+    "handle": "coder-blessed",
+    "expected": 34,
+    "collected": 34,
+    "count_match": true
+  },
+  {
+    "handle": "contributorsambhav",
+    "expected": 71,
+    "collected": 71,
+    "count_match": true
+  },
+  {
+    "handle": "cyberrockng",
+    "expected": 8,
+    "collected": 8,
+    "count_match": true
+  },
+  {
+    "handle": "damli40",
+    "expected": 33,
+    "collected": 33,
+    "count_match": true
+  },
+  {
+    "handle": "dammygreene",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "danielamodu",
+    "expected": 27,
+    "collected": 27,
+    "count_match": true
+  },
+  {
+    "handle": "darealbirdie",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "darkty0x",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "darrojen",
+    "expected": 26,
+    "collected": 26,
+    "count_match": true
+  },
+  {
+    "handle": "davife2025",
+    "expected": 59,
+    "collected": 59,
+    "count_match": true
+  },
+  {
+    "handle": "davre001",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "deepakA18",
+    "expected": 70,
+    "collected": 70,
+    "count_match": true
+  },
+  {
+    "handle": "demonchant",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "devarogundade",
+    "expected": 3,
+    "collected": 3,
+    "count_match": true
+  },
+  {
+    "handle": "devnarayanan0",
+    "expected": 14,
+    "collected": 14,
+    "count_match": true
+  },
+  {
+    "handle": "dhivyapraban",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "dimk472",
+    "expected": 4,
+    "collected": 4,
+    "count_match": true
+  },
+  {
+    "handle": "dinesh11515",
+    "expected": 90,
+    "collected": 90,
+    "count_match": true
+  },
+  {
+    "handle": "dinxsh",
+    "expected": 162,
+    "collected": 162,
+    "count_match": true
+  },
+  {
+    "handle": "divineudoka12",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "divyansh-v15-06",
+    "expected": 43,
+    "collected": 43,
+    "count_match": true
+  },
+  {
+    "handle": "divyanshkumar333",
+    "expected": 14,
+    "collected": 14,
+    "count_match": true
+  },
+  {
+    "handle": "dmetagame",
+    "expected": 31,
+    "collected": 31,
+    "count_match": true
+  },
+  {
+    "handle": "dolepee",
+    "expected": 73,
+    "collected": 73,
+    "count_match": true
+  },
+  {
+    "handle": "drained69",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "dun999",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "echorura",
+    "expected": 2,
+    "collected": 2,
+    "count_match": true
+  },
+  {
+    "handle": "edycutjong",
+    "expected": 135,
+    "collected": 135,
+    "count_match": true
+  },
+  {
+    "handle": "egekoca",
+    "expected": 61,
+    "collected": 61,
+    "count_match": true
+  },
+  {
+    "handle": "emarc99",
+    "expected": 280,
+    "collected": 280,
+    "count_match": true
+  },
+  {
+    "handle": "eminentcodes",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "emmatheo",
+    "expected": 76,
+    "collected": 76,
+    "count_match": true
+  },
+  {
+    "handle": "emperorjsx",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "enliven17",
+    "expected": 89,
+    "collected": 89,
+    "count_match": true
+  },
+  {
+    "handle": "envexx",
+    "expected": 51,
+    "collected": 51,
+    "count_match": true
+  },
+  {
+    "handle": "esimuda",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "ezekiel6262",
+    "expected": 52,
+    "collected": 52,
+    "count_match": true
+  },
+  {
+    "handle": "fahmmin",
+    "expected": 55,
+    "collected": 55,
+    "count_match": true
+  },
+  {
+    "handle": "faithful1ofall",
+    "expected": 88,
+    "collected": 88,
+    "count_match": true
+  },
+  {
+    "handle": "ferzerz5-lab",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "fexx301",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "ffffffffhugfadil",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "folajindayo",
+    "expected": 28,
+    "collected": 28,
+    "count_match": true
+  },
+  {
+    "handle": "georgekarapi",
+    "expected": 30,
+    "collected": 30,
+    "count_match": true
+  },
+  {
+    "handle": "githoboman",
+    "expected": 112,
+    "collected": 112,
+    "count_match": true
+  },
+  {
+    "handle": "gossipgirlonchain",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "gracetemmy",
+    "expected": 8,
+    "collected": 8,
+    "count_match": true
+  },
+  {
+    "handle": "hari-hara-sudharsan",
+    "expected": 41,
+    "collected": 41,
+    "count_match": true
+  },
+  {
+    "handle": "harsh11067",
+    "expected": 23,
+    "collected": 23,
+    "count_match": true
+  },
+  {
+    "handle": "hassanmubiru",
+    "expected": 91,
+    "collected": 91,
+    "count_match": true
+  },
+  {
+    "handle": "henessay",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "hicksonhaziel",
+    "expected": 28,
+    "collected": 28,
+    "count_match": true
+  },
+  {
+    "handle": "hien-p",
+    "expected": 100,
+    "collected": 100,
+    "count_match": true
+  },
+  {
+    "handle": "holyaustin",
+    "expected": 297,
+    "collected": 297,
+    "count_match": true
+  },
+  {
+    "handle": "huangharen",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "huolongluo",
+    "expected": 21,
+    "collected": 21,
+    "count_match": true
+  },
+  {
+    "handle": "huzi0000",
+    "expected": 5,
+    "collected": 5,
+    "count_match": true
+  },
+  {
+    "handle": "iBrainiac",
+    "expected": 129,
+    "collected": 129,
+    "count_match": true
+  },
+  {
+    "handle": "iamrobertmoore",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "iaserveraims",
+    "expected": 0,
+    "collected": 0,
+    "count_match": true
+  },
+  {
+    "handle": "idriskinze86",
+    "expected": 15,
+    "collected": 15,
+    "count_match": true
+  },
+  {
+    "handle": "igboze",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "ikemHood",
+    "expected": 162,
+    "collected": 162,
+    "count_match": true
+  },
+  {
+    "handle": "ikhsanRamadhan",
+    "expected": 45,
+    "collected": 45,
+    "count_match": true
+  },
+  {
+    "handle": "ivanmolto",
+    "expected": 313,
+    "collected": 313,
+    "count_match": true
+  },
+  {
+    "handle": "iwbinb",
+    "expected": 129,
+    "collected": 129,
+    "count_match": true
+  },
+  {
+    "handle": "j8cvgrm9ff-netizen",
+    "expected": 0,
+    "collected": 0,
+    "count_match": true
+  },
+  {
+    "handle": "janneh2000",
+    "expected": 35,
+    "collected": 35,
+    "count_match": true
+  },
+  {
+    "handle": "javierpmateos",
+    "expected": 18,
+    "collected": 18,
+    "count_match": true
+  },
+  {
+    "handle": "jayasaisrikar",
+    "expected": 63,
+    "collected": 63,
+    "count_match": true
+  },
+  {
+    "handle": "jerrymusaga",
+    "expected": 145,
+    "collected": 145,
+    "count_match": true
+  },
+  {
+    "handle": "jnhualu-art",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "johnboscoE",
+    "expected": 26,
+    "collected": 26,
+    "count_match": true
+  },
+  {
+    "handle": "juhzinho",
+    "expected": 17,
+    "collected": 17,
+    "count_match": true
+  },
+  {
+    "handle": "kanagaabishek",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "karagozemin",
+    "expected": 74,
+    "collected": 74,
+    "count_match": true
+  },
+  {
+    "handle": "kashifbashir204-netizen",
+    "expected": 3,
+    "collected": 3,
+    "count_match": true
+  },
+  {
+    "handle": "kataenda",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "kelechikizito",
+    "expected": 120,
+    "collected": 120,
+    "count_match": true
+  },
+  {
+    "handle": "kenny-svg",
+    "expected": 47,
+    "collected": 47,
+    "count_match": true
+  },
+  {
+    "handle": "khoragee",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "kimerran",
+    "expected": 120,
+    "collected": 120,
+    "count_match": true
+  },
+  {
+    "handle": "kunmiesther",
+    "expected": 20,
+    "collected": 20,
+    "count_match": true
+  },
+  {
+    "handle": "lazydevpro",
+    "expected": 18,
+    "collected": 18,
+    "count_match": true
+  },
+  {
+    "handle": "librapraise",
+    "expected": 59,
+    "collected": 59,
+    "count_match": true
+  },
+  {
+    "handle": "ligulfzhou",
+    "expected": 202,
+    "collected": 202,
+    "count_match": true
+  },
+  {
+    "handle": "linoxbt",
+    "expected": 75,
+    "collected": 75,
+    "count_match": true
+  },
+  {
+    "handle": "liutongxian",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "loficoded",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "louji2308",
+    "expected": 10,
+    "collected": 10,
+    "count_match": true
+  },
+  {
+    "handle": "lucifer1017",
+    "expected": 74,
+    "collected": 74,
+    "count_match": true
+  },
+  {
+    "handle": "lucky-ivanius",
+    "expected": 30,
+    "collected": 30,
+    "count_match": true
+  },
+  {
+    "handle": "luongs3",
+    "expected": 93,
+    "collected": 93,
+    "count_match": true
+  },
+  {
+    "handle": "lviffy",
+    "expected": 53,
+    "collected": 53,
+    "count_match": true
+  },
+  {
+    "handle": "lxyaverse",
+    "expected": 17,
+    "collected": 17,
+    "count_match": true
+  },
+  {
+    "handle": "madhesh60",
+    "expected": 24,
+    "collected": 24,
+    "count_match": true
+  },
+  {
+    "handle": "major101x",
+    "expected": 56,
+    "collected": 56,
+    "count_match": true
+  },
+  {
+    "handle": "manav2701",
+    "expected": 21,
+    "collected": 21,
+    "count_match": true
+  },
+  {
+    "handle": "mansiverma897993",
+    "expected": 120,
+    "collected": 120,
+    "count_match": true
+  },
+  {
+    "handle": "marshersusanin",
+    "expected": 18,
+    "collected": 18,
+    "count_match": true
+  },
+  {
+    "handle": "martian3062",
+    "expected": 96,
+    "collected": 96,
+    "count_match": true
+  },
+  {
+    "handle": "martin-gedyk",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "mashharuki",
+    "expected": 996,
+    "collected": 996,
+    "count_match": true
+  },
+  {
+    "handle": "mateojkk",
+    "expected": 17,
+    "collected": 17,
+    "count_match": true
+  },
+  {
+    "handle": "maulana-tech",
+    "expected": 88,
+    "collected": 88,
+    "count_match": true
+  },
+  {
+    "handle": "mdfaizee19",
+    "expected": 16,
+    "collected": 16,
+    "count_match": true
+  },
+  {
+    "handle": "mdlog",
+    "expected": 125,
+    "collected": 125,
+    "count_match": true
+  },
+  {
+    "handle": "midasbal",
+    "expected": 22,
+    "collected": 22,
+    "count_match": true
+  },
+  {
+    "handle": "midexol",
+    "expected": 79,
+    "collected": 79,
+    "count_match": true
+  },
+  {
+    "handle": "minhleeee123",
+    "expected": 20,
+    "collected": 20,
+    "count_match": true
+  },
+  {
+    "handle": "mmac-dev",
+    "expected": 3,
+    "collected": 3,
+    "count_match": true
+  },
+  {
+    "handle": "mojeebdev",
+    "expected": 57,
+    "collected": 57,
+    "count_match": true
+  },
+  {
+    "handle": "mrfomoweb3",
+    "expected": 33,
+    "collected": 33,
+    "count_match": true
+  },
+  {
+    "handle": "mystiquemide",
+    "expected": 33,
+    "collected": 33,
+    "count_match": true
+  },
+  {
+    "handle": "mzterwalexzyy",
+    "expected": 55,
+    "collected": 55,
+    "count_match": true
+  },
+  {
+    "handle": "n-dlms",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "neromtoobad",
+    "expected": 42,
+    "collected": 42,
+    "count_match": true
+  },
+  {
+    "handle": "nonggde",
+    "expected": 48,
+    "collected": 48,
+    "count_match": true
+  },
+  {
+    "handle": "norbert351",
+    "expected": 45,
+    "collected": 45,
+    "count_match": true
+  },
+  {
+    "handle": "oderahub",
+    "expected": 128,
+    "collected": 128,
+    "count_match": true
+  },
+  {
+    "handle": "ombaviskar18",
+    "expected": 51,
+    "collected": 51,
+    "count_match": true
+  },
+  {
+    "handle": "onchaindc",
+    "expected": 26,
+    "collected": 26,
+    "count_match": true
+  },
+  {
+    "handle": "oyingrace",
+    "expected": 143,
+    "collected": 143,
+    "count_match": true
+  },
+  {
+    "handle": "oynozan",
+    "expected": 57,
+    "collected": 57,
+    "count_match": true
+  },
+  {
+    "handle": "p3ris0n",
+    "expected": 41,
+    "collected": 41,
+    "count_match": true
+  },
+  {
+    "handle": "pandaer119",
+    "expected": 3,
+    "collected": 3,
+    "count_match": true
+  },
+  {
+    "handle": "pextacy",
+    "expected": 26,
+    "collected": 26,
+    "count_match": true
+  },
+  {
+    "handle": "pisuthd",
+    "expected": 50,
+    "collected": 50,
+    "count_match": true
+  },
+  {
+    "handle": "pplmaverick",
+    "expected": 41,
+    "collected": 41,
+    "count_match": true
+  },
+  {
+    "handle": "prime1999",
+    "expected": 65,
+    "collected": 65,
+    "count_match": true
+  },
+  {
+    "handle": "priyaraghavan23",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "r0bops",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "rajkaria",
+    "expected": 31,
+    "collected": 31,
+    "count_match": true
+  },
+  {
+    "handle": "raldblox",
+    "expected": 53,
+    "collected": 53,
+    "count_match": true
+  },
+  {
+    "handle": "ramanarolla1-source",
+    "expected": 27,
+    "collected": 27,
+    "count_match": true
+  },
+  {
+    "handle": "raviraj016-innovator",
+    "expected": 8,
+    "collected": 8,
+    "count_match": true
+  },
+  {
+    "handle": "rawakinode",
+    "expected": 87,
+    "collected": 87,
+    "count_match": true
+  },
+  {
+    "handle": "rehna-jp",
+    "expected": 82,
+    "collected": 82,
+    "count_match": true
+  },
+  {
+    "handle": "riush03",
+    "expected": 117,
+    "collected": 117,
+    "count_match": true
+  },
+  {
+    "handle": "rogersterkaa",
+    "expected": 9,
+    "collected": 9,
+    "count_match": true
+  },
+  {
+    "handle": "rohitsingh-01",
+    "expected": 3,
+    "collected": 3,
+    "count_match": true
+  },
+  {
+    "handle": "sadik-tofik",
+    "expected": 73,
+    "collected": 73,
+    "count_match": true
+  },
+  {
+    "handle": "sakalbills-source",
+    "expected": 3,
+    "collected": 3,
+    "count_match": true
+  },
+  {
+    "handle": "salemzii",
+    "expected": 75,
+    "collected": 75,
+    "count_match": true
+  },
+  {
+    "handle": "satianurag",
+    "expected": 40,
+    "collected": 40,
+    "count_match": true
+  },
+  {
+    "handle": "satvik-svg",
+    "expected": 49,
+    "collected": 49,
+    "count_match": true
+  },
+  {
+    "handle": "scientivan",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "sediq247",
+    "expected": 8,
+    "collected": 8,
+    "count_match": true
+  },
+  {
+    "handle": "seekdaseek",
+    "expected": 35,
+    "collected": 35,
+    "count_match": true
+  },
+  {
+    "handle": "shahwali-dev",
+    "expected": 6,
+    "collected": 6,
+    "count_match": true
+  },
+  {
+    "handle": "shittuking",
+    "expected": 13,
+    "collected": 13,
+    "count_match": true
+  },
+  {
+    "handle": "shivanshpathak95",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "shreyansh001boy-tech",
+    "expected": 0,
+    "collected": 0,
+    "count_match": true
+  },
+  {
+    "handle": "shreyas-sovani",
+    "expected": 68,
+    "collected": 68,
+    "count_match": true
+  },
+  {
+    "handle": "shrooms08",
+    "expected": 33,
+    "collected": 33,
+    "count_match": true
+  },
+  {
+    "handle": "shubhangisarvade",
+    "expected": 2,
+    "collected": 2,
+    "count_match": true
+  },
+  {
+    "handle": "siddhant-k08",
+    "expected": 59,
+    "collected": 59,
+    "count_match": true
+  },
+  {
+    "handle": "sivadst",
+    "expected": 86,
+    "collected": 86,
+    "count_match": true
+  },
+  {
+    "handle": "snehendu098",
+    "expected": 126,
+    "collected": 126,
+    "count_match": true
+  },
+  {
+    "handle": "sniperchief",
+    "expected": 8,
+    "collected": 8,
+    "count_match": true
+  },
+  {
+    "handle": "sodiq-code",
+    "expected": 17,
+    "collected": 17,
+    "count_match": true
+  },
+  {
+    "handle": "sofiadaniellarossi-cmd",
+    "expected": 5,
+    "collected": 5,
+    "count_match": true
+  },
+  {
+    "handle": "solocreativeone",
+    "expected": 4,
+    "collected": 4,
+    "count_match": true
+  },
+  {
+    "handle": "solutionkanu12",
+    "expected": 23,
+    "collected": 23,
+    "count_match": true
+  },
+  {
+    "handle": "southenempire",
+    "expected": 44,
+    "collected": 44,
+    "count_match": true
+  },
+  {
+    "handle": "spiffamani",
+    "expected": 58,
+    "collected": 58,
+    "count_match": true
+  },
+  {
+    "handle": "stanleykosi",
+    "expected": 36,
+    "collected": 36,
+    "count_match": true
+  },
+  {
+    "handle": "stephenovo",
+    "expected": 4,
+    "collected": 4,
+    "count_match": true
+  },
+  {
+    "handle": "subheeksh5599",
+    "expected": 84,
+    "collected": 84,
+    "count_match": true
+  },
+  {
+    "handle": "successaje",
+    "expected": 102,
+    "collected": 102,
+    "count_match": true
+  },
+  {
+    "handle": "supreme2580",
+    "expected": 194,
+    "collected": 194,
+    "count_match": true
+  },
+  {
+    "handle": "suyash242004",
+    "expected": 27,
+    "collected": 27,
+    "count_match": true
+  },
+  {
+    "handle": "swarupasaha2005-hue",
+    "expected": 11,
+    "collected": 11,
+    "count_match": true
+  },
+  {
+    "handle": "tamerrarda",
+    "expected": 8,
+    "collected": 8,
+    "count_match": true
+  },
+  {
+    "handle": "tang-vu",
+    "expected": 98,
+    "collected": 98,
+    "count_match": true
+  },
+  {
+    "handle": "tejas0111",
+    "expected": 5,
+    "collected": 5,
+    "count_match": true
+  },
+  {
+    "handle": "thakursanju",
+    "expected": 26,
+    "collected": 26,
+    "count_match": true
+  },
+  {
+    "handle": "tharunkumar3691",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "the-galaxy-knight",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "thesithunyein",
+    "expected": 33,
+    "collected": 33,
+    "count_match": true
+  },
+  {
+    "handle": "thisyearnofear",
+    "expected": 152,
+    "collected": 152,
+    "count_match": true
+  },
+  {
+    "handle": "tommycet",
+    "expected": 30,
+    "collected": 30,
+    "count_match": true
+  },
+  {
+    "handle": "trudransh",
+    "expected": 67,
+    "collected": 67,
+    "count_match": true
+  },
+  {
+    "handle": "tushar598",
+    "expected": 32,
+    "collected": 32,
+    "count_match": true
+  },
+  {
+    "handle": "tusharpamnani",
+    "expected": 212,
+    "collected": 212,
+    "count_match": true
+  },
+  {
+    "handle": "ubongn",
+    "expected": 77,
+    "collected": 77,
+    "count_match": true
+  },
+  {
+    "handle": "uduakobongjames55-pixel",
+    "expected": 1,
+    "collected": 1,
+    "count_match": true
+  },
+  {
+    "handle": "user-Rishabh",
+    "expected": 19,
+    "collected": 19,
+    "count_match": true
+  },
+  {
+    "handle": "uzochukwuv",
+    "expected": 317,
+    "collected": 317,
+    "count_match": true
+  },
+  {
+    "handle": "var12958",
+    "expected": 34,
+    "collected": 34,
+    "count_match": true
+  },
+  {
+    "handle": "vibenedict",
+    "expected": 36,
+    "collected": 36,
+    "count_match": true
+  },
+  {
+    "handle": "wahyudi100715",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "wildanre",
+    "expected": 71,
+    "collected": 71,
+    "count_match": true
+  },
+  {
+    "handle": "wngstnr-code",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "wolf1276",
+    "expected": 50,
+    "collected": 50,
+    "count_match": true
+  },
+  {
+    "handle": "wurli-sh",
+    "expected": 5,
+    "collected": 5,
+    "count_match": true
+  },
+  {
+    "handle": "x-maues",
+    "expected": 70,
+    "collected": 70,
+    "count_match": true
+  },
+  {
+    "handle": "yangyangnovelist-hub",
+    "expected": 25,
+    "collected": 25,
+    "count_match": true
+  },
+  {
+    "handle": "yash251",
+    "expected": 159,
+    "collected": 159,
+    "count_match": true
+  },
+  {
+    "handle": "yashannadate",
+    "expected": 13,
+    "collected": 13,
+    "count_match": true
+  },
+  {
+    "handle": "youngancient",
+    "expected": 163,
+    "collected": 163,
+    "count_match": true
+  },
+  {
+    "handle": "yousunlotif-bappy",
+    "expected": 20,
+    "collected": 20,
+    "count_match": true
+  },
+  {
+    "handle": "youtpout",
+    "expected": 135,
+    "collected": 135,
+    "count_match": true
+  },
+  {
+    "handle": "yuvrajvibhute",
+    "expected": 15,
+    "collected": 15,
+    "count_match": true
+  },
+  {
+    "handle": "zachbuilds26",
+    "expected": 7,
+    "collected": 7,
+    "count_match": true
+  },
+  {
+    "handle": "zeeonchain",
+    "expected": 5,
+    "collected": 5,
+    "count_match": true
+  },
+  {
+    "handle": "zicjoe",
+    "expected": 12,
+    "collected": 12,
+    "count_match": true
+  },
+  {
+    "handle": "zkasuran",
+    "expected": 70,
+    "collected": 70,
+    "count_match": true
+  },
+  {
+    "handle": "zmrfzn",
+    "expected": 72,
+    "collected": 72,
+    "count_match": true
+  },
+  {
+    "handle": "zzzbedream",
+    "expected": 20,
+    "collected": 20,
+    "count_match": true
+  }
+]

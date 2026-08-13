@@ -1,0 +1,2669 @@
+{
+  "methodology": {
+    "canonical_population": "DoraHacks registered-hacker API",
+    "repository_scope": "All public repositories from every resolved participant-disclosed GitHub account",
+    "evidence_layers": [
+      "DoraHacks profile disclosure",
+      "repository metadata",
+      "README",
+      "current-period commits",
+      "contributors",
+      "languages"
+    ],
+    "classification_caveat": "Likely-current is competitive intelligence, not proof of final DoraHacks submission or eligibility."
+  },
+  "totals": {
+    "likely_current_repository_projects": 87,
+    "profile_recovered_repositories": 4,
+    "profile_only_or_unlinked_signals": 8,
+    "total_public_or_profile_signals": 99
+  },
+  "repository_projects": [
+    {
+      "full_name": "RaYYeR220/veil",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-22T13:49:01Z",
+      "pushed_at": "2026-07-23T07:09:52Z",
+      "description": "Confidential credit for FXRP on Flare — a borrower is scored inside a hardware enclave, and only a signed credit line reaches the chain.",
+      "lane_heuristic": "dual",
+      "proof_score": 5,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 28,
+      "current_period_contributors": [
+        "RaYYeR220"
+      ],
+      "languages": {
+        "Solidity": 987917,
+        "TypeScript": 96256,
+        "Go": 77262,
+        "Python": 17400,
+        "CSS": 16637,
+        "Dockerfile": 1134,
+        "JavaScript": 334
+      }
+    },
+    {
+      "full_name": "a252937166/faktura",
+      "class": "explicit-current",
+      "created_at": "2026-07-02T12:57:54Z",
+      "pushed_at": "2026-07-04T12:29:22Z",
+      "description": "Faktura — the autonomous invoice-financing desk on Flare (FTSOv2 + FDC). Flare Summer Signal submission.",
+      "lane_heuristic": "dual",
+      "proof_score": 5,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 15,
+      "current_period_contributors": [
+        "a252937166",
+        "supplyweijiemtm@outlook.com"
+      ],
+      "languages": {
+        "TypeScript": 169152,
+        "Solidity": 30538,
+        "CSS": 18345,
+        "HTML": 688
+      }
+    },
+    {
+      "full_name": "edycutjong/backstop",
+      "class": "explicit-current",
+      "created_at": "2026-07-31T13:02:16Z",
+      "pushed_at": "2026-08-12T00:27:10Z",
+      "description": "🛟 Backstop — FXRP redemption-default insurance on Flare, triggered by the protocol's own FDC ReferencedPaymentNonexistence proof (Coston2).",
+      "lane_heuristic": "interoperable",
+      "proof_score": 5,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "HTML": 217078,
+        "TypeScript": 189336,
+        "Solidity": 73628,
+        "CSS": 6757,
+        "JavaScript": 2043,
+        "Makefile": 1417
+      }
+    },
+    {
+      "full_name": "Risingtell/rill",
+      "class": "explicit-current",
+      "created_at": "2026-08-06T19:57:32Z",
+      "pushed_at": "2026-08-10T21:52:25Z",
+      "description": "A standard EIP-3009 authorization shim for FXRP, unlocking x402 on Flare's flagship FAsset",
+      "lane_heuristic": "interoperable",
+      "proof_score": 4,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "TypeScript": 66658,
+        "Solidity": 6388,
+        "HTML": 5560
+      }
+    },
+    {
+      "full_name": "YingchenWang999/signal-harbor",
+      "class": "explicit-current",
+      "created_at": "2026-07-18T14:56:50Z",
+      "pushed_at": "2026-08-01T02:51:41Z",
+      "description": "Non-custodial Flare treasury risk console with FTSOv2 pricing and FDC-verified cross-chain evidence",
+      "lane_heuristic": "interoperable",
+      "proof_score": 4,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": false,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "JavaScript": 29633,
+        "TypeScript": 20570,
+        "Solidity": 13184,
+        "CSS": 12166,
+        "HTML": 596
+      }
+    },
+    {
+      "full_name": "darkty0x/flare-fassets-agent",
+      "class": "explicit-current",
+      "created_at": "2026-07-28T07:22:50Z",
+      "pushed_at": "2026-07-28T09:14:44Z",
+      "description": "Flare-native FTSO + FXRP guardian agent on Coston2 (Flare Summer Signal)",
+      "lane_heuristic": "dual",
+      "proof_score": 4,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": false,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "TypeScript": 50052,
+        "CSS": 8264,
+        "JavaScript": 1719,
+        "Solidity": 1163
+      }
+    },
+    {
+      "full_name": "fexx301/embargo",
+      "class": "explicit-current",
+      "created_at": "2026-07-29T07:04:34Z",
+      "pushed_at": "2026-08-10T11:34:22Z",
+      "description": "Confidential bug bounties verified with Flare Confidential Compute",
+      "lane_heuristic": "dual",
+      "proof_score": 4,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "TypeScript": 161876,
+        "Solidity": 92530,
+        "Go": 68774,
+        "CSS": 34357,
+        "Shell": 21761,
+        "JavaScript": 7164,
+        "Dockerfile": 3008
+      }
+    },
+    {
+      "full_name": "sodiq-code/aegis",
+      "class": "explicit-current",
+      "created_at": "2026-08-02T22:02:12Z",
+      "pushed_at": "2026-08-08T03:06:15Z",
+      "description": "Aegis — A Verifiable, Confidential, AI-Managed Cross-Chain Treasury and Autonomous Risk Layer for XRP-Native Institutions on Flare",
+      "lane_heuristic": "dual",
+      "proof_score": 4,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "Go": 1017903,
+        "TypeScript": 582174,
+        "Solidity": 363180,
+        "Python": 51404,
+        "JavaScript": 40090,
+        "Shell": 16891,
+        "Dockerfile": 7060,
+        "CSS": 4619
+      }
+    },
+    {
+      "full_name": "spiffamani/wayafee",
+      "class": "explicit-current",
+      "created_at": "2026-08-09T22:08:41Z",
+      "pushed_at": "2026-08-13T07:29:17Z",
+      "description": "Guided FXRP on-ramp for cross-border remittance and savings. Turns Flare's two-wallet minting flow into one seamless experience for XRP holders sending money home or saving outside local currency volatility. Built on Flare's FAssets protocol.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 4,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 7,
+      "current_period_contributors": [
+        "godwinchijioke@gmail.com",
+        "spiffamani"
+      ],
+      "languages": {
+        "TypeScript": 117506,
+        "Solidity": 7974,
+        "CSS": 7813,
+        "JavaScript": 5226
+      }
+    },
+    {
+      "full_name": "0xNexuz/cinder",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-14T04:04:31Z",
+      "pushed_at": "2026-07-22T06:53:10Z",
+      "description": "Commit-reveal XRP RFQ and FDC settlement on Flare",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "JavaScript": 60130,
+        "HTML": 47579,
+        "Solidity": 42945,
+        "TypeScript": 14693,
+        "CSS": 7412
+      }
+    },
+    {
+      "full_name": "Carlys17/adumbra-flare",
+      "class": "explicit-current",
+      "created_at": "2026-08-04T15:39:16Z",
+      "pushed_at": "2026-08-06T07:48:48Z",
+      "description": "Adumbra — confidential order routing for FXRP on Flare. Route selection runs inside a TEE; only the enclave-signed order reaches the chain, so MEV searchers have nothing to front-run. Flare Summer Signal, Bounty 2.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 65,
+      "current_period_contributors": [
+        "Carlys17"
+      ],
+      "languages": {
+        "HTML": 59743,
+        "Solidity": 12429,
+        "Rust": 12330,
+        "Shell": 8521,
+        "Python": 1397
+      }
+    },
+    {
+      "full_name": "Donyemiight/whisper",
+      "class": "explicit-current",
+      "created_at": "2026-07-31T21:53:31Z",
+      "pushed_at": "2026-08-01T17:46:43Z",
+      "description": "Whisper — Confidential cross-chain FXRP↔XRP settlement layer for Flare Summer Signal 2026. TEE-sealed bids, vTPM-verified matches, two-leg attested settlement.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "TypeScript": 76317,
+        "Python": 58787,
+        "Solidity": 31445,
+        "Shell": 8646,
+        "CSS": 1743,
+        "Dockerfile": 1727,
+        "JavaScript": 597
+      }
+    },
+    {
+      "full_name": "Hexdee/nightjar",
+      "class": "explicit-current",
+      "created_at": "2026-08-10T13:22:52Z",
+      "pushed_at": "2026-08-10T18:55:06Z",
+      "description": "Confidential cross-chain RFQ and FDC-verified XRP settlement on Flare.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "Go": 221442,
+        "Shell": 55015,
+        "TypeScript": 47541,
+        "Python": 32046,
+        "Solidity": 26711,
+        "Dockerfile": 15860,
+        "HTML": 645
+      }
+    },
+    {
+      "full_name": "JohnboscoE/Veripay",
+      "class": "explicit-current",
+      "created_at": "2026-08-02T07:45:01Z",
+      "pushed_at": "2026-08-02T08:22:31Z",
+      "description": "Veripay settles peer-to-peer trades using the Flare Data Connector ",
+      "lane_heuristic": "interoperable",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "TypeScript": 152091,
+        "Solidity": 64320,
+        "JavaScript": 16617,
+        "CSS": 7312,
+        "HTML": 658
+      }
+    },
+    {
+      "full_name": "KingOfTheMultiverse/fxrp-agent-radar",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-29T03:21:07Z",
+      "pushed_at": "2026-07-29T04:46:59Z",
+      "description": "Risk-scored agent selection for Flare FAssets — surfaces liquidation proximity and redemption-default exposure before you mint or redeem FXRP",
+      "lane_heuristic": "interoperable",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 6,
+      "current_period_contributors": [
+        "KingOfTheMultiverse"
+      ],
+      "languages": {
+        "HTML": 36989,
+        "JavaScript": 28201
+      }
+    },
+    {
+      "full_name": "MaxxxDong/flare-evidence-escrow",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-09T14:35:36Z",
+      "pushed_at": "2026-08-09T15:39:02Z",
+      "description": "Evidence-linked FXRP escrow on Flare Coston2",
+      "lane_heuristic": "interoperable",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": false,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 4,
+      "current_period_contributors": [
+        "max@MaxdeMacBook-Air.local"
+      ],
+      "languages": {
+        "HTML": 169983,
+        "TypeScript": 13661,
+        "Solidity": 10705,
+        "CSS": 1203
+      }
+    },
+    {
+      "full_name": "Obiajulu-gif/flareseal",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-05T16:24:58Z",
+      "pushed_at": "2026-08-07T17:21:44Z",
+      "description": "Confidential invoice creation and FXRP escrow on Flare Testnet Coston2, using Flare Confidential Compute (TEE) and FTSOv2.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 14,
+      "current_period_contributors": [
+        "Obiajulu-gif"
+      ],
+      "languages": {
+        "TypeScript": 328206,
+        "Go": 233091,
+        "Shell": 109356,
+        "Python": 38410,
+        "Solidity": 34176,
+        "Dockerfile": 22201,
+        "JavaScript": 14976,
+        "CSS": 6733,
+        "Makefile": 3310
+      }
+    },
+    {
+      "full_name": "PhiBao/autopilot",
+      "class": "explicit-current",
+      "created_at": "2026-08-01T00:03:13Z",
+      "pushed_at": "2026-08-02T22:26:27Z",
+      "description": "The lifecycle manager for XRP savings on Flare Smart Accounts",
+      "lane_heuristic": "interoperable",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "Solidity": 943607,
+        "TypeScript": 177426,
+        "Python": 17400,
+        "CSS": 3555,
+        "JavaScript": 2419,
+        "Dockerfile": 842
+      }
+    },
+    {
+      "full_name": "SharkHand3/fasset-taskbounty",
+      "class": "explicit-current",
+      "created_at": "2026-07-14T16:13:24Z",
+      "pushed_at": "2026-07-24T05:08:21Z",
+      "description": "A decentralized task bounty protocol powered by FAssets on Flare.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 27,
+      "current_period_contributors": [
+        "SharkHand3"
+      ],
+      "languages": {
+        "TypeScript": 283911,
+        "CSS": 66259,
+        "Solidity": 18892,
+        "JavaScript": 10834
+      }
+    },
+    {
+      "full_name": "Tajudeeen/ledgerguard",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-10T21:52:41Z",
+      "pushed_at": "2026-08-12T23:18:44Z",
+      "description": "Risk-aware agent selection for FXRP minting on Flare.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 31,
+      "current_period_contributors": [
+        "Tajudeeen",
+        "vercel[bot]"
+      ],
+      "languages": {
+        "TypeScript": 232577,
+        "JavaScript": 7792,
+        "Solidity": 5175,
+        "CSS": 2826
+      }
+    },
+    {
+      "full_name": "a252937166/heirloom",
+      "class": "explicit-current",
+      "created_at": "2026-07-17T17:09:19Z",
+      "pushed_at": "2026-08-09T11:56:46Z",
+      "description": "The continuity vault for XRP — non-custodial inheritance proven by Flare consensus (Flare Summer Signal 2026)",
+      "lane_heuristic": "interoperable",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 48,
+      "current_period_contributors": [
+        "a252937166"
+      ],
+      "languages": {
+        "TypeScript": 278464,
+        "JavaScript": 159492,
+        "Solidity": 23605,
+        "CSS": 18251,
+        "Shell": 1241,
+        "HTML": 630
+      }
+    },
+    {
+      "full_name": "dmetagame/ballast",
+      "class": "explicit-current",
+      "created_at": "2026-08-02T16:43:07Z",
+      "pushed_at": "2026-08-13T00:01:16Z",
+      "description": "Automated deleveraging for XRP-collateralised borrow positions on Flare. Protects leveraged FXRP positions from liquidation using Morpho flash loans and FTSO's ~2s price feeds.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 50,
+      "current_period_contributors": [
+        "dmetagame"
+      ],
+      "languages": {
+        "Solidity": 196426,
+        "JavaScript": 106605,
+        "HTML": 102486,
+        "Go": 29507,
+        "Shell": 15988,
+        "CSS": 5967
+      }
+    },
+    {
+      "full_name": "drained69/Tacit",
+      "class": "explicit-current",
+      "created_at": "2026-08-11T15:20:45Z",
+      "pushed_at": "2026-08-13T06:50:14Z",
+      "description": " confidential autonomous treasury for FXRP on Flares",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 14,
+      "current_period_contributors": [
+        "Chinwuba081",
+        "PyGuy2"
+      ],
+      "languages": {
+        "Solidity": 1202650,
+        "TypeScript": 91259,
+        "JavaScript": 80366,
+        "Python": 78259,
+        "HTML": 69176,
+        "CSS": 52180,
+        "Go": 29775,
+        "Shell": 2992,
+        "Dockerfile": 2700
+      }
+    },
+    {
+      "full_name": "fahmmin/sotto-flare",
+      "class": "explicit-current",
+      "created_at": "2026-08-03T08:53:19Z",
+      "pushed_at": "2026-08-03T20:26:37Z",
+      "description": "Sotto - a sealed-bid batch auction for FXRP on Flare. Orders are encrypted to a TEE-held key and every batch clears at one uniform price, so there is no order flow left to sell.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 22,
+      "current_period_contributors": [
+        "fahmmin"
+      ],
+      "languages": {
+        "JavaScript": 192664,
+        "Python": 34676,
+        "Solidity": 32008,
+        "HTML": 21734,
+        "CSS": 5636,
+        "PowerShell": 5272,
+        "Dockerfile": 1051
+      }
+    },
+    {
+      "full_name": "ikhsanRamadhan/pixelorbit-flare",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-10T15:39:03Z",
+      "pushed_at": "2026-08-11T07:18:06Z",
+      "description": "PixelOrbit is an arcade game whose entire economy runs on FXRP, and whose three trust-critical operations run inside a Flare Confidential Compute.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 226,
+      "current_period_contributors": [
+        "ikhsanRamadhan"
+      ],
+      "languages": {
+        "TypeScript": 3652653,
+        "Solidity": 74833,
+        "JavaScript": 559,
+        "CSS": 488
+      }
+    },
+    {
+      "full_name": "jerrymusaga/Keyless",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-13T01:52:45Z",
+      "pushed_at": "2026-08-11T17:40:27Z",
+      "description": "An XRPL account whose key lives in a TEE that will only sign what an on-chain policy permits. The operator holds no key and can sign nothing the policy forbids.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 152,
+      "current_period_contributors": [
+        "jerrymusaga"
+      ],
+      "languages": {
+        "TypeScript": 342015,
+        "Go": 206131,
+        "Solidity": 167510,
+        "JavaScript": 73131,
+        "Shell": 62645,
+        "Dockerfile": 7243,
+        "CSS": 2799
+      }
+    },
+    {
+      "full_name": "nonggde/privyroll-signal",
+      "class": "explicit-current",
+      "created_at": "2026-07-12T07:56:23Z",
+      "pushed_at": "2026-07-17T15:14:10Z",
+      "description": "Privacy-aware interoperable payroll settlement on Flare",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": false,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 6,
+      "current_period_contributors": [
+        "nonggde"
+      ],
+      "languages": {
+        "HTML": 161271,
+        "TypeScript": 16337,
+        "Solidity": 6308,
+        "CSS": 3112,
+        "JavaScript": 2862,
+        "PowerShell": 2185
+      }
+    },
+    {
+      "full_name": "stephenovo/sealed-credit",
+      "class": "explicit-current",
+      "created_at": "2026-08-11T03:16:14Z",
+      "pushed_at": "2026-08-11T06:43:36Z",
+      "description": "Confidential FXRP working-capital lines for XRP-native businesses, powered by Flare FCC.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 3,
+      "current_period_contributors": [
+        "stephenovo"
+      ],
+      "languages": {
+        "Go": 221413,
+        "TypeScript": 101620,
+        "Shell": 90831,
+        "Python": 38410,
+        "CSS": 26639,
+        "Dockerfile": 22201,
+        "Solidity": 17143,
+        "JavaScript": 4186,
+        "HTML": 451
+      }
+    },
+    {
+      "full_name": "tang-vu/Vouchsafe",
+      "class": "explicit-current",
+      "created_at": "2026-07-13T09:52:04Z",
+      "pushed_at": "2026-08-13T08:09:29Z",
+      "description": "Private, stake-backed proof-of-solvency for RWA issuers and FAsset agents on Flare",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": false,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 26,
+      "current_period_contributors": [
+        "tang-vu"
+      ],
+      "languages": {
+        "TypeScript": 148371,
+        "Solidity": 55995,
+        "JavaScript": 46328,
+        "HTML": 29322,
+        "CSS": 23209,
+        "Shell": 4150,
+        "Dockerfile": 2282
+      }
+    },
+    {
+      "full_name": "tommycet/creditgate",
+      "class": "explicit-current",
+      "created_at": "2026-08-06T18:41:38Z",
+      "pushed_at": "2026-08-10T14:59:47Z",
+      "description": "CreditGate — Private FXRP credit eligibility layer on Flare. FCC + FDC + FTSO + FAssets. 141 tests, 8 invariants, live on Coston2.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 163,
+      "current_period_contributors": [
+        "hashir@zama-hackathon.dev"
+      ],
+      "languages": {
+        "Solidity": 485170,
+        "TypeScript": 238144,
+        "Python": 70397,
+        "Go": 30445,
+        "Shell": 10014,
+        "Dockerfile": 3738,
+        "CSS": 2178,
+        "JavaScript": 505
+      }
+    },
+    {
+      "full_name": "wngstnr-code/SealedFi",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-27T10:38:56Z",
+      "pushed_at": "2026-08-07T04:03:02Z",
+      "description": "SealedFi — Proof of Alpha. On-chain asset management on Flare: strategies sealed inside a Flare Compute Extension (TEE), NAV from FTSO, guardrails enforced on-chain.",
+      "lane_heuristic": "dual",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 110,
+      "current_period_contributors": [
+        "Wangsit05",
+        "scientivan",
+        "wngstnr-code"
+      ],
+      "languages": {
+        "Go": 578937,
+        "TypeScript": 530331,
+        "Solidity": 274335,
+        "Shell": 78697,
+        "JavaScript": 48038,
+        "CSS": 12460,
+        "Dockerfile": 5805
+      }
+    },
+    {
+      "full_name": "yangyangnovelist-hub/darkstop",
+      "class": "explicit-current",
+      "created_at": "2026-07-17T04:34:42Z",
+      "pushed_at": "2026-08-09T14:45:57Z",
+      "description": "DarkStop — confidential stop-loss orders on Flare. Trigger prices encrypted in a TEE extension, revealed only at settlement, re-checked on-chain against FTSO.",
+      "lane_heuristic": "confidential",
+      "proof_score": 3,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 51,
+      "current_period_contributors": [
+        "yyn"
+      ],
+      "languages": {
+        "Solidity": 3349932,
+        "Go": 331786,
+        "Shell": 85936,
+        "TypeScript": 53744,
+        "Python": 17400,
+        "Dockerfile": 4411,
+        "CSS": 1315,
+        "JavaScript": 94
+      }
+    },
+    {
+      "full_name": "Ai-Rook/flare-wallet-port",
+      "class": "explicit-current",
+      "created_at": "2026-08-09T21:37:26Z",
+      "pushed_at": "2026-08-10T21:04:00Z",
+      "description": "Flare Summer Signal hackathon — multi-asset wallet ported to Flare with FTSO price feeds and FAssets",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 52,
+      "current_period_contributors": [
+        "Ai-Rook",
+        "queen@Queens-Mac-Studio.local"
+      ],
+      "languages": {}
+    },
+    {
+      "full_name": "CryptoZephyr/herkos",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-12T11:40:37Z",
+      "pushed_at": "2026-08-12T22:30:24Z",
+      "description": "Exit-capacity oracle for FXRP lending on Flare",
+      "lane_heuristic": "interoperable",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 0,
+      "current_period_contributors": [],
+      "languages": {
+        "JavaScript": 233983,
+        "Solidity": 120240,
+        "CSS": 11453,
+        "HTML": 9137
+      }
+    },
+    {
+      "full_name": "Derojuu/VaultDrop",
+      "class": "explicit-current",
+      "created_at": "2026-07-06T06:55:16Z",
+      "pushed_at": "2026-07-15T14:49:01Z",
+      "description": "VaultDrop demonstrates how Flare Confidential Compute can power real-world, privacy-preserving applications by moving beyond simple file storage into programmable, policy-driven access control.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 11,
+      "current_period_contributors": [
+        "Derojuu"
+      ],
+      "languages": {
+        "TypeScript": 325824,
+        "CSS": 12575,
+        "JavaScript": 923
+      }
+    },
+    {
+      "full_name": "LSUDOKO/Wraith",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-11T17:40:56Z",
+      "pushed_at": "2026-08-13T05:40:44Z",
+      "description": "Private conditional orders on Flare. Your trigger is encrypted to a TEE and never published — so it cannot be hunted.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 55,
+      "current_period_contributors": [
+        "LSUDOKO",
+        "dependabot[bot]",
+        "google-labs-jules[bot]",
+        "semantic-release-bot"
+      ],
+      "languages": {
+        "TypeScript": 63911,
+        "Go": 47993,
+        "Solidity": 38229,
+        "CSS": 26031,
+        "JavaScript": 18260
+      }
+    },
+    {
+      "full_name": "Lukeknow0/flare-payflow-guard",
+      "class": "explicit-current",
+      "created_at": "2026-07-18T05:12:53Z",
+      "pushed_at": "2026-07-18T07:14:28Z",
+      "description": "Deterministic FXRP direct-mint preflight and receipt guard anchored to real Flare Coston2/FAssets state.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 8,
+      "current_period_contributors": [
+        "Lukeknow0",
+        "superman32432432"
+      ],
+      "languages": {
+        "JavaScript": 107411,
+        "Python": 97718,
+        "Makefile": 1846
+      }
+    },
+    {
+      "full_name": "Marc-Dvci/BridgeSafe",
+      "class": "explicit-current",
+      "created_at": "2026-07-28T10:22:28Z",
+      "pushed_at": "2026-07-28T14:58:54Z",
+      "description": "A Flare-controlled XRPL treasury: confidential payment instructions, spending policy enforced inside a TEE, settlement proved by the Flare Data Connector. Flare Summer Signal.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 12,
+      "current_period_contributors": [
+        "Marc-Dvci",
+        "nositrax"
+      ],
+      "languages": {
+        "Go": 394121,
+        "Solidity": 136125,
+        "Shell": 84820,
+        "TypeScript": 35162,
+        "CSS": 5659,
+        "Dockerfile": 4729
+      }
+    },
+    {
+      "full_name": "NoBanks/traide-flare",
+      "class": "explicit-current",
+      "created_at": "2026-07-22T15:58:19Z",
+      "pushed_at": "2026-07-23T03:15:15Z",
+      "description": "TRAIDE on Flare - Coston2 port + FTSOv2-to-AggregatorV3 adapter (Flare Summer Signal 2026)",
+      "lane_heuristic": "interoperable",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": true,
+        "mock_or_simulated": false,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 2,
+      "current_period_contributors": [
+        "nobanksnearby@NoBankss-Mac-mini-4.local"
+      ],
+      "languages": {
+        "JavaScript": 14520,
+        "Solidity": 3740
+      }
+    },
+    {
+      "full_name": "Pandey456/VeilMarket",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-28T18:10:20Z",
+      "pushed_at": "2026-08-12T10:59:02Z",
+      "description": "The first confidential parimutuel prediction market on Flare. Eliminating herding bias using TEEs, FDC, and FTSO for trustless, zero-knowledge resolution.",
+      "lane_heuristic": "confidential",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 45,
+      "current_period_contributors": [
+        "Pandey456",
+        "github-actions[bot]"
+      ],
+      "languages": {
+        "HTML": 107698,
+        "JavaScript": 34514,
+        "Solidity": 11848
+      }
+    },
+    {
+      "full_name": "PugarHuda/buta",
+      "class": "explicit-current",
+      "created_at": "2026-07-22T06:43:19Z",
+      "pushed_at": "2026-08-08T05:53:26Z",
+      "description": "Sealed-bid OTC desk on Flare Confidential Compute — the auctioneer itself cannot read the bids. Flare Summer Signal 2026.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 92,
+      "current_period_contributors": [
+        "PugarHuda"
+      ],
+      "languages": {
+        "Go": 373324,
+        "TypeScript": 182775,
+        "JavaScript": 100222,
+        "Shell": 99109,
+        "HTML": 79984,
+        "Solidity": 48144,
+        "CSS": 31249,
+        "Dockerfile": 5572
+      }
+    },
+    {
+      "full_name": "PugarHuda/undelayed",
+      "class": "explicit-current",
+      "created_at": "2026-07-28T12:43:42Z",
+      "pushed_at": "2026-08-08T05:53:28Z",
+      "description": "Predict when a FAssets direct minting actually executes — plus TagRail, a tagged-XRP merchant checkout on Flare's official MintingTagManager.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 58,
+      "current_period_contributors": [
+        "PugarHuda"
+      ],
+      "languages": {
+        "TypeScript": 144304,
+        "JavaScript": 128070,
+        "Solidity": 46324,
+        "HTML": 21546
+      }
+    },
+    {
+      "full_name": "Terese678/schoolsave-flare",
+      "class": "explicit-current",
+      "created_at": "2026-08-13T04:24:20Z",
+      "pushed_at": "2026-08-13T05:59:22Z",
+      "description": "Trustless school-fee savings vault, originally built for BOTChain, now extended with Flare FTSOv2 price feeds to show real-time USD-equivalent progress.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 27,
+      "current_period_contributors": [
+        "Terese678"
+      ],
+      "languages": {
+        "TypeScript": 57925,
+        "JavaScript": 46241,
+        "CSS": 12324,
+        "Solidity": 8130,
+        "HTML": 360
+      }
+    },
+    {
+      "full_name": "bolajiev/drip",
+      "class": "explicit-current",
+      "created_at": "2026-08-01T22:05:54Z",
+      "pushed_at": "2026-08-11T13:56:20Z",
+      "description": "DRIP — trustless XRP subscription streaming on Flare: one XRPL payment mints FXRP (FAssets v1.3 direct minting) into a Sablier-style stream. Coston2 demo.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 16,
+      "current_period_contributors": [
+        "drip@hackathon.dev"
+      ],
+      "languages": {
+        "Solidity": 104832,
+        "TypeScript": 90713,
+        "CSS": 3683,
+        "HTML": 909
+      }
+    },
+    {
+      "full_name": "danielamodu/Warden",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-10T22:13:24Z",
+      "pushed_at": "2026-08-13T08:04:32Z",
+      "description": "Warden is a self-releasing escrow for XRP that automatically pays out when a real-world condition is verified — and privately arbitrates disputes when it isn't.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": true,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 13,
+      "current_period_contributors": [
+        "danielamodu"
+      ],
+      "languages": {
+        "Go": 271106,
+        "TypeScript": 263514,
+        "JavaScript": 128531,
+        "Shell": 128224,
+        "Python": 38410,
+        "Solidity": 35192,
+        "Dockerfile": 22201,
+        "CSS": 12059,
+        "HTML": 1018
+      }
+    },
+    {
+      "full_name": "davre001/UMBRA",
+      "class": "explicit-current",
+      "created_at": "2026-07-28T11:34:02Z",
+      "pushed_at": "2026-08-12T21:16:51Z",
+      "description": "UMBRA is a next-generation decentralized dark pool built for the Flare Network. It bridges the gap between institutional-grade privacy and regulatory compliance by combining Flare's native infrastructure with modern cryptographic technologies.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 105,
+      "current_period_contributors": [
+        "Dami904",
+        "Mazwancreatives",
+        "Xyrelix",
+        "davre001"
+      ],
+      "languages": {
+        "TypeScript": 755993,
+        "Solidity": 703140,
+        "Noir": 92668,
+        "Shell": 14871,
+        "JavaScript": 6047,
+        "CSS": 2564
+      }
+    },
+    {
+      "full_name": "envexx/FlareOne",
+      "class": "explicit-current",
+      "created_at": "2026-08-12T18:21:25Z",
+      "pushed_at": "2026-08-12T18:27:11Z",
+      "description": "FlareOne is a non-custodial AI Command Center for Flare users. It unifies portfolio discovery, FAsset planning, verified Firelight yield entry, policy controls, and private notifications in one conversation. Live on Coston2 today, with Flare Mainnet execution as the next milestone.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 3,
+      "current_period_contributors": [
+        "everythingcode-1"
+      ],
+      "languages": {
+        "TypeScript": 357691,
+        "Solidity": 9074,
+        "CSS": 3877,
+        "JavaScript": 419
+      }
+    },
+    {
+      "full_name": "huangharen/xrpflow-flare",
+      "class": "explicit-current",
+      "created_at": "2026-07-12T17:21:50Z",
+      "pushed_at": "2026-07-13T03:09:25Z",
+      "description": "USD-denominated FXRP treasury payments powered by Flare FTSOv2",
+      "lane_heuristic": "interoperable",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 7,
+      "current_period_contributors": [
+        "huangharen"
+      ],
+      "languages": {
+        "TypeScript": 128209,
+        "CSS": 34886,
+        "Solidity": 10743,
+        "JavaScript": 2212
+      }
+    },
+    {
+      "full_name": "huzi0000/milestonex-flare",
+      "class": "explicit-current",
+      "created_at": "2026-08-04T11:45:23Z",
+      "pushed_at": "2026-08-07T09:49:08Z",
+      "description": "FXRP-powered milestone escrow for transparent cross-border project payments on Flare.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 50,
+      "current_period_contributors": [
+        "huzi0000"
+      ],
+      "languages": {
+        "TypeScript": 203412,
+        "CSS": 130065,
+        "Solidity": 16066,
+        "HTML": 3656,
+        "JavaScript": 1335
+      }
+    },
+    {
+      "full_name": "luongs3/flare-confidential-settle",
+      "class": "explicit-current",
+      "created_at": "2026-07-06T07:34:15Z",
+      "pushed_at": "2026-07-14T07:49:41Z",
+      "description": "Confidential Settlement: AML risk engine for agent payments as a Flare FCC TEE extension",
+      "lane_heuristic": "confidential",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": true,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 6,
+      "current_period_contributors": [
+        "luongs3"
+      ],
+      "languages": {
+        "Go": 240986,
+        "Shell": 51496,
+        "Solidity": 7189,
+        "Dockerfile": 4388
+      }
+    },
+    {
+      "full_name": "mashharuki/Flare-Summer-Signal-Hackathon-2026",
+      "class": "explicit-current",
+      "created_at": "2026-08-02T09:36:16Z",
+      "pushed_at": "2026-08-04T13:58:43Z",
+      "description": "This system allows you to use your crypto holdings as collateral without selling them.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 32,
+      "current_period_contributors": [
+        "mashharuki"
+      ],
+      "languages": {
+        "TypeScript": 396148,
+        "Solidity": 159913,
+        "HTML": 92844,
+        "Python": 89650,
+        "JavaScript": 87277,
+        "Shell": 18531,
+        "CSS": 8542
+      }
+    },
+    {
+      "full_name": "mystiquemide/jorqeth",
+      "class": "explicit-current",
+      "created_at": "2026-08-10T11:38:52Z",
+      "pushed_at": "2026-08-13T06:25:01Z",
+      "description": "Private commission settlement with exact payouts on Flare Coston2",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 58,
+      "current_period_contributors": [
+        "mystiquemide"
+      ],
+      "languages": {
+        "TypeScript": 191347,
+        "Solidity": 144304,
+        "JavaScript": 69131,
+        "CSS": 63116,
+        "Shell": 48102,
+        "HTML": 26167,
+        "Go": 18585,
+        "Dockerfile": 1894
+      }
+    },
+    {
+      "full_name": "pplmaverick/flare-prediction-market",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-25T13:22:25Z",
+      "pushed_at": "2026-08-10T15:58:07Z",
+      "description": "Confidential prediction market on Flare — bets ECIES-encrypted client-side, settled by TEE via FCC using live FTSO price feeds",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 34,
+      "current_period_contributors": [
+        "pplmaverick"
+      ],
+      "languages": {
+        "TypeScript": 231263,
+        "Solidity": 65088,
+        "CSS": 3744,
+        "JavaScript": 559
+      }
+    },
+    {
+      "full_name": "thesithunyein/cipher-sign",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-21T10:04:13Z",
+      "pushed_at": "2026-08-03T13:27:34Z",
+      "description": "Policy-gated payout vault on Flare TEE. Allowlist, spending limit, and expiry enforced in the enclave before any signature.",
+      "lane_heuristic": "dual",
+      "proof_score": 2,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 80,
+      "current_period_contributors": [
+        "thesithunyein"
+      ],
+      "languages": {
+        "Go": 230492,
+        "TypeScript": 107173,
+        "CSS": 28047,
+        "Shell": 27770,
+        "JavaScript": 18898,
+        "HTML": 18594,
+        "Solidity": 10643,
+        "Dockerfile": 4292
+      }
+    },
+    {
+      "full_name": "Bsh54/aegisflow",
+      "class": "explicit-current",
+      "created_at": "2026-07-21T19:17:17Z",
+      "pushed_at": "2026-08-05T22:37:18Z",
+      "description": "Confidential AML compliance firewall for FXRP inflows on Flare — Flare Summer Signal hackathon",
+      "lane_heuristic": "dual",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": true,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 33,
+      "current_period_contributors": [
+        "Bsh54"
+      ],
+      "languages": {
+        "TypeScript": 76621,
+        "Solidity": 17522,
+        "Python": 9251,
+        "JavaScript": 3463,
+        "CSS": 2463,
+        "Dockerfile": 362
+      }
+    },
+    {
+      "full_name": "Cubiczan/flareintel",
+      "class": "explicit-current",
+      "created_at": "2026-07-21T18:44:23Z",
+      "pushed_at": "2026-07-21T18:45:12Z",
+      "description": "FlareIntel — On-Chain Geopolitical & Financial Intelligence | Flare Summer Signal Hackathon",
+      "lane_heuristic": "interoperable",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 1,
+      "current_period_contributors": [
+        "z@container"
+      ],
+      "languages": {
+        "JavaScript": 66810,
+        "Solidity": 34213,
+        "Python": 12487,
+        "HTML": 1096
+      }
+    },
+    {
+      "full_name": "DiveshChauhan123/flare_",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-02T12:31:46Z",
+      "pushed_at": "2026-08-05T15:54:21Z",
+      "description": "A privacy-first payroll application for DAOs and Web3 organizations. Built on Flare Confidential Compute (FCC) to securely distribute native FLR without exposing individual salaries on-chain.",
+      "lane_heuristic": "confidential",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 6,
+      "current_period_contributors": [
+        "DiveshChauhan123"
+      ],
+      "languages": {
+        "JavaScript": 17868,
+        "CSS": 6460,
+        "Solidity": 2043,
+        "HTML": 360
+      }
+    },
+    {
+      "full_name": "EndPx/whisperdesk",
+      "class": "explicit-current",
+      "created_at": "2026-07-22T05:32:58Z",
+      "pushed_at": "2026-08-10T03:57:11Z",
+      "description": "WhisperDesk — private OTC desk for XRP<->FXRP block trades on Flare. TEE-sealed RFQ matching + FDC-proven DvP settlement. Flare Summer Signal hackathon.",
+      "lane_heuristic": "dual",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 111,
+      "current_period_contributors": [
+        "EndPx"
+      ],
+      "languages": {
+        "Solidity": 1128302,
+        "TypeScript": 505205,
+        "Go": 191932,
+        "JavaScript": 168535,
+        "Python": 17400,
+        "CSS": 6794,
+        "Shell": 3987,
+        "PowerShell": 3521
+      }
+    },
+    {
+      "full_name": "KingBeeee/cuddly-lamp",
+      "class": "strong-current-candidate",
+      "created_at": "2020-03-15T17:46:39Z",
+      "pushed_at": "2026-08-12T18:50:33Z",
+      "description": "Confidential off-chain credit scoring for under-collateralized DeFi lending, built on the Flare Network",
+      "lane_heuristic": "dual",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 9,
+      "current_period_contributors": [
+        "KingBeeee",
+        "root@3773.example.uk"
+      ],
+      "languages": {
+        "Python": 14762,
+        "HTML": 7133,
+        "Solidity": 1084
+      }
+    },
+    {
+      "full_name": "Theophilus20/flarecredit",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-05T03:24:14Z",
+      "pushed_at": "2026-08-07T08:04:37Z",
+      "description": "FlareCredit verifies your XRPL payment history with Flare's Data Connector, calculates your credit score inside a confidential enclave, and publishes only the score on chain. Your XRPL address and transaction history remain private. A score of 700 or higher reduces the collateral required for FXRP loans from 150% to 120%.",
+      "lane_heuristic": "dual",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 12,
+      "current_period_contributors": [
+        "Theophilus20"
+      ],
+      "languages": {
+        "HTML": 217753,
+        "Python": 53315,
+        "JavaScript": 45333,
+        "CSS": 36701,
+        "Go": 18300,
+        "Solidity": 13468,
+        "Dockerfile": 618
+      }
+    },
+    {
+      "full_name": "Webghost01-NG/flare-pulse-ai",
+      "class": "explicit-current",
+      "created_at": "2026-08-11T07:46:52Z",
+      "pushed_at": "2026-08-11T16:02:01Z",
+      "description": "FlarePulse AI: Autonomous Yield & Risk Sentinel powered by Flare Time Series Oracle (FTSOv2) on Coston2 Testnet for Flare Summer Signal Hackathon",
+      "lane_heuristic": "dual",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 28,
+      "current_period_contributors": [
+        "Webghost01-NG"
+      ],
+      "languages": {
+        "TypeScript": 62399,
+        "Solidity": 7725,
+        "CSS": 3421,
+        "JavaScript": 83
+      }
+    },
+    {
+      "full_name": "Webghost01-NG/relaypay",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-12T17:37:07Z",
+      "pushed_at": "2026-08-13T08:09:18Z",
+      "description": "RelayPay: Non-Custodial XRP Merchant Checkout & SDK on Flare EVM via FDC & FTSO v2",
+      "lane_heuristic": "interoperable",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 1,
+      "current_period_contributors": [
+        "Webghost01-NG"
+      ],
+      "languages": {
+        "Solidity": 1191
+      }
+    },
+    {
+      "full_name": "anoopbalan25-creator/proofvault",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-04T08:51:33Z",
+      "pushed_at": "2026-08-04T09:27:25Z",
+      "description": "Privacy first blockchain document verification platform built on Flare Coston2.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 2,
+      "current_period_contributors": [
+        "anoopbalan25-creator"
+      ],
+      "languages": {
+        "TypeScript": 72964,
+        "Solidity": 1322,
+        "CSS": 759,
+        "JavaScript": 537,
+        "HTML": 329
+      }
+    },
+    {
+      "full_name": "captainebru84-sudo/ward",
+      "class": "explicit-current",
+      "created_at": "2026-07-29T16:27:17Z",
+      "pushed_at": "2026-08-13T07:48:02Z",
+      "description": "AI DeFi copilot whose promises are enforced on-chain — TEE-attested Safety Envelopes on Flare",
+      "lane_heuristic": "confidential",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 13,
+      "current_period_contributors": [
+        "captainebru84-sudo"
+      ],
+      "languages": {
+        "TypeScript": 479142,
+        "Solidity": 276414,
+        "HTML": 66720,
+        "Python": 55358,
+        "JavaScript": 2047,
+        "Dockerfile": 780
+      }
+    },
+    {
+      "full_name": "cyberrockng/workproof",
+      "class": "explicit-current",
+      "created_at": "2026-08-10T13:11:18Z",
+      "pushed_at": "2026-08-12T23:33:39Z",
+      "description": "WorkProof — Flare Confidential Compute escrow for verifiable AI/human work (Flare Summer Signal hackathon)",
+      "lane_heuristic": "dual",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 42,
+      "current_period_contributors": [
+        "JakobOpresnik",
+        "Snojj25",
+        "cyberrockng",
+        "fassko"
+      ],
+      "languages": {
+        "Go": 356739,
+        "Solidity": 136339,
+        "Shell": 119825,
+        "TypeScript": 42742,
+        "Python": 38410,
+        "Dockerfile": 23629,
+        "JavaScript": 18568
+      }
+    },
+    {
+      "full_name": "holyaustin/PortalFX",
+      "class": "explicit-current",
+      "created_at": "2026-08-09T12:53:10Z",
+      "pushed_at": "2026-08-09T12:54:52Z",
+      "description": "One‑Click XRP to Yield – powered by Flare Smart Accounts v1.3.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": true,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 1,
+      "current_period_contributors": [
+        "holyaustin"
+      ],
+      "languages": {
+        "TypeScript": 33004,
+        "CSS": 2261,
+        "JavaScript": 116
+      }
+    },
+    {
+      "full_name": "onchaindc/RippleFi",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-27T03:06:25Z",
+      "pushed_at": "2026-08-10T19:38:21Z",
+      "description": "Earn and spend with XRP: deposit FXRP on Flare, earn yield, and keep the same balance liquid for everyday payments.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": true,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 65,
+      "current_period_contributors": [
+        "onchaindc"
+      ],
+      "languages": {
+        "TypeScript": 409765,
+        "Python": 63152,
+        "Solidity": 17899,
+        "CSS": 4745,
+        "PowerShell": 4283,
+        "JavaScript": 559,
+        "Dockerfile": 435
+      }
+    },
+    {
+      "full_name": "priyaraghavan23/flare-fee-dashboard",
+      "class": "explicit-current",
+      "created_at": "2026-07-31T12:07:20Z",
+      "pushed_at": "2026-07-31T13:05:18Z",
+      "description": "Cross-chain (ETH/Base/Flare/Songbird) USD gas fee dashboard priced 100% by Flare FTSO v2 on-chain getFeedById reads. Flare Summer Signal Bounty 1.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": true,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 9,
+      "current_period_contributors": [
+        "priyaraghavan23"
+      ],
+      "languages": {
+        "HTML": 15079,
+        "Python": 3305,
+        "Solidity": 1634
+      }
+    },
+    {
+      "full_name": "vibenedict/flavest",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-02T09:08:37Z",
+      "pushed_at": "2026-08-05T10:19:42Z",
+      "description": "Flavest — real-time Flare token-launch radar with an anti-rug Safety Engine (FTSOv2 + FDC)",
+      "lane_heuristic": "interoperable",
+      "proof_score": 1,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": true,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 8,
+      "current_period_contributors": [
+        "vibenedict"
+      ],
+      "languages": {
+        "TypeScript": 110917,
+        "CSS": 11765,
+        "JavaScript": 9636,
+        "Solidity": 3221
+      }
+    },
+    {
+      "full_name": "Alike001/fasset-sentry",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-12T22:58:11Z",
+      "pushed_at": "2026-08-12T23:06:27Z",
+      "description": "Permissionless FAssets challenger infrastructure for Flare",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 4,
+      "current_period_contributors": [
+        "Alike001"
+      ],
+      "languages": {}
+    },
+    {
+      "full_name": "Cassxbt/fxrp-dark-rfq",
+      "class": "explicit-current",
+      "created_at": "2026-08-13T04:47:48Z",
+      "pushed_at": "2026-08-13T07:45:08Z",
+      "description": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal/research/roster-audit/github/readmes/Cassxbt__fxrp-dark-rfq.md",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 10,
+      "current_period_contributors": [
+        "cassxbt@example.com"
+      ],
+      "languages": {
+        "Go": 263938,
+        "TypeScript": 68574,
+        "Shell": 55015,
+        "Solidity": 32467,
+        "Python": 32046,
+        "Dockerfile": 15860,
+        "JavaScript": 559,
+        "CSS": 488
+      }
+    },
+    {
+      "full_name": "Folawewo/flareshield",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-04T14:08:23Z",
+      "pushed_at": "2026-08-04T14:08:25Z",
+      "description": "FlareShield is an automated risk-managed yield vault built specifically for wrapped XRP (FXRP) holders on Flare",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 1,
+      "current_period_contributors": [
+        "Folawewo"
+      ],
+      "languages": {}
+    },
+    {
+      "full_name": "Hugegreencandle/fassets-verify",
+      "class": "explicit-current",
+      "created_at": "2026-07-19T01:01:03Z",
+      "pushed_at": "2026-08-13T06:32:27Z",
+      "description": "Independent dual-leg proof-of-solvency for Flare FAssets (FXRP), re-derived from raw Flare mainnet + XRP Ledger. No indexer, no oracle, no dashboard trusted. Flare Summer Signal.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 110,
+      "current_period_contributors": [
+        "Hugegreencandle",
+        "dane@kairovault.com",
+        "kvt-verifier@users.noreply.github.com"
+      ],
+      "languages": {
+        "Python": 77922,
+        "HTML": 31037,
+        "JavaScript": 15379,
+        "Makefile": 1626,
+        "Dockerfile": 715
+      }
+    },
+    {
+      "full_name": "Kenny-svg/flareramp",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-10T12:50:36Z",
+      "pushed_at": "2026-08-13T08:06:05Z",
+      "description": "Verifiable XRPL Testnet → Coston2 FXRP Core Vault direct-mint ramp: Check → Sign (Xaman) → Prove (FDC) → Mint.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 19,
+      "current_period_contributors": [
+        "ETIM-PAUL",
+        "Kenny-svg"
+      ],
+      "languages": {
+        "TypeScript": 418966,
+        "JavaScript": 1437,
+        "CSS": 184
+      }
+    },
+    {
+      "full_name": "Marvy247/Umbra-Protocol",
+      "class": "explicit-current",
+      "created_at": "2026-07-29T12:51:04Z",
+      "pushed_at": "2026-08-05T16:08:34Z",
+      "description": "Umbra Protocol enables privacy-preserving cross-chain asset transfers using Flare's Confidential Compute technology.",
+      "lane_heuristic": "dual",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 96,
+      "current_period_contributors": [
+        "Marvy247",
+        "dev@umbraprotocol.xyz"
+      ],
+      "languages": {
+        "TypeScript": 225887,
+        "Solidity": 54302,
+        "JavaScript": 8971,
+        "CSS": 7081
+      }
+    },
+    {
+      "full_name": "Milites-Christi/prv1311-flare-submission",
+      "class": "explicit-current",
+      "created_at": "2026-08-10T21:05:56Z",
+      "pushed_at": "2026-08-13T06:48:30Z",
+      "description": "Autonomous market-state interpretation engine — dual-engine A/B testing Coinbase vs Flare FTSOv2 pricing, with divergence anchored on-chain. Built for Flare Summer Signal.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 24,
+      "current_period_contributors": [
+        "Milites-Christi",
+        "sofeel"
+      ],
+      "languages": {
+        "Python": 659771,
+        "PowerShell": 48291,
+        "Solidity": 7482
+      }
+    },
+    {
+      "full_name": "Rasslonely/NexusXRP",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-31T10:59:21Z",
+      "pushed_at": "2026-08-12T08:11:07Z",
+      "description": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal/research/roster-audit/github/readmes/Rasslonely__NexusXRP.md",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 137,
+      "current_period_contributors": [
+        "Rasslonely"
+      ],
+      "languages": {
+        "TypeScript": 663562,
+        "Python": 314595,
+        "JavaScript": 53731,
+        "Solidity": 24390,
+        "Shell": 19215,
+        "CSS": 4990,
+        "Dockerfile": 3356
+      }
+    },
+    {
+      "full_name": "ShalyX/private-fxrp",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-05T00:41:38Z",
+      "pushed_at": "2026-08-10T20:36:22Z",
+      "description": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal/research/roster-audit/github/readmes/ShalyX__private-fxrp.md",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 14,
+      "current_period_contributors": [
+        "codex"
+      ],
+      "languages": {
+        "Go": 226344,
+        "JavaScript": 211370,
+        "Shell": 145073,
+        "TypeScript": 50681,
+        "Python": 38410,
+        "Solidity": 36156,
+        "CSS": 26014,
+        "Dockerfile": 23056,
+        "HTML": 510
+      }
+    },
+    {
+      "full_name": "argenestel/fxrproute",
+      "class": "explicit-current",
+      "created_at": "2026-08-10T08:32:54Z",
+      "pushed_at": "2026-08-10T09:33:34Z",
+      "description": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal/research/roster-audit/github/readmes/argenestel__fxrproute.md",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 5,
+      "current_period_contributors": [
+        "argenestel"
+      ],
+      "languages": {
+        "Solidity": 4107667,
+        "JavaScript": 1928919,
+        "Python": 44686,
+        "CSS": 31408,
+        "Shell": 10161,
+        "JSON5": 4119,
+        "Makefile": 1714,
+        "HTML": 548,
+        "Ruby": 211
+      }
+    },
+    {
+      "full_name": "davife2025/polycast",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-02T15:38:52Z",
+      "pushed_at": "2026-08-02T19:24:49Z",
+      "description": "decentralised prediction market powered my flare network protocol",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 7,
+      "current_period_contributors": [
+        "davife2025"
+      ],
+      "languages": {
+        "JavaScript": 6017650,
+        "TypeScript": 116397,
+        "Solidity": 31337,
+        "CSS": 351
+      }
+    },
+    {
+      "full_name": "hari-hara-sudharsan/XRPShield",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-08T05:31:15Z",
+      "pushed_at": "2026-08-13T06:12:14Z",
+      "description": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal/research/roster-audit/github/readmes/hari-hara-sudharsan__XRPShield.md",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 97,
+      "current_period_contributors": [
+        "Vendhan1512",
+        "sudharsanj008gmail.com"
+      ],
+      "languages": {
+        "HTML": 681956,
+        "Java": 554609,
+        "JavaScript": 482478,
+        "Solidity": 71755,
+        "CSS": 69692,
+        "PowerShell": 1246,
+        "Dockerfile": 849,
+        "Shell": 799
+      }
+    },
+    {
+      "full_name": "luongs3/flare-firegate",
+      "class": "explicit-current",
+      "created_at": "2026-07-06T07:30:03Z",
+      "pushed_at": "2026-08-07T03:01:58Z",
+      "description": "Firegate: trustless XRP checkout on Flare — FDC proof + FTSOv2 pricing + FXRP payout",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 3,
+      "current_period_contributors": [
+        "luongs3"
+      ],
+      "languages": {
+        "Solidity": 973144,
+        "JavaScript": 25053,
+        "TypeScript": 23510,
+        "Python": 17400
+      }
+    },
+    {
+      "full_name": "major101x/midpoint",
+      "class": "strong-current-candidate",
+      "created_at": "2026-08-09T00:08:54Z",
+      "pushed_at": "2026-08-10T11:35:08Z",
+      "description": "Sealed-bid batch auction venue for FXRP on Flare, with the matching engine running inside a TEE",
+      "lane_heuristic": "dual",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 58,
+      "current_period_contributors": [
+        "major101x"
+      ],
+      "languages": {
+        "Go": 224829,
+        "TypeScript": 180338,
+        "Solidity": 116801,
+        "Shell": 104981,
+        "Python": 38410,
+        "JavaScript": 37574,
+        "CSS": 32285,
+        "Dockerfile": 22201,
+        "HTML": 1199
+      }
+    },
+    {
+      "full_name": "martin-gedyk/paigold",
+      "class": "explicit-current",
+      "created_at": "2026-08-12T09:02:25Z",
+      "pushed_at": "2026-08-12T14:15:38Z",
+      "description": "Privacy-first point-of-sale for physical gold dealers — prices from our own Flare Mainnet oracles, every deal anchored on-chain without PII. Flare Summer Signal 2026.",
+      "lane_heuristic": "confidential",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 91,
+      "current_period_contributors": [
+        "Atmyown",
+        "martin-gedyk"
+      ],
+      "languages": {
+        "PHP": 694842,
+        "JavaScript": 642215,
+        "HTML": 208865,
+        "Solidity": 7318,
+        "PowerShell": 6174,
+        "CSS": 1998,
+        "Dockerfile": 889,
+        "Shell": 493
+      }
+    },
+    {
+      "full_name": "riush03/Veri",
+      "class": "strong-current-candidate",
+      "created_at": "2026-07-08T05:00:56Z",
+      "pushed_at": "2026-07-08T05:39:05Z",
+      "description": "Veri is a next-generation fintech dApp that democratizes access to FAssets on the Flare Network by providing a seamless, secure, and intuitive interface for managing FXRP tokens.",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 2,
+      "current_period_contributors": [
+        "Clean-earthw"
+      ],
+      "languages": {
+        "TypeScript": 173089,
+        "CSS": 4304,
+        "JavaScript": 559
+      }
+    },
+    {
+      "full_name": "seekdaseek/haircut",
+      "class": "explicit-current",
+      "created_at": "2026-08-05T19:17:36Z",
+      "pushed_at": "2026-08-05T21:18:55Z",
+      "description": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal/research/roster-audit/github/readmes/seekdaseek__haircut.md",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": false,
+        "limitation_disclosed": false
+      },
+      "current_period_commit_count": 6,
+      "current_period_contributors": [
+        "ochinimus@proton.me"
+      ],
+      "languages": {
+        "JavaScript": 76229,
+        "Solidity": 7291
+      }
+    },
+    {
+      "full_name": "sofiadaniellarossi-cmd/fxrp-vault",
+      "class": "explicit-current",
+      "created_at": "2026-08-01T09:55:49Z",
+      "pushed_at": "2026-08-02T11:55:40Z",
+      "description": "Vault de ahorro sobre FXRP con valor en vivo vía FTSO de Flare y envío por link recomendable, sin necesitar la dirección del receptor de antemano. Construido para el hackathon Flare Summer Signal (Track1- Interoperable Asset Products), sobre Coston2 testnet. ",
+      "lane_heuristic": "interoperable",
+      "proof_score": 0,
+      "evidence": {
+        "live_app": false,
+        "deployed": false,
+        "transaction_evidence": false,
+        "tests": false,
+        "video": false,
+        "mock_or_simulated": true,
+        "limitation_disclosed": true
+      },
+      "current_period_commit_count": 7,
+      "current_period_contributors": [
+        "sofiadaniellarossi-cmd"
+      ],
+      "languages": {
+        "HTML": 15620,
+        "Solidity": 4143,
+        "JavaScript": 1624
+      }
+    }
+  ],
+  "profile_recovered_repositories": [
+    {
+      "project": "SealedFlare",
+      "repository": "AnubisCrypto666/sealedflare",
+      "track": "dual",
+      "basis": "DoraHacks profile names sealed-bid FXRP auctions; README explicitly names Flare Summer Signal and Coston2."
+    },
+    {
+      "project": "StacksBit Flare",
+      "repository": "rogersterkaa/stacksBit-flare",
+      "track": "interoperable",
+      "basis": "DoraHacks profile says porting to Flare; README explicitly labels the Summer Signal submission and Coston2 deployment."
+    },
+    {
+      "project": "Balary",
+      "repository": "Sparexonzy95/balary",
+      "track": "confidential",
+      "basis": "DoraHacks profile disclosed Zalary; repository README identifies Balary as the renamed Summer Signal Bounty 2 deployment."
+    },
+    {
+      "project": "VeriFlow AI",
+      "repository": "Librapraise/veriflow-ai",
+      "track": "confidential",
+      "basis": "DoraHacks profile disclosed confidential identity work; README documents a live Coston2 proof product and honest simulated-TEE boundary."
+    }
+  ],
+  "profile_only_or_unlinked_signals": [
+    {
+      "project": "Denarii Orchestrator",
+      "dorahacks_username": "Denarii_DFI",
+      "github": "kashifbashir204-netizen",
+      "track": "interoperable",
+      "status": "profile-disclosed; no matching current public repository found"
+    },
+    {
+      "project": "FLEC Hub",
+      "dorahacks_username": "flareflec",
+      "github": "FlareFlec",
+      "track": "interoperable",
+      "status": "profile-disclosed; public docs repository exists but no event-specific repository evidence"
+    },
+    {
+      "project": "G1",
+      "dorahacks_username": "G1Flare",
+      "github": "sakalbills-source",
+      "track": "interoperable",
+      "status": "profile-disclosed; pre-event repository exists"
+    },
+    {
+      "project": "FlareGPT",
+      "dorahacks_username": "U_24cyg",
+      "github": "salemzii",
+      "track": "interoperable",
+      "status": "profile-disclosed; no matching current public repository found"
+    },
+    {
+      "project": "RebalanceKeeper FCC extension",
+      "dorahacks_username": "U_edd018189fe05e",
+      "github": "jnhualu-art",
+      "track": "confidential",
+      "status": "profile-disclosed extension; public repository still documents Ethereum KeeperHub version"
+    },
+    {
+      "project": "CAVOK",
+      "dorahacks_username": "cavok",
+      "github": null,
+      "track": "dual",
+      "status": "detailed profile disclosure; no GitHub link"
+    },
+    {
+      "project": "FlareClaw",
+      "dorahacks_username": "flarenetworkflr",
+      "github": null,
+      "track": "dual",
+      "status": "detailed profile disclosure; no GitHub link"
+    },
+    {
+      "project": "TEE-enforced agent authorization",
+      "dorahacks_username": "U_125e5c8f902ec2",
+      "github": "GreatSage-dev",
+      "track": "confidential",
+      "status": "profile-disclosed; no matching current public repository found"
+    }
+  ],
+  "exclusions": [
+    "FlareForward/ftso-accuracy-data",
+    "FlareForward/ftso-signal-providers",
+    "jnhualu-art/agent-builders-cup",
+    "mashharuki/flare-sample",
+    "pplmaverick/fce-extension-scaffold"
+  ],
+  "merged_variants": [
+    {
+      "project": "Sotto / Umbra",
+      "repositories": [
+        "fahmmin/sotto-flare",
+        "fahmmin/umbra-flare"
+      ],
+      "canonical": "fahmmin/sotto-flare"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "version": "1.1",
+  "hackathon_name": "Flare Summer Signal",
+  "project_name": "baton",
+  "winning_idea": "Baton — one XRPL signature drives a whole Flare DeFi portfolio (Smart Accounts atomic multi-call: FXRP + deploy across multiple vaults)",
+  "source": "warroom",
+  "status": "complete",
+  "current_phase": "complete",
+  "current_substep": null,
+  "phases_complete": ["phase-0", "phase-0b", "phase-1", "phase-1.5", "phase-2", "phase-2.5", "phase-3", "phase-3.5", "phase-4"],
+  "autonomous_mode": false,
+  "working_dir": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal",
+  "timestamps": { "started": "2026-08-13T21:30:00Z", "completed": "2026-08-13T22:40:00Z" },
+  "documents": {
+    "prd": "baton/PRD.md",
+    "architecture": "baton/ARCHITECTURE.md",
+    "architecture_sections_complete": ["overview","components","types","config","viem-registry","encoder","personal-account","status","positions-ftso","xrpl-signer","frontend","domain","submission-dir","multi-track","safety","config-ref","testing","deployment","addresses","internal-api","integration-map","build-order","config-files-seed"],
+    "implementation_plan": "baton/PLAN.md",
+    "mini_verdict": null,
+    "deep_research": "baton/SMART-ACCOUNTS-SPIKE.md"
+  },
+  "quality_scores": {
+    "prd": "6/6 metrics PASS",
+    "architecture": "6/6 inline metrics PASS + 4/4 cross-doc PASS; post-review adversarial audit fixed 3 BLOCKERs + 5 HIGH (app would not have run as first written)",
+    "implementation_plan": "7/7 metrics PASS",
+    "cross_doc_audit": "PASS; THESIS-1..5 all PASS; review-and-fix pass applied before handoff"
+  },
+  "corrections": [
+    "REVIEW+FIX PASS (2 independent agents + self): fixed 3 BLOCKERs + 5 HIGH before handoff.",
+    "BLOCKER: status falsely reported 'executed' (baselineNonce field never returned; contract-account nonce doesn't bump on CALL) → rewrote to LOG-BASED detection (scan vault deposit logs for receiver since sign-block); status route now baseline(sinceBlock)+poll two-call contract.",
+    "BLOCKER: buildCalls emitted deposit() with no ERC-20 approve → every atomic deposit would revert → buildCalls now async, resolves FXRP via registry, reads FXRP decimals() at runtime, emits [approve, deposit] per leg.",
+    "BLOCKER: getFeedById is payable (reverts via readContract) → switched to free getFeedByIdView; valuation decoupled from balances so positions render if FTSO down.",
+    "HIGH: /proof force-static read proof.md at build (before it exists) → force-dynamic + nodejs runtime.",
+    "HIGH: dropped Vercel (no Python for the encode CLI) → added Node+Python Dockerfile for Railway/Fly.",
+    "HIGH: added parseBridgeOutput CLI output adapter with shape assertions (no silent undefined into XRPL Payment).",
+    "HIGH: FXRP decimals read at runtime, not hardcoded 6.",
+    "FEATURE-COMPLETE (standing feedback): frontend upgraded from inline-style stub → design-token system (lib/theme.ts + globals.css), always-populated landing (server-rendered ContrastHero + real prior-run receipt), server component + client island, /api/price route, funding-guard failure state, error-handled fetches, single-flight submit guard."
+  ],
+  "tech_stack": {
+    "family": "Full-Stack Web (Next.js) + Backend CLI subprocess",
+    "additional_modules": ["viem Coston2 reads", "xrpl.js browser signer", "smart-accounts-cli (Python) encoder"],
+    "languages": ["TypeScript"],
+    "frameworks": ["Next.js", "viem", "xrpl.js", "zod"],
+    "deploy_target": "Coston2 (chainId 114) + XRPL Testnet; app on Node+Python host"
+  },
+  "timeline": { "hours_remaining": 22, "scope_mode": "emergency" },
+  "scope_mode": "emergency",
+  "project_type": "full-stack",
+  "project_type_rationale": "Next.js app + API routes + external live contracts; no custom Solidity, no autonomous loop. User flows (create wallet, sign, dashboard) present.",
+  "thesis": "WINNER-BRIEF.md ## Thesis (6 fields, provisional) — locked; all documents checked against it (THESIS-1..5 PASS)",
+  "technical_spike": {
+    "needed": true,
+    "verified_patterns": [
+      "MasterAccountController 0x434936d47503353f06750Db1A444DBDC5F0AD37c live Coston2",
+      "Operator/executor 0x103b384064ae85577127097A7cCadfd6fb13f437 — 52,581 txs, funded (we use it, don't build it)",
+      "Provider XRPL wallet rEyj8nsHLdgt79KJWzXR5BgF7ZbaohbXwq",
+      "4 vaults: 0xD913…,0x9E63…,0x4066… (Upshift), 0xC90D… (Firelight)",
+      "Minting agent vault 0x55c815260cBE6c45Fe5bFe5FF32E3C7D746f14dC (real FXRP direct-mint)",
+      "FTestXRP faucet-available on Coston2 (depth-7, no agent/collateral) — TECHNICAL-SPIKE-FDC",
+      "Reference impl: flare-foundation/smart-accounts-cli (encode/bridge/mint + custom Call[])"
+    ],
+    "unverified_patterns": ["exact CLI subcommand flags (pinned in Task-0)", "vault deposit signatures per type (Task 2.1)", "FTSO getFeedById fee/feed-id (Task 3.2)", "PersonalAccount getter name (Task 1.2)"],
+    "assumed_patterns": ["funded end-to-end run = build Task-0 go/no-go"]
+  },
+  "build_gates": {
+    "task_0": "Funded XRPL-testnet e2e: reference CLI encode|bridge instruction confirms live operator executes on Coston2. PASS→continue; FAIL→FDC-Payment checkout.",
+    "gate_1": "Real FXRP direct-mint works → depth-8; else faucet FTestXRP → depth-7 (BATON_DEPTH env)."
+  },
+  "feature_observables": "baton/FEATURE-OBSERVABLES.md",
+  "artifacts": {
+    "prd_path": "baton/PRD.md",
+    "architecture_path": "baton/ARCHITECTURE.md",
+    "plan_path": "baton/PLAN.md",
+    "env_example_path": ".env.example",
+    "feature_observables_path": "baton/FEATURE-OBSERVABLES.md"
+  },
+  "errors": []
+}
