@@ -1,0 +1,21 @@
+{
+  "project": "Baton",
+  "currentPhase": "phase-0",
+  "currentStep": "0.1",
+  "currentSubStep": "0.1.a",
+  "status": "in-progress",
+  "autonomous_mode": true,
+  "expected_phases": ["phase-0", "phase-1", "phase-2", "phase-3", "phase-4", "phase-5", "phase-6"],
+  "completedSteps": [],
+  "fileGroups": {},
+  "deviations": [],
+  "phaseExecutors": {},
+  "contractAddresses": {},
+  "env": {},
+  "devPort": 3000,
+  "depsVerified": false,
+  "verification_commands": [],
+  "screenshot_paths": [],
+  "context_percentage": 0,
+  "timestamp": "2026-08-13T23:07:00Z"
+}

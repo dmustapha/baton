@@ -1,6 +1,6 @@
 # Project Pulse: Flare Summer Signal
 > Rolling context. Every skill reads on entry, appends on exit.
-> Last updated: 2026-08-13T14:48:27Z by hackathon-warroom
+> Last updated: 2026-08-13T23:58:00Z by hackathon-critique
 
 ## Active Facts
 | Fact ID | Skill | What Changed | Old → New |
@@ -360,3 +360,35 @@
 #### For Next Skills (url_preverify, critique — via conductor in a NEW chat)
 - The two remaining "will-it-run" unknowns are still chain-facts to pin during BUILD, not planning gaps: exact CLI flags/stdout (Task 0.1), FTSO view getter name + FXRP registry name (Task 1.3/3.2), vault deposit signatures (Task 2.1). All have decision trees.
 - Do NOT advance conductor from THIS chat. Handoff snapshot drives the new chat.
+
+---
+### critique — 2026-08-13T23:58:00Z
+**Status:** COMPLETE (adversarial planning-stage critique, fresh context)
+**Session(s):** 1 (Baton, autonomous — no Telegram)
+
+#### Verdict
+- **Positioning: differentiated · Narrative: compelling · Win-probability index: 74/100.** A real top-2 contender for Interoperable Asset *if* Task-0 passes and atomicity is made judge-visible.
+
+#### Active Facts
+- [CR1] Baton **escapes the "simple FXRP vault" kill-list** on mechanism: the differentiator is the atomic multi-vault `executeUserOp(Call[])` (composition primitive), not the vaults. Verified against the HIGH-threat registry — no competitor (Wayafee/Haircut/Backstop/Heirloom/Faktura/fassets-verify) occupies the atomic-multicall-from-one-XRPL-signature mechanism. Escape must be *shown* (E-3), not asserted.
+- [CR2] Flare depth: **deep on Smart Accounts (the moat), moderate on FAssets + FDC, honestly-surface on FTSO.** Remove-Flare test passes decisively (impossible on any non-Flare EVM chain). FDC is consumed *through* the operator (not a first-party call) — honest but should be pre-empted (E-2). depth-7 fallback silently degrades FAssets from mint-lifecycle to pre-funded balance → real score loss (E-1).
+
+#### Two BLOCKERs (surfaced, non-halting — build-time de-risk)
+- **BLOCKER-1:** whole thesis rides one un-run assumption (Task-0 operator executes custom `Call[]`); documented fallback (plain FDC checkout) = bottom-quartile "simple FXRP utility." Mitigation: fail-fast hr-2 + **E-5** (better fallback = single-vault Smart-Accounts `Call[]`). Deferred to build judgment.
+- **BLOCKER-2:** atomicity is the thesis but is narrated, not shown. **Addressed by E-3 (applied)** — Scene 4 now holds on the explorer internal-calls view of one tx with two deposits + proof.md annotation.
+
+#### Elevations (5 proposed; 3 applied, 2 deferred)
+- [AUTO] Approved E-2, E-3, E-4 (all quick/none-risk) — applied to PRD.md + PLAN.md. No Telegram; autonomous default.
+- **Deferred E-1** (keep depth-8, timeboxed evidenced Gate-1 — medium effort) and **E-5** (upgrade Task-0 fallback to single-vault `Call[]` — medium effort/medium risk). Both `compatible` thesis-impact; left as build-time judgment calls, noted in PLAN Task 1.3/5.2 (E-1) — E-5 recorded in CRITIQUE-REPORT/state only, NOT yet in PLAN (owner: build, if Task-0 partially passes).
+
+#### Thesis / observables integrity
+- THESIS-1..5 re-gate PASS on edited docs (all INVARIANTS a–e hold; no amendment required). No FEATURE-OBSERVABLE broken — E-3 strengthens F-001/F-003 judge-visibility. Edits additive → PLAN↔PRD coverage + Architecture Quality metrics 1/5 unchanged.
+
+#### For Next Skill (url_preverify / build)
+- Build MUST start at PLAN Phase 0 (Task-0 go/no-go) — it is BLOCKER-1. If Task-0 partially passes (operator runs a length-1 `Call[]` but not multi-call), implement **E-5** before dropping to plain FDC checkout.
+- Land the **E-3** wow beat in the demo (explorer one-tx-two-deposits) — it is the single fact that proves the "not a simple vault" claim.
+- Reconsider **E-1** at Gate-1: fight for depth-8; if depth-7, record the exact blocker.
+
+#### Downstream Items
+- [DS-CR1] owner: build — evaluate E-5 (single-vault `Call[]` fallback) at Task-0 if multi-call fails but a simpler instruction executes. P2. OPEN.
+- [DS-CR2] owner: demo — execute E-3 explorer internal-calls wow beat. P1. OPEN.
