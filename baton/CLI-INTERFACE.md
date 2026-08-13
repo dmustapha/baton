@@ -40,3 +40,10 @@ ARCHITECTURE §6 assumed one-shot `encode custom-instruction --calls <json>`. **
 - vaults: id 4 `0xD913…` (Upshift, Vault A) · id 1 `0xC90D…` (Firelight, Vault B) · id 2 `0x9E63…` · id 3 `0x4066…` (Upshift)
 - lot size 10,000,000 UBA · assetMintingDecimals 6 → **1 lot = 10 testXRP** · CR fee(1 lot) ≈ 1.68 FLR ≈ 10,007 drops · asset symbol `testXRP` · not emergency-paused
 - demo PersonalAccount (for `rwLtfA6c…`): `0x27fBb63780AB83aE7CEcd69291AAbb0A769071f7`
+
+## PINNED CHAIN-FACTS (build Task 0.1/1 probes — reconcile ARCHITECTURE against these)
+- **Registry** (`getContractAddressByName`): `FtsoV2`=`0xC4e9c78EA53db782E28f28Fdf80BaF59336B304d`, `AssetManagerFXRP`=`0xc1Ca88b937d0b528842F95d5731ffB586f4fbDFA`, `MasterAccountController`=`0x434936d47503353f06750Db1A444DBDC5F0AD37c`. **There is NO `FXRP` name** (DEV-003).
+- **FXRP token** = `AssetManagerFXRP.fAsset()` → `0x0b6A3645c240605887a5532109323A3E12273dc7`, `decimals()` = **6**.
+- **FTSO getter (DEV-004):** use **`getFeedById(bytes21 feedId)`** — it returns `(uint256 value,int8 decimals,uint64 ts)` via `eth_call` (works read-only). ARCHITECTURE §9's `getFeedByIdView` **REVERTS ("no data")** — do NOT use it. XRP/USD feed id `0x015852502f55534400000000000000000000000000`.
+- **PersonalAccount getter:** `MasterAccountController.getPersonalAccount(string xrplAddress)` → the PersonalAccount EVM address (demo `rwLtfA6c…` → `0x27fBb63780AB83aE7CEcd69291AAbb0A769071f7`). Not `getAccountAddress`.
+- **Vaults expose ERC-4626-ish**; confirm exact `deposit` signature per vault in Phase 2 via the CLI's `clients/flare/upshift.py` + `firelight.py` (authoritative) before encoding deposit legs.
