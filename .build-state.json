@@ -1,21 +1,42 @@
 {
   "project": "Baton",
-  "currentPhase": "phase-0",
-  "currentStep": "0.1",
-  "currentSubStep": "0.1.a",
+  "currentPhase": "phase-1",
+  "currentStep": "1.1",
+  "currentSubStep": "1.1.a",
   "status": "in-progress",
   "autonomous_mode": true,
   "expected_phases": ["phase-0", "phase-1", "phase-2", "phase-3", "phase-4", "phase-5", "phase-6"],
-  "completedSteps": [],
-  "fileGroups": {},
-  "deviations": [],
-  "phaseExecutors": {},
+  "completedSteps": ["0.1", "0.2"],
+  "fileGroups": {
+    "0.1": { "files": ["baton/CLI-INTERFACE.md", ".env"], "written": true, "verified": true },
+    "0.2": { "files": ["scripts/task0-e2e.mjs", "submission/proof.md"], "written": true, "verified": true }
+  },
+  "deviations": [
+    { "step": "0.1", "id": "DEV-001", "description": "CLI entry is smart_accounts.py (not -m smart_accounts_cli); python must be repo venv (3.12)", "reason": "module path was an assumption; system python 3.14 lacks web3 wheels", "class": "COSMETIC", "impact": "none — .env fixed" },
+    { "step": "0.2", "id": "DEV-002", "description": "custom Call[] needs `custom register` (Flare infra tx→call-hash) then `encode custom-instruction -c <hash>`, not one-shot --calls", "reason": "real CLI references registered Call[] by hash", "class": "DEGRADED", "impact": "Phase 1/2 encode.ts adds register step + backend FLR infra key; user path still XRPL-only" }
+  ],
+  "phaseExecutors": { "phase-0": "inline" },
   "contractAddresses": {},
-  "env": {},
+  "env": {
+    "BATON_DEPTH": "depth-8",
+    "DEMO_PERSONAL_ACCOUNT": "0x27fBb63780AB83aE7CEcd69291AAbb0A769071f7",
+    "FXRP_TOKEN": "0x0b6A3645c240605887a5532109323A3E12273dc7"
+  },
   "devPort": 3000,
   "depsVerified": false,
+  "task0": {
+    "verdict": "GO",
+    "depth": "depth-8",
+    "cli_commit": "c8809b94bcda3d0855ca762707f54483a9181e9d",
+    "xrpl_cr_tx": "7EC5DFA71A7D851C534D043CC822FAF278A9C57930A5B1D89083B7CD32D57CAB",
+    "coston2_reserve_tx": "0x97730bfc760e38cfba0ceaf12243f0e23b0805ecb6ffcd7aba8bf77bc95f57d9",
+    "xrpl_mint_tx": "F4EEDF56C8CED1D4BA6EB4F5873CEED2D6F3249D4BF52B1231636885E9FF43F9",
+    "coston2_mint_tx": "0x0c33940aab2058c01bfaa1b4cb78f89479ad267c0e43445870648f673af38707",
+    "fxrp_minted": "10.0",
+    "personal_account": "0x27fBb63780AB83aE7CEcd69291AAbb0A769071f7"
+  },
   "verification_commands": [],
   "screenshot_paths": [],
   "context_percentage": 0,
-  "timestamp": "2026-08-13T23:07:00Z"
+  "timestamp": "2026-08-13T22:20:00Z"
 }
