@@ -40,3 +40,9 @@ FOR[Dami].md
 baton/CRITIQUE-REPORT.md
 baton/concerns.md
 docs/plans/
+
+# video build artifacts (keep source in video/src + final mp4s in submission/)
+video/node_modules/
+video/out/
+video/public/audio/
+video/public/img/
