@@ -1,5 +1,24 @@
-{ "version": 3, "status": "complete", "currentPhase": "logo_forge",
+{
+  "version": 3,
+  "status": "complete",
+  "currentPhase": "logo_forge",
   "note": "logo_forge only (app already built+deployed; formalize/refine not re-run)",
-  "logo_forge": { "variantsGenerated": 3, "selectedVariant": "logo-v3 (B monogram) [AUTO — legibility + consistency with app/video]",
-    "finals": ["brand/logo.svg","brand/logo-icon-1024.png","brand/logo-lockup.png","brand/og-banner.png","brand/favicon-32.png","app/icon.png","app/opengraph-image.png"] },
-  "artifacts": { "brandJson": "brand.json", "logo": "brand/logo.svg" } }
+  "logo_forge": {
+    "variantsGenerated": 3,
+    "selectedVariant": "logomark (orchestration fan) — one node fanning to three vaults; distinctive + describes the product",
+    "finals": [
+      "brand/logo.svg",
+      "brand/logo-icon-1024.png",
+      "brand/logo-lockup.png",
+      "brand/og-banner.png",
+      "brand/favicon-32.png",
+      "app/icon.png",
+      "app/opengraph-image.png"
+    ],
+    "note": "followed logo-1..5: brief, 3 typed variants (logomark/wordmark/combination), multi-context mockups, selection, refine"
+  },
+  "artifacts": {
+    "brandJson": "brand.json",
+    "logo": "brand/logo.svg"
+  }
+}

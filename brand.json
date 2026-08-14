@@ -5,11 +5,31 @@
   "brandColor": "#2f7bff",
   "accent": "#2f7bff",
   "accent2": "#ff5a3c",
-  "ink": ["#0a0e1a", "#111726", "#171f33", "#232c44", "#eef2fb"],
-  "semantic": { "success": "#35d09a", "warning": "#ffb84d", "danger": "#ff5a3c" },
-  "fonts": { "display": "Space Grotesk", "body": "Space Grotesk", "mono": "JetBrains Mono" },
-  "radii": { "sm": 10, "md": 14, "lg": 22, "xl": 44 },
+  "ink": [
+    "#0a0e1a",
+    "#111726",
+    "#171f33",
+    "#232c44",
+    "#eef2fb"
+  ],
+  "semantic": {
+    "success": "#35d09a",
+    "warning": "#ffb84d",
+    "danger": "#ff5a3c"
+  },
+  "fonts": {
+    "display": "Space Grotesk",
+    "body": "Space Grotesk",
+    "mono": "JetBrains Mono"
+  },
+  "radii": {
+    "sm": 10,
+    "md": 14,
+    "lg": 22,
+    "xl": 44
+  },
   "shadowPhilosophy": "pure-glow",
-  "signatureElement": "Rounded-square B mark with a blue-to-ember diagonal gradient (XRP handed off to Flare)",
-  "logoPath": "brand/logo.svg"
+  "signatureElement": "Orchestration mark: one origin node fanning into three vault nodes (one XRPL signature distributing a Flare portfolio), blue-to-ember gradient",
+  "logoPath": "brand/logo.svg",
+  "logoConcept": "baton = orchestration; one signature -> multi-vault portfolio"
 }
