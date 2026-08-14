@@ -50,9 +50,8 @@ export const Problem: React.FC = () => {
           })}
         </div>
 
-        <div style={{ opacity: footOp, marginTop: 34, textAlign: "center" }}>
-          <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 40, color: COLORS.accent2 }}>Five steps. Two chains.</div>
-          <div style={{ fontFamily: BODY, fontSize: 26, color: COLORS.inkDim, marginTop: 6 }}>Most people quit before they finish.</div>
+        <div style={{ opacity: footOp, marginTop: 36, textAlign: "center" }}>
+          <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 44, color: COLORS.accent2 }}>Five steps. Two chains.</div>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

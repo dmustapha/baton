@@ -30,11 +30,11 @@ export const ORBS = [
 // Scene durations — driven by the real ElevenLabs audio length + tail (no narration is ever cut).
 // audio(s): hook 9.38, problem 16.25, howitworks 21.41, app 24.71, proof 27.82, close 6.73
 export const SCENE_DURATIONS = {
-  hook: 305,
+  hook: 280,
   problem: 511,
   howitworks: 666,
   app: 765,
-  proof: 862,
+  proof: 815,
   close: 238,
 } as const;
 
