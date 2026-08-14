@@ -37,8 +37,26 @@ The FAssets primitive is genuinely load-bearing — not a faucet-prefunded balan
 
 Instruction encoded (fxrp-cr, 1 lot, agent 1, wallet 248): `0x00f8000000000000000000010001000000000000000000000000000000000000`
 
-## Phase 2 — Atomic multi-vault deposit (the differentiator)
-_pending — one XRPL signature → one atomic Coston2 tx → two vault balances > 0._
+## Thesis note (build finding)
+The SDK's `custom-instruction` (atomic multi-vault Call[]) primitive is **not deployed** on Coston2
+(diamond `FunctionNotFound` for `encodeCustomInstruction`; verified on prod + staging MACs, 60
+selectors each). Baton's thesis is therefore the live, operator-executed primitive: **one XRPL
+signature → mint FXRP + deposit into a live Flare yield vault** — the XRP-to-productive-Flare
+on-ramp, no EVM wallet and no FLR gas in the user path. A strategy picker (Upshift / Firelight)
+gives product depth; each strategy is one signed instruction.
+
+## Phase 2 — One signature → live Flare yield-vault position (PROVEN)
+XRP holder `rwLtfA6c…` deposits into the **Upshift** vault (`0xD91324A6…`) via `upshift-cr-deposit`
+(mint FXRP + deposit, operator-executed). Result: **10.0 vault shares** minted to the PersonalAccount.
+
+| Step | Chain | Tx |
+|---|---|---|
+| CR request (user signs) | XRPL | `D59E90269946E7F3A87B90727C52DE32F24FD85360F49573149A144D687E6E27` |
+| Mint payment (user signs) | XRPL | `BC7CCD19801E267DBF828090BCCFDF34999EFD27FC50B5777E904BD53EAB87D6` |
+| Operator mint + vault deposit | Coston2 | `0x5f4766e1bb83c34363d67f289e4ffdab0d8dd3c0903cea0b9d2c10df1c2ed6cb` (block 34033370) → **10.0 Upshift shares** |
+
+Instruction (upshift-cr-deposit, 1 lot, agent 1, vault 4, wallet 248): `0x20f8000000000000000000010001000400000000000000000000000000000000`
+No EVM wallet, no FLR gas used by the user path (INVARIANT a holds).
 
 ## FTSO valuation
 _pending — live XRP/USD from FtsoV2._
