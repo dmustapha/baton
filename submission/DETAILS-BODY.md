@@ -1,91 +1,66 @@
-# Baton
+**Your XRP just sits there. Baton puts it to work on Flare, from the wallet you already own.**
 
-## Your XRP, working on Flare. In one signature.
-
-Baton turns idle XRP into a live, yield-bearing Flare position with a single signature from the XRPL
-wallet you already have. No EVM wallet. No FLR gas. No manual bridge. You sign on the XRP Ledger, and
-Flare's Smart Accounts operator mints FXRP and deposits it into a live Flare yield vault for you,
-while you keep custody of your key.
+Flare Summer Signal · Interoperable Asset Products
 
 ## The problem
 
-An XRP holder who wants yield on Flare today faces five unfamiliar steps across two chains: bridge or
-mint FXRP, create and fund an EVM wallet, hold FLR for gas, pick a vault, approve, and deposit. That
-friction is why most XRP never reaches Flare DeFi at all. The asset is interoperable on paper, but the
-user experience is not.
+An XRP holder who wants yield on Flare today has to cross two chains and five unfamiliar steps: bridge or mint a wrapped asset, create and fund an EVM wallet, buy that chain's gas token, approve a contract, and only then deposit. The asset is **interoperable on paper, but the user experience is not**. Most XRP never makes the trip, so it sits idle.
 
 ## The solution
 
-Baton collapses those five steps into one signature. It uses Flare Smart Accounts, where every XRPL
-address maps to a deterministic PersonalAccount contract on Flare and a hosted operator executes
-instructions carried in an XRPL payment memo. Baton composes the instruction that mints FXRP through
-FAssets and deposits it into a live yield vault. The user's only action is signing one payment from
-their XRP wallet. The operator does the Flare work and pays the Flare gas. Custody stays with the
-XRPL key.
+Baton collapses those five steps into a single action from the wallet the user already has. It uses **Flare Smart Accounts**, where every XRPL address maps to a deterministic PersonalAccount contract on Flare and a hosted operator executes instructions carried in an XRPL payment memo. Baton composes the instruction that **mints real FXRP through FAssets and deposits it into a live Flare yield vault**. The user signs from their XRP Ledger wallet, the operator does the on-chain work and pays the Flare gas, and custody stays with the XRPL key. Baton deploys **no custom Solidity**: it reuses live Flare infrastructure end to end.
 
-## How it works
+## How It Works
 
-You sign one XRPL payment whose memo carries the encoded instruction. Flare's operator, a live EOA at
-0x103b384064ae85577127097A7cCadfd6fb13f437 with more than fifty thousand executed transactions, picks
-it up, runs the FAssets collateral reservation, mints FXRP, and deposits it into your chosen vault on
-your Flare PersonalAccount. Baton reads the result live and shows an honest status: signed, reserved,
-minting, deposited. The valuation is pulled from FTSOv2 in real time.
+**1. Sign from your XRP Ledger wallet.** You send one XRPL payment whose memo carries the encoded instruction. No EVM wallet, no FLR gas.
 
-## Features
+**2. The Flare operator picks it up.** Flare's live hosted operator (`0x103b38…f437`, more than 50,000 executed transactions) reads the memo.
 
-Single signature deposit with a strategy picker for the Upshift and Firelight vaults. An honest live
-status strip that reflects the real operator FDC round instead of a fake spinner. A live portfolio
-that converts real vault shares to FXRP and values them through FTSOv2. An on chain proof route with
-explorer links to every real transaction. Reproducible proof scripts. Baton deploys no custom
-Solidity and resolves every mutable protocol address through the Contract Registry at runtime.
+**3. FAssets mints real FXRP.** The operator runs the collateral reservation and mints FXRP to your deterministic PersonalAccount via `MasterAccountController.getPersonalAccount`.
 
-## Proof cluster (real, on chain, Coston2 chainId 114)
+**4. It deposits into a live vault.** In one Flare transaction (`executeDepositAfterMinting`), the FXRP lands in the Upshift or Firelight yield vault. Your position is now live.
 
-FXRP minted to the PersonalAccount, 10.0 FXRP:
-0x0c33940aab2058c01bfaa1b4cb78f89479ad267c0e43445870648f673af38707
+**5. Baton reads it back, live.** Balances come straight from the vault, valued in real time through `FtsoV2.getFeedById`, decoupled so your balance still renders if the price feed goes quiet.
 
-One signature deposit resulting in 10.0 Upshift vault shares:
-0x5f4766e1bb83c34363d67f289e4ffdab0d8dd3c0903cea0b9d2c10df1c2ed6cb
+## Key Features
 
-Operator collateral reservation:
-0x97730bfc760e38cfba0ceaf12243f0e23b0805ecb6ffcd7aba8bf77bc95f57d9
+- **One signing flow, no EVM tooling:** sign on the XRP Ledger, keep custody, pay zero FLR gas.
+- **Real FAssets lifecycle:** FXRP is genuinely minted through the collateral reservation flow, not faucet-funded.
+- **Strategy picker:** allocate to the Upshift (lending) or Firelight (strategy) vault.
+- **Honest live status:** the status strip reflects the real operator FDC round, not a fake spinner.
+- **Live FTSO valuation:** positions are priced through Flare's FTSOv2 oracle, decoupled from balance reads.
+- **Nothing hardcoded:** every mutable protocol address resolves through the Contract Registry at runtime.
 
-PersonalAccount for the demo XRPL wallet rwLtfA6cn57VYjzaDetfCQi2z4cDgeNi8b:
-0x27fBb63780AB83aE7CEcd69291AAbb0A769071f7
+## Live Now
 
-## Stack
+- **Live app:** https://baton-flare.onrender.com (free tier, first load may cold start for about 30 seconds)
+- **Repository:** https://github.com/dmustapha/baton
+- **Real on-chain proof (Coston2, chainId 114):** one XRPL-driven flow minted `10 FXRP` and deposited it into the Upshift vault in a single Flare transaction.
+- **Deposit transaction:** `0x5f4766e1bb83c34363d67f289e4ffdab0d8dd3c0903cea0b9d2c10df1c2ed6cb` (method `executeDepositAfterMinting`, 10 FXRP into the vault)
+- **Mint transaction:** `0x0c33940aab2058c01bfaa1b4cb78f89479ad267c0e43445870648f673af38707` (10 FXRP minted to the PersonalAccount)
+- **In-app proof route:** the `/proof` page links every real transaction to the explorer.
 
-Next.js 15 and viem for a typed Flare integration layer. The Flare smart-accounts-cli, pinned at
-commit c8809b94, as the encoding and bridge authority, called as a Python subprocess. FAssets for the
-real FXRP mint. Flare Smart Accounts for XRPL authorized execution. FTSOv2 for live valuation. The app
-ships as a Node plus Python Docker image so the encode path runs anywhere.
+## Tech Stack
 
-## Contracts (reused live infrastructure, Coston2 chainId 114)
+`Next.js 15` · `viem` (Coston2) · `Flare Smart Accounts` · `FAssets / FXRP` · `FTSOv2` · `Contract Registry` · the pinned Python `smart-accounts-cli` as the encode and bridge authority (subprocess) · `Node + Python` Docker on Render.
 
-MasterAccountController: 0x434936d47503353f06750Db1A444DBDC5F0AD37c
-Hosted operator EOA: 0x103b384064ae85577127097A7cCadfd6fb13f437
-FXRP token: 0x0b6A3645c240605887a5532109323A3E12273dc7
-Upshift vault: 0xD91324A6e8884147F6425E9ddd60e11Aea060B5b
-Firelight vault: 0xC90D6847747b85d1fa2E07859869fb9fB72c0361
-Contract Registry: 0xaD67FE66660Fb8dFE9d6b1b4240d8650e30F6019
+## Reused live infrastructure (Coston2, chainId 114)
 
-## Alignment with the track
+- **MasterAccountController:** `0x434936d47503353f06750Db1A444DBDC5F0AD37c`
+- **Hosted operator (EOA):** `0x103b384064ae85577127097A7cCadfd6fb13f437`
+- **FXRP (FAsset) token:** `0x0b6A3645c240605887a5532109323A3E12273dc7`
+- **Upshift vault:** `0xD91324A6e8884147F6425E9ddd60e11Aea060B5b`
+- **Firelight vault:** `0xC90D6847747b85d1fa2E07859869fb9fB72c0361`
+- **Contract Registry:** `0xaD67FE66660Fb8dFE9d6b1b4240d8650e30F6019`
 
-Interoperable Asset Products asks for products that make assets more useful across Flare and connected
-ecosystems. Baton takes XRP, an asset that lives on another chain, and makes it productive on Flare
-with the lowest possible friction, using the FAssets lifecycle as the load bearing integration and
-Smart Accounts as the execution rail. The target user is a real XRP holder on XRPL mainnet using a
-wallet like Xaman. Testnet is a demo constraint, and the mainnet path uses Xaman QR signing and
-mainnet FXRP.
+## Hackathon Alignment
+
+Primary track: **Interoperable Asset Products**. Baton takes XRP, an asset that lives on another chain, and makes it productive on Flare with the lowest possible friction, using the FAssets lifecycle as the load-bearing integration and Smart Accounts as the execution rail. The target user is a real XRP holder on XRPL mainnet using a wallet like Xaman. Testnet is a demo constraint: the mainnet path uses Xaman QR signing and mainnet FXRP.
 
 ## Honest note on scope
 
-Baton's original design was a single signature atomic multi vault deposit through the Smart Accounts
-custom instruction primitive. During the build we found that facet is present in the SDK but not yet
-deployed on Coston2, verified by a diamond FunctionNotFound on both the production and staging
-controllers. We pivoted to the live, operator supported primitive, one signature per strategy, which
-preserves the core value. Multi vault in one signature returns as soon as that facet ships on chain.
+Baton's original design was a single-signature atomic multi-vault deposit through the Smart Accounts custom-instruction primitive. During the build we found that facet is present in the SDK but not yet deployed on Coston2, verified by a diamond `FunctionNotFound` on both the production and staging controllers. We pivoted to the live, operator-supported primitive: one signature per strategy, mint and deposit, which preserves the core value. Multi-vault in one signature returns as soon as that facet ships on-chain.
 
 ## Close
 
-Every number above comes from a genuinely executed run. Sign once, and your XRP is working on Flare.
+Every number above comes from a genuinely executed run. Try it live at https://baton-flare.onrender.com, read the code at https://github.com/dmustapha/baton, and verify the transactions on the Coston2 explorer.
