@@ -1,0 +1,35 @@
+app = "baton-flare"
+primary_region = "iad"
+
+[build]
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 2
+  memory_mb = 1024
+
+[env]
+  NODE_ENV = "production"
+  SMART_ACCOUNTS_CLI_DIR = "/smart-accounts-cli"
+  CLI_PYTHON = "/smart-accounts-cli/venv/bin/python"
+  CLI_ENTRY = "smart_accounts.py"
+  COSTON2_RPC_URL = "https://coston2-api.flare.network/ext/C/rpc"
+  FLR_RPC_URL = "https://coston2-api.flare.network/ext/C/rpc"
+  XRPL_RPC_URL = "https://s.altnet.rippletest.net:51234"
+  XRPL_WSS = "wss://s.altnet.rippletest.net:51233"
+  PROVIDER_XRPL_WALLET = "rEyj8nsHLdgt79KJWzXR5BgF7ZbaohbXwq"
+  CLI_WALLET_ID = "248"
+  AGENT_VAULT_ID = "1"
+  VAULT_A_ADDRESS = "0xD91324A6e8884147F6425E9ddd60e11Aea060B5b"
+  VAULT_A_ID = "4"
+  VAULT_B_ADDRESS = "0xC90D6847747b85d1fa2E07859869fb9fB72c0361"
+  VAULT_B_ID = "1"
+  DEMO_XRPL_ADDRESS = "rwLtfA6cn57VYjzaDetfCQi2z4cDgeNi8b"
+  BATON_DEPTH = "depth-8"
