@@ -32,5 +32,6 @@
   "signatureElement": "Orchestration mark: one origin node fanning into three vault nodes (one XRPL signature distributing a Flare portfolio), blue-to-ember gradient",
   "logoPath": "brand/logo.svg",
   "logoConcept": "baton = orchestration; one signature -> multi-vault portfolio",
-  "logoBackground": "transparent (mark only); flat thumbnails in brand/thumb-white.png and thumb-ink.png"
+  "logoBackground": "flat ink #0a0e1a (no glow, no tile) — chosen; transparent mark master at brand/logo.svg",
+  "primaryLogo": "brand/thumb-ink.png"
 }
