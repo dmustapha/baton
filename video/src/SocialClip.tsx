@@ -3,6 +3,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate } fr
 import { COLORS, SOCIAL_DURATION, URLS } from "./constants";
 import { BODY, MONO } from "./fonts";
 import { AnimatedBackground } from "./components/AnimatedBackground";
+import { Mark } from "./components/Mark";
 
 const VERTICAL_ORBS = [
   { baseX: 220, baseY: 360, size: 460, color: COLORS.accent, blur: 130, opacity: 0.12, speed: 0.006 },
@@ -26,8 +27,8 @@ export const SocialClip: React.FC = () => {
     <AbsoluteFill style={{ background: COLORS.bg, opacity: fadeOut }}>
       <AnimatedBackground orbs={VERTICAL_ORBS} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 34, padding: "0 70px" }}>
-        <div style={{ opacity: markOp, width: 120, height: 120, borderRadius: 30, background: `linear-gradient(135deg, ${COLORS.accent}, ${COLORS.accent2})`, display: "grid", placeItems: "center", color: "#fff", fontFamily: BODY, fontWeight: 800, fontSize: 68, boxShadow: `0 0 80px ${COLORS.accent}66` }}>
-          B
+        <div style={{ opacity: markOp }}>
+          <Mark size={148} id="socialmk" />
         </div>
         <div style={{ textAlign: "center" }}>
           <div style={{ ...line(l1), fontFamily: BODY, fontWeight: 800, fontSize: 78, color: COLORS.ink, letterSpacing: -2, lineHeight: 1.08 }}>Your XRP, working on Flare.</div>

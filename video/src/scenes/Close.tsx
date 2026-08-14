@@ -3,6 +3,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate } fr
 import { COLORS, ORBS, SCENE_DURATIONS, URLS } from "../constants";
 import { BODY, MONO } from "../fonts";
 import { AnimatedBackground } from "../components/AnimatedBackground";
+import { Mark } from "../components/Mark";
 
 export const Close: React.FC = () => {
   const frame = useCurrentFrame();
@@ -26,17 +27,8 @@ export const Close: React.FC = () => {
     <AbsoluteFill style={{ background: COLORS.bg, opacity: fadeOut }}>
       <AnimatedBackground orbs={ORBS} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 22 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 18, opacity: markOp, transform: `scale(${markScale})` }}>
-          <div
-            style={{
-              width: 76, height: 76, borderRadius: 20,
-              background: `linear-gradient(135deg, ${COLORS.accent}, ${COLORS.accent2})`,
-              display: "grid", placeItems: "center", color: "#fff", fontFamily: BODY, fontWeight: 800, fontSize: 42,
-              boxShadow: `0 0 70px ${COLORS.accent}66`,
-            }}
-          >
-            B
-          </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 16, opacity: markOp, transform: `scale(${markScale})` }}>
+          <Mark size={82} id="closemk" />
           <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 60, color: COLORS.ink, letterSpacing: -2 }}>Baton</div>
         </div>
 

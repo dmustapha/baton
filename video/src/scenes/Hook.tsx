@@ -3,6 +3,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate } fr
 import { COLORS, ORBS, SCENE_DURATIONS } from "../constants";
 import { BODY } from "../fonts";
 import { AnimatedBackground } from "../components/AnimatedBackground";
+import { Mark } from "../components/Mark";
 
 export const Hook: React.FC = () => {
   const frame = useCurrentFrame();
@@ -28,17 +29,8 @@ export const Hook: React.FC = () => {
       <AnimatedBackground orbs={ORBS} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 26 }}>
         {/* brand mark */}
-        <div style={{ display: "flex", alignItems: "center", gap: 18, opacity: markOp, transform: `scale(${markScale})` }}>
-          <div
-            style={{
-              width: 68, height: 68, borderRadius: 18,
-              background: `linear-gradient(135deg, ${COLORS.accent}, ${COLORS.accent2})`,
-              display: "grid", placeItems: "center", color: "#fff", fontFamily: BODY, fontWeight: 800, fontSize: 38,
-              boxShadow: `0 0 60px ${COLORS.accent}55`,
-            }}
-          >
-            B
-          </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 14, opacity: markOp, transform: `scale(${markScale})` }}>
+          <Mark size={72} id="hookmk" />
           <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 44, color: COLORS.ink, letterSpacing: -1 }}>Baton</div>
         </div>
 
