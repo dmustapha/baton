@@ -413,3 +413,18 @@
 - Phase 1 scaffold does NOT need the FLR key — proceed. Phase 2 execution does.
 - `lib/encode.ts` must implement the two-step register→encode flow (DEV-002), not the one-shot.
 - Depth-8 is real: keep the FXRP direct-mint as the first leg of the atomic instruction.
+
+---
+### build (Phase 2 — THESIS PIVOT) — 2026-08-14
+**Status:** IN-PROGRESS. Autonomous mode (user asleep, "continue with conductor").
+
+#### Active Facts (override brief) — DEV-007
+- **Custom instructions (atomic multi-vault Call[]) are NOT deployed on Coston2.** `custom register` reverts `FunctionNotFound(0x5acff490)`. Diamond loupe: prod MAC `0x4349…` and staging `0x32F6…` both have 60 selectors, neither has encodeCustomInstruction/registerCustomInstruction. Verified 3 ways.
+- **THESIS PIVOTED (user-approved):** from "one signature → atomic MULTI-vault" to **"one XRPL signature → mint FXRP + deposit into a live Flare yield vault"** (`upshift-cr-deposit` / `firelight-cr-deposit`). Single-vault, real FAssets mint+deposit, no EVM wallet/gas. Strategy picker (Upshift/Firelight) = product depth; each strategy = one cr-deposit signature.
+- Positioning: NOT "simple FXRP vault" — it's the end-to-end XRP→productive-Flare-position in ONE signature from an existing XRPL wallet (Xaman), FAssets lifecycle load-bearing.
+
+#### For Next Skill (build continuation, then debug/wire/verify)
+- lib/encode.ts's 3-step custom-instruction flow is DEAD on this deployment — replace the app's core action with the cr-deposit instruction (encode {upshift,firelight}-cr-deposit -w 248 -v <lots> -a 1 -u <vaultId> → bridge instruction → bridge mint-tx -w). Keep buildCalls/tests as archived (still valid code, just no live facet).
+- Update PRD/PLAN thesis language: single-signature mint+deposit, strategy picker, drop "atomic multi-vault".
+- Proof: one-sig upshift-cr-deposit e2e running now; record hashes + vault share balance in submission/proof.md.
+- Depth-8 already proven (Task-0 mint). The cr-deposit IS depth-8+ (mint+deposit in one operator-executed flow).

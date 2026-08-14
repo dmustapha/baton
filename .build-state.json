@@ -5,24 +5,142 @@
   "currentSubStep": "2.1.a",
   "status": "in-progress",
   "autonomous_mode": true,
-  "expected_phases": ["phase-0", "phase-1", "phase-2", "phase-3", "phase-4", "phase-5", "phase-6"],
-  "completedSteps": ["0.1", "0.2", "1.1", "1.2", "1.3"],
+  "expected_phases": [
+    "phase-0",
+    "phase-1",
+    "phase-2",
+    "phase-3",
+    "phase-4",
+    "phase-5",
+    "phase-6"
+  ],
+  "completedSteps": [
+    "0.1",
+    "0.2",
+    "1.1",
+    "1.2",
+    "1.3"
+  ],
   "fileGroups": {
-    "0.1": { "files": ["baton/CLI-INTERFACE.md", ".env"], "written": true, "verified": true },
-    "0.2": { "files": ["scripts/task0-e2e.mjs", "submission/proof.md"], "written": true, "verified": true },
-    "1.1": { "files": ["package.json", "next.config.mjs", "tsconfig.json", "lib/config.ts", "lib/types.ts", "DOMAIN-GUIDE.md"], "written": true, "verified": true },
-    "1.2": { "files": ["lib/viem.ts", "abis/contractRegistry.json", "lib/registry.ts", "abis/masterAccountController.json", "lib/personalAccount.ts"], "written": true, "verified": true },
-    "1.3": { "files": ["lib/templates.ts", "abis/vault.json", "abis/erc20meta.json", "lib/cli.ts", "lib/ftso.ts", "abis/ftsoV2.json", "lib/encode.ts", "app/api/encode/route.ts", "lib/encode.test.ts", "vitest.config.ts", "scripts/verify-phase1.ts"], "written": true, "verified": true }
+    "0.1": {
+      "files": [
+        "baton/CLI-INTERFACE.md",
+        ".env"
+      ],
+      "written": true,
+      "verified": true
+    },
+    "0.2": {
+      "files": [
+        "scripts/task0-e2e.mjs",
+        "submission/proof.md"
+      ],
+      "written": true,
+      "verified": true
+    },
+    "1.1": {
+      "files": [
+        "package.json",
+        "next.config.mjs",
+        "tsconfig.json",
+        "lib/config.ts",
+        "lib/types.ts",
+        "DOMAIN-GUIDE.md"
+      ],
+      "written": true,
+      "verified": true
+    },
+    "1.2": {
+      "files": [
+        "lib/viem.ts",
+        "abis/contractRegistry.json",
+        "lib/registry.ts",
+        "abis/masterAccountController.json",
+        "lib/personalAccount.ts"
+      ],
+      "written": true,
+      "verified": true
+    },
+    "1.3": {
+      "files": [
+        "lib/templates.ts",
+        "abis/vault.json",
+        "abis/erc20meta.json",
+        "lib/cli.ts",
+        "lib/ftso.ts",
+        "abis/ftsoV2.json",
+        "lib/encode.ts",
+        "app/api/encode/route.ts",
+        "lib/encode.test.ts",
+        "vitest.config.ts",
+        "scripts/verify-phase1.ts"
+      ],
+      "written": true,
+      "verified": true
+    }
   },
   "deviations": [
-    { "step": "0.1", "id": "DEV-001", "description": "CLI entry smart_accounts.py; venv python 3.12", "reason": "assumption; py3.14 no wheels", "class": "COSMETIC", "impact": "none" },
-    { "step": "1.3", "id": "DEV-002", "description": "3-step custom register→encode custom-instruction→bridge instruction (not one-shot)", "reason": "real CLI refs registered Call[] by hash", "class": "DEGRADED", "impact": "needs backend FLR key (funded)" },
-    { "step": "1.2", "id": "DEV-003", "description": "FXRP via AssetManagerFXRP.fAsset(), no FXRP registry name", "reason": "registry layout", "class": "DEGRADED", "impact": "resolveFxrp() live-verified" },
-    { "step": "1.3", "id": "DEV-004", "description": "getFeedById (not getFeedByIdView which reverts)", "reason": "view getter absent", "class": "DEGRADED", "impact": "ftso live-verified 1.0116" },
-    { "step": "1.2", "id": "DEV-005", "description": "getPersonalAccount (not getAccountAddress)", "reason": "wrong assumed name", "class": "COSMETIC", "impact": "live matches Task-0 PA" },
-    { "step": "1.1", "id": "DEV-006", "description": "package.json caret ranges; typescript 5.5.0 invalid", "reason": "bad exact pin broke install", "class": "COSMETIC", "impact": "installed via bun" }
+    {
+      "step": "0.1",
+      "id": "DEV-001",
+      "description": "CLI entry smart_accounts.py; venv python 3.12",
+      "reason": "assumption; py3.14 no wheels",
+      "class": "COSMETIC",
+      "impact": "none"
+    },
+    {
+      "step": "1.3",
+      "id": "DEV-002",
+      "description": "3-step custom register→encode custom-instruction→bridge instruction (not one-shot)",
+      "reason": "real CLI refs registered Call[] by hash",
+      "class": "DEGRADED",
+      "impact": "needs backend FLR key (funded)"
+    },
+    {
+      "step": "1.2",
+      "id": "DEV-003",
+      "description": "FXRP via AssetManagerFXRP.fAsset(), no FXRP registry name",
+      "reason": "registry layout",
+      "class": "DEGRADED",
+      "impact": "resolveFxrp() live-verified"
+    },
+    {
+      "step": "1.3",
+      "id": "DEV-004",
+      "description": "getFeedById (not getFeedByIdView which reverts)",
+      "reason": "view getter absent",
+      "class": "DEGRADED",
+      "impact": "ftso live-verified 1.0116"
+    },
+    {
+      "step": "1.2",
+      "id": "DEV-005",
+      "description": "getPersonalAccount (not getAccountAddress)",
+      "reason": "wrong assumed name",
+      "class": "COSMETIC",
+      "impact": "live matches Task-0 PA"
+    },
+    {
+      "step": "1.1",
+      "id": "DEV-006",
+      "description": "package.json caret ranges; typescript 5.5.0 invalid",
+      "reason": "bad exact pin broke install",
+      "class": "COSMETIC",
+      "impact": "installed via bun"
+    },
+    {
+      "step": "2.0",
+      "id": "DEV-007",
+      "description": "custom instructions (encode/registerCustomInstruction) not deployed on Coston2 prod or staging MAC; atomic multi-vault Call[] impossible",
+      "reason": "CustomInstructionsFacet absent from live diamond (60 selectors, FunctionNotFound)",
+      "class": "UNTESTED",
+      "impact": "THESIS PIVOT to single-signature mint+deposit (user-approved)"
+    }
   ],
-  "phaseExecutors": { "phase-0": "inline", "phase-1": "inline" },
+  "phaseExecutors": {
+    "phase-0": "inline",
+    "phase-1": "inline"
+  },
   "contractAddresses": {},
   "env": {
     "BATON_DEPTH": "depth-8",
@@ -46,8 +164,13 @@
     "fxrp_minted": "10.0",
     "personal_account": "0x27fBb63780AB83aE7CEcd69291AAbb0A769071f7"
   },
-  "verification_commands": ["tsc --noEmit (clean)", "vitest run (7/7)", "tsx scripts/verify-phase1.ts (5/5 live PASS)"],
+  "verification_commands": [
+    "tsc --noEmit (clean)",
+    "vitest run (7/7)",
+    "tsx scripts/verify-phase1.ts (5/5 live PASS)"
+  ],
   "screenshot_paths": [],
   "context_percentage": 0,
-  "timestamp": "2026-08-14T03:20:00Z"
+  "timestamp": "2026-08-14T03:20:00Z",
+  "thesis": "one XRPL signature -> mint FXRP + deposit into a live Flare yield vault (cr-deposit); custom multi-vault facet not deployed (DEV-007)"
 }

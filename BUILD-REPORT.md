@@ -46,8 +46,15 @@ Track: Interoperable Asset Products · Coston2 (chainId 114) · NO custom Solidi
 | 1 | live derivePersonalAccount(demo) | 0x27fBb6… (Task-0 PA) | 0x27fBb63780AB83aE7CEcd69291AAbb0A769071f7 | ✅ |
 | 1 | live getXrpUsd (getFeedById) | > 0 | XRP/USD = 1.0116 | ✅ |
 
+## ARCHITECTURAL FINDING (DEV-007 — Phase 2 blocker, escalated)
+**Custom instructions (the atomic multi-vault Call[] primitive) are NOT deployed on Coston2.**
+`custom register` reverts with `FunctionNotFound(0x5acff490)` (`0x5416eb98` = diamond `FunctionNotFound(bytes4)`; arg = `encodeCustomInstruction`'s selector). Diamond loupe on BOTH the production MAC (`0x4349…`) and staging MAC (`0x32F6…`) enumerates 60 selectors each — neither includes `encodeCustomInstruction` (`0x5acff490`) nor `registerCustomInstruction` (`0xa8c90e6c`). The CLI/SDK ships these commands, but the live Coston2 deployment does not implement the CustomInstructionsFacet.
+**Impact:** the thesis "ONE XRPL signature → atomic MULTI-vault deposit" cannot execute on-chain. Every live instruction type is single-purpose (mint, transfer, ONE-vault deposit). Multi-vault would require N signatures.
+**Viable single-signature primitives that DO work live** (operator-executed, proven or CLI-supported): `fxrp-cr` (mint FXRP — PROVEN Task-0), `upshift-cr-deposit` / `firelight-cr-deposit` (mint + deposit into ONE yield vault, one signature), `upshift-deposit` / `firelight-deposit` (deposit existing FXRP into one vault).
+**Escalated to user** (build architectural-error protocol) for a thesis decision. Phase 1 (encoder, scaffold) remains valid — `lib/encode.ts`'s 3-step flow is correct code against the SDK; it just can't run against this deployment.
+
 ## Known Risks (for debug)
-- The atomic multi-vault Call[] (Phase 2) needs a `custom register` Flare tx signed by a **backend FLR infra key** with C2FLR gas (DEV-002). This key is infra, never the user's; must be funded before Phase 2. Currently the CLI `.env` has a dummy `FLR_PRIVATE_KEY` (fine for encode/bridge-instruction only).
+- The atomic multi-vault Call[] (Phase 2) needs a `custom register` Flare tx signed by a **backend FLR infra key** with C2FLR gas (DEV-002). This key is infra, never the user's; must be funded before Phase 2. Currently the CLI `.env` has a dummy `FLR_PRIVATE_KEY` (fine for encode/bridge-instruction only). — SUPERSEDED by DEV-007: custom instructions aren't deployed, so the register step can't run regardless.
 - Operator FDC rounds take ~90–180s per action (CR reserve, then mint). Demo pacing must account for this (PRD §6 already notes it).
 - FXRP `decimals()` = 6 (confirmed) — Phase 1 `getFxrpDecimals()` must read this live, not assume 18.
 
