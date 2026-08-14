@@ -1,0 +1,5 @@
+{ "version": 3, "status": "complete", "currentPhase": "logo_forge",
+  "note": "logo_forge only (app already built+deployed; formalize/refine not re-run)",
+  "logo_forge": { "variantsGenerated": 3, "selectedVariant": "logo-v3 (B monogram) [AUTO — legibility + consistency with app/video]",
+    "finals": ["brand/logo.svg","brand/logo-icon-1024.png","brand/logo-lockup.png","brand/og-banner.png","brand/favicon-32.png","app/icon.png","app/opengraph-image.png"] },
+  "artifacts": { "brandJson": "brand.json", "logo": "brand/logo.svg" } }
