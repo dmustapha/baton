@@ -1,3 +1,5 @@
 .env
 .env.local
 *.seed
+node_modules/
+.next/

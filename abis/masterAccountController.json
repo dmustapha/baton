@@ -1,0 +1,9 @@
+[
+  {
+    "type": "function",
+    "name": "getPersonalAccount",
+    "stateMutability": "view",
+    "inputs": [{ "name": "_xrplOwner", "type": "string" }],
+    "outputs": [{ "name": "", "type": "address" }]
+  }
+]
