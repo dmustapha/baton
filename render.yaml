@@ -1,0 +1,50 @@
+services:
+  - type: web
+    name: baton
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    region: oregon
+    healthCheckPath: /api/price
+    autoDeploy: false
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SMART_ACCOUNTS_CLI_DIR
+        value: /smart-accounts-cli
+      - key: CLI_PYTHON
+        value: /smart-accounts-cli/venv/bin/python
+      - key: CLI_ENTRY
+        value: smart_accounts.py
+      - key: COSTON2_RPC_URL
+        value: https://coston2-api.flare.network/ext/C/rpc
+      - key: FLR_RPC_URL
+        value: https://coston2-api.flare.network/ext/C/rpc
+      - key: XRPL_RPC_URL
+        value: https://s.altnet.rippletest.net:51234
+      - key: XRPL_WSS
+        value: wss://s.altnet.rippletest.net:51233
+      - key: PROVIDER_XRPL_WALLET
+        value: rEyj8nsHLdgt79KJWzXR5BgF7ZbaohbXwq
+      - key: CLI_WALLET_ID
+        value: "248"
+      - key: AGENT_VAULT_ID
+        value: "1"
+      - key: VAULT_A_ADDRESS
+        value: "0xD91324A6e8884147F6425E9ddd60e11Aea060B5b"
+      - key: VAULT_A_ID
+        value: "4"
+      - key: VAULT_B_ADDRESS
+        value: "0xC90D6847747b85d1fa2E07859869fb9fB72c0361"
+      - key: VAULT_B_ID
+        value: "1"
+      - key: DEMO_XRPL_ADDRESS
+        value: rwLtfA6cn57VYjzaDetfCQi2z4cDgeNi8b
+      - key: BATON_DEPTH
+        value: depth-8
+      - key: XRPL_SECRET
+        sync: false
+      - key: FLR_PRIVATE_KEY
+        sync: false
+      - key: DEMO_XRPL_SEED
+        sync: false
