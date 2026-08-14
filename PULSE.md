@@ -428,3 +428,18 @@
 - Update PRD/PLAN thesis language: single-signature mint+deposit, strategy picker, drop "atomic multi-vault".
 - Proof: one-sig upshift-cr-deposit e2e running now; record hashes + vault share balance in submission/proof.md.
 - Depth-8 already proven (Task-0 mint). The cr-deposit IS depth-8+ (mint+deposit in one operator-executed flow).
+
+---
+### build (COMPLETE) — 2026-08-14T04:05:00Z
+**Status:** COMPLETE (complete_with_blockers — DEV-007 pivot).
+
+#### Done
+- Phases 0-5 built. Thesis PROVEN on-chain (pivoted): one XRPL signature -> mint FXRP + deposit into a live Flare yield vault.
+- Task-0: 10 FXRP minted (Coston2 0x0c33940a). One-sig upshift-cr-deposit -> 10 Upshift vault shares (Coston2 0x5f4766e1).
+- Feature-complete Next.js app: strategy picker, one-sign deposit, live status strip, live portfolio (real 10 FXRP position, FTSO-valued $10.10), /proof page. Prod `next build` passes (3 static + 6 dynamic routes). Dockerfile (Node+Python) ready.
+- Verified live: /api/price XRP/USD 1.0105, /api/positions real position, seed-demo all PASS.
+
+#### For Next Skill (debug/wire/verify or package)
+- App is deploy-ready (Dockerfile) but NOT deployed to a host yet. `depositExisting` (pure one-payment) does NOT execute on-chain (operator needs mint-flow approve) — the WORKING hero is cr-deposit (2 XRPL payments, self-replenishing). Frame honestly.
+- Remaining: deploy to Fly/Railway, submission package (brief §Package blueprint), demo video, design polish. Heavy phases need fresh context.
+- Balances: demo XRPL ~78 XRP, backend FLR 100 C2FLR. Dev server: `next dev`; kill port 3000 first.

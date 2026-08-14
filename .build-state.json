@@ -1,9 +1,9 @@
 {
   "project": "Baton",
-  "currentPhase": "phase-2",
+  "currentPhase": "phase-6",
   "currentStep": "2.1",
   "currentSubStep": "2.1.a",
-  "status": "in-progress",
+  "status": "complete",
   "autonomous_mode": true,
   "expected_phases": [
     "phase-0",
@@ -19,7 +19,16 @@
     "0.2",
     "1.1",
     "1.2",
-    "1.3"
+    "1.3",
+    "2.1",
+    "2.2",
+    "3.1",
+    "3.2",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "5.2"
   ],
   "fileGroups": {
     "0.1": {

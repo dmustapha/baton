@@ -2,7 +2,7 @@
   "version": "1.0",
   "working_dir": "/Users/MAC/hackathon-toolkit/active/flare-summer-signal",
   "created_at": "2026-08-13T22:20:00Z",
-  "updated_at": "2026-08-13T23:05:00Z",
+  "updated_at": "2026-08-14T04:00:00Z",
   "hackathon": {
     "name": "Flare Summer Signal",
     "url": "https://dorahacks.io/hackathon/flaresummersignal/detail",
@@ -95,10 +95,16 @@
         ]
       },
       "build": {
-        "status": "running",
+        "status": "complete_with_blockers",
         "dispatched_at": "2026-08-13T23:05:00Z",
-        "completed_at": null,
-        "artifacts": []
+        "completed_at": "2026-08-14T04:00:00Z",
+        "artifacts": [
+          "BUILD-REPORT.md",
+          ".build-state.json",
+          "submission/proof.md",
+          "NEW_WORK.md",
+          "Dockerfile"
+        ]
       },
       "debug": {
         "status": "pending",
@@ -230,7 +236,7 @@
     },
     "demo_xrpl": {
       "addr": "rwLtfA6cn57VYjzaDetfCQi2z4cDgeNi8b",
-      "funded_xrp": 100.0
+      "funded_xrp": 100
     }
   },
   "retry_budgets": {
@@ -254,5 +260,13 @@
       "BLOCKER-2: atomicity is the thesis but not judge-visible (addressed by E-3)"
     ],
     "crossReview": "peer unavailable (degraded, non-blocking)"
+  },
+  "buildState": {
+    "status": "complete",
+    "thesis": "one XRPL signature -> mint FXRP + deposit into a live Flare yield vault (cr-deposit); custom multi-vault facet NOT deployed on Coston2 (DEV-007, user-approved pivot)",
+    "depth": "depth-8 (real FXRP mint proven)",
+    "deviationCount": 7,
+    "untestedDeviationCount": 1,
+    "knownRiskCount": 2
   }
 }
