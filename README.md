@@ -7,6 +7,7 @@ signature from their existing XRPL wallet. No EVM wallet, no FLR gas, no manual 
 on the XRP Ledger; Flare's Smart Accounts operator mints FXRP and deposits it into a live Flare
 yield vault on your behalf, while you keep custody.
 
+- **Live app:** https://baton-flare.onrender.com  (free tier — first load may cold-start ~30s)
 - **Track:** Interoperable Asset Products
 - **Network:** Coston2 (Flare testnet, chainId `114`)
 - **Demo wallet (testnet):** `rwLtfA6cn57VYjzaDetfCQi2z4cDgeNi8b`
